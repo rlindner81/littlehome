@@ -1,0 +1,170 @@
+\documentclass[11pt,a4paper,leqno]{article}
+
+\usepackage{pst-plot, pstricks} 
+\usepackage{fancybox,amssymb,color} 
+
+\usepackage{amsfonts,german}
+\usepackage{a4wide}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{uebung}
+\usepackage{texdraw}
+%\usepackage{epsf}
+
+
+\psset{unit=0.5cm} % Units für Graphen
+
+\Nummer{3} % Blattnummer eingeben
+
+%% Gruppe Haus Test Zusatz
+
+\Anfang{1}{1}{1}{1} % Zaehler fuer  Gruppenuebung und Hausuebung eingeben
+
+\Datum{08. Oktober 2004} % Datum eingeben
+
+\parindent0mm
+
+
+
+\begin{document}
+
+\Kopf
+
+\Uebungloes
+
+%%%%%%%%%%%%%%%%%%%% Gruppenuebungen %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Gruppenuebungen}
+
+
+\Aufgabe % 1
+\textbf{(Rechnen mit Vektoren im $\mathbb{R}^3$)}
+
+Der Funktionsgraph ist streng monoton steigend, doch wird er im letzten Abschnitt ``flacher'', das heißt die Steigung nimmt ab. $f'$ kann als die Neuverschuldung interpretiert werden.
+
+\Aufgabe % 2
+\textbf{(Physikunterricht)}
+
+$f'$ beschreibt die Geschwindigkeit und $f''$ die Beschleunigung.
+
+\Aufgabe % 3
+\textbf{(Grenzwert der Sekantensteigung)}
+\begin{eqnarray*}
+f'(x_0) & = & \lim_{h \rightarrow 0} \ \frac{f(x_0+h) - f(x_0)}{h} \\
+ & = & \lim_{h \rightarrow 0} \ \frac{5(x_0+h)^2 - 5x_0^2}{h} \\
+ & = & \lim_{h \rightarrow 0} \ \frac{5x_0^2 + 10x_0h + 5h^2 - 5x_0^2}{h} \\
+ & = & \lim_{h \rightarrow 0} \ 10x_0 + 5h \\
+ & = & 10x_0 \\
+ & = & 50. 
+\end{eqnarray*}
+
+\Aufgabe % 4
+\textbf{(Wo ist $f$ differenzierbar?)}
+
+\begin{itemize}
+\item[(a)]
+Es gibt bei der Funktion $f$ auf dem "Ubungsblatt $4$ Problemstellen. Der linke Rand. Die zwei ``Knicke'' vor dem (globalen) Maximum und die Sprungstelle nach dem Maximum. $f$ ist an keiner dieser Stellen differenzierbar und an der letzteren nicht mal stetig.\\
+\item[(b)]
+Ja, Differenzierbarkeit ist eine st"arkere Eigenschaft als Stetigkeit. Ist also $f$ in einem Punkt $x$ differenzierbar, so ist sie in diesem Punkt erst recht stetig. Umgekehrt kann $f$ an einer Unstetigkeitsstelle nie Differenzierbar sein.
+\end{itemize}
+
+\Aufgabe % 5
+\textbf{(Ableiten)}
+
+\begin{itemize}
+\item[(a)]
+$f'(x) = 15x^4 + 2$
+\item[(b)]
+$f'(x) = {3 \over 5}(x^3+2x)^{-\frac{2}{5}}(3x^2+2)$
+\item[(c)]
+$g'(t)= e^{t}(\sin{t} + \cos{t})$
+\item[(d)]
+$f'(z)=\frac{z(8z^7-\sin z)-2(z^8+\cos z)}{3z^3}$
+\item[(e)]
+$x'(t)=\cos({t^2})2t$
+\item[(f)]
+$g'(y)=0$
+\item[(g)]
+$g'(y) = 1$   
+\end{itemize}
+
+
+\Aufgabe % 6
+\textbf{(Diese Aufgabe erschien uns nicht sinnvoll)}
+
+\pagebreak
+
+\Aufgabe % 7
+\textbf{(Skizziere die Ableitung)}
+
+Achtung: Diese Zeichnung ist nur sehr ungef"ahr!
+\[ \begin{pspicture}(-3,-2)(6,3)
+  \psaxes[labels=none]{->}(0,0)(-3,-2)(6,3)
+  \psplot{-1}{0.5}{-1 x mul -1 add} 
+  \psplot{0.5}{2}{x -2 add} 
+  \psplot{2}{4}{0.05}
+  \psplot{4}{5}{x -4.5 add x -4.5 add mul -10 mul 2.5 add}
+  \psplot{5}{5.5}{-1 x mul 5 add}
+\end{pspicture} \]
+
+\Aufgabe % 8
+\textbf{(Nullstelle, Extrema, Wendestellen)}
+\begin{itemize}
+\item[(a)]
+$f(x)=-x^3+4x^2-3x=(x-0)(x-1)(x-3)$\\
+Also sind die Nullstellen $0, 1, 3$.
+\item[(b)]
+$0 = f'(x) = -3x^2+8x-3= x^2-\frac{8}{3}x+1$\\
+$f''(x_{min}) \neq 0 \neq f''(x_{max})$\\
+Lokale Extrema sind bei $x_{min} = \frac{4}{3} - \frac{\sqrt 7 }{3}$ (Minimum) \ $x_{max} = \frac{4}{3} + \frac{\sqrt 7 }{3}$ (Maximum)
+\item[(c)]
+$0 = f''(x) = -6x+8$\\
+$f'''(x_w) \neq 0$\\
+Wendepunkte: $x_w = \frac{4}{3}$
+\end{itemize}
+
+\Aufgabe % 9
+\textbf{(Lokale und globale Extrema)}
+
+Wir untersuchen $f:[-4,4] \rightarrow \mathbb{R}: x \mapsto -\frac{1}{3}x^3-x^2+3x$.
+
+\[ \begin{pspicture}(-4,-10)(10,1)
+  \psaxes{->}(0,0)(-4,-8)(4,0)
+  \psplot{-4}{3.1}{-1 3 div x x x mul mul mul -1 x x mul mul add 3 x mul add} 
+\end{pspicture} \]
+Also finden wir das lokale Minimum bei $x_{min} = -3$ und das globale Minimum bei $x_{Gmin} = 4$. Ein lokales und auch globales Maximum ist bei $x_{Gmax}=1$. 
+
+\Aufgabe % 10 
+\textbf{(Integrieren)}
+\begin{itemize}
+\item[(a)]
+$\int \cos x \ dx = \sin x + c$
+\item[(b)]
+$\int x^2 +3x +4 \ dx = \frac{1}{3} x^3 + \frac{3}{2} x^2 + 4x + c$
+\item[(c)]
+$\int 5 \ dx = 5x + c$
+\item[(d)]
+$\int x\cdot e^x \ dx = (x-1)e^x  + c$
+\item[(e)]
+$\int \frac{1}{5}x \ dy = \frac{1}{5}xy + c$
+\end{itemize}
+
+\Aufgabe % 11 
+\textbf{(Integrieren gleich Fl"acheninhalt?)}
+
+Das gegebene Integral ergibt Null, da die oberen und unteren ``Fl"acheninhalte'' (die ja noch ein Vorzeichen tragen) sich aufheben.\\ Um den echten Fl"acheninhalt zu erhalten berechnen wir $\int^{2\pi}_{0} |\sin t| \ dt = 4$.
+
+\[ \begin{pspicture}(-6,0)(6,3)
+  \psaxes[labels=none]{->}(0,0)(-6,0)(6,3)
+  \psplot{-6}{6}{180 3.14 div x mul sin} 
+\end{pspicture} \]
+
+\end{Gruppenuebungen}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

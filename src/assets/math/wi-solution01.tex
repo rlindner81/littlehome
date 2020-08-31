@@ -1,0 +1,221 @@
+\documentclass[11pt,a4paper,leqno]{article}
+\usepackage{amsfonts,german}
+\usepackage{a4wide}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{uebung}
+\usepackage{texdraw}
+%\usepackage{epsf}
+
+\newcommand{\smfrac}[2]%
+{{\raise0.5ex\hbox{$\scriptstyle #1$} \kern-0.1em/\kern-0.15em \lower0.25ex\hbox{$\scriptstyle #2$}}}
+
+
+
+\Nummer{1} % Blattnummer eingeben
+
+%% Gruppe Haus Test Zusatz
+
+\Anfang{1}{1}{1}{1} % Zaehler fuer  Gruppenuebung und Hausuebung eingeben
+
+\Datum{08. Oktober 2004} % Datum eingeben
+
+\parindent0mm
+
+
+
+\begin{document}
+
+\Kopf
+
+\Uebungloes
+
+
+
+%%%%%%%%%%%%%%%%%%%% Gruppenuebungen %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Gruppenuebungen}
+
+
+\Aufgabe % 1
+\textbf{(Rechnen mit Vektoren im $\mathbb{R}^3$)}
+\begin{itemize}
+
+\item[(a)]
+\[
+\vec m _{Jan}  = \left( {\begin{array}{*{20}c}
+   {140}  \\
+   {700}  \\
+   {35}  \\
+\end{array}} \right) \hspace{1.5cm}
+\vec m _{Feb}  = \left( {\begin{array}{*{20}c}
+   {134}  \\
+   {670}  \\
+   {46}  \\
+\end{array}} \right) \hspace{1.5cm}
+\vec m _{Mar}  = \left( {\begin{array}{*{20}c}
+   {137}  \\
+   {685}  \\
+   {40{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}}}  \\
+\end{array}} \right)
+\]
+
+\item[(b)]
+$$
+| \vec m_{Jan} | = 714.72 \hspace{1.5cm}
+| \vec m_{Feb} | = 684.815 \hspace{1.5cm}
+| \vec m_{Mar} | = 699.739
+$$
+
+\item[(c)]
+\[
+\det \left( {\begin{array}{*{20}c}
+   {140} & {700} & {35}  \\
+   {134} & {670} & {46}  \\
+   {137} & {685} & {40{\raise0.5ex\hbox{$\scriptstyle 1$}
+\kern-0.1em/\kern-0.15em
+\lower0.25ex\hbox{$\scriptstyle 2$}}}  \\
+\end{array}} \right) = 0
+\]
+
+\item[(d)]
+Da die Determinante der Matrix aus c) $0$ ergibt hat das von den $3$ Vektoren aufgespannte Gebilde kein Volumen. Die Drei sind also linear abh"angig und spannen nur eine Fl"ache oder eine Gerade auf.
+\end{itemize}
+
+\Aufgabe % 2
+\textbf{(Lineare Gleichungssysteme)}
+\begin{itemize}
+\item[(a)]
+\[
+\left( {\begin{array}{*{20}c}
+   1 & 4 & 0 & 0 & {11}  \\
+   0 & 0 & 3 & 2 & 1  \\
+   2 & 0 & 0 & 0 & 0  \\
+\end{array}} \right) \cdot \left( {\begin{array}{*{20}c}
+   1  \\
+   1  \\
+   0  \\
+   2  \\
+   2  \\
+\end{array}} \right) = \left( {\begin{array}{*{20}c}
+   {27}  \\
+   6  \\
+   2  \\
+\end{array}} \right)
+\]
+
+\item[(b)]
+$$
+x=40 \hspace{1cm} y=30 \hspace{1cm} z=20 \hspace{1cm} w=10 
+$$
+
+\end{itemize}
+
+\Aufgabe % 3
+\textbf{(W"urfelvolumen)}\\
+
+Die Matrix der Vektoren, die einen W"urfel mit Kantenl"ange 2 im Raum aufspannen kann folgende Form haben:
+
+\[
+A = \left( {\begin{array}{*{20}c}
+   2 & 0 & 0  \\
+   0 & 2 & 0  \\
+   0 & 0 & 2  \\
+\end{array}} \right) \hspace{2cm}
+\det A = 8
+\]
+
+\pagebreak
+
+\Aufgabe % 4
+\textbf{(Rechnen in $\mathbb{C}$)}
+\begin{itemize}
+\item[(a)]
+$$
+a+b=2+16i \hspace{1cm} a+d=5+18i \hspace{1cm} b+c=-1+3i \hspace{1cm} a+d+e=-3+18i
+$$
+
+\item[(b)]
+$$
+b-a=-8+2i \hspace{1cm} a-c=3+13i \hspace{1cm} e-b-c=-7-3i
+$$
+
+\item[(c)]
+$$
+a\cdot b= -78+24i \hspace{1cm} c\cdot d=66+22i \hspace{1cm} b\cdot e=24-72i \hspace{1cm} a\cdot c \cdot e = (52-16i)\cdot (-8) = -416+128i
+$$
+
+\item[(d)]
+$$
+\frac{b}{a}=\frac{1}{a\cdot \bar a}(b\cdot \bar a) = \frac{1}{37} (24+33i) \hspace{1cm} \frac{d}{c}=\frac{1}{20}(-33+11i)
+$$
+
+\item[(e)]
+$$
+|a|= 8.602 \hspace{1cm} |b|= 9.487 \hspace{1cm} |c|= 6.325
+$$
+
+\item[(f)]
+$$
+\bar a = 5-7i \hspace{0.5cm} \bar c = 2+6i \hspace{0.5cm} \bar d = -11i \hspace{0.5cm} \bar e = -8 \hspace{0.5cm} \overline{a+c} = 7-i \hspace{0.5cm} \overline{b\cdot d} = -99+33i \hspace{0.5cm} \overline{c-b}=5+15i
+$$
+
+\end{itemize}
+
+\Aufgabe % 5
+\textbf{(Kartesische- und Polardarstellung)}
+
+\begin{itemize}
+\item[(a)]
+Eine komplexe Zahl $z$ mit der Polardarstellung $(r,\varphi)$ hat die folgende kartesische Darstellung $z = r\cdot (\cos \varphi + i \sin \varphi)$ oder $(r\cdot \cos \varphi,r\cdot \sin \varphi)$.
+\item[(b)]
+   \begin{itemize}
+   \item[(i)]
+$1+i \triangleright (\sqrt 2, \smfrac{\pi}{4})$
+   \item[(ii)]
+$-1+i \triangleright (\sqrt 2, \smfrac{3 \pi}{4})$
+   \item[(iii)]
+$i \triangleright (1, \smfrac{\pi}{2})$
+   \item[(iv)]
+$(\sqrt 2, \smfrac{\pi}{4}) \triangleright 1+i$
+   \item[(v)]
+$(3, \pi) \triangleright -3$
+   \item[(vi)]
+$(1, \smfrac{\pi}{3}) \triangleright \smfrac{1}{2}+\smfrac{\sqrt 3}{2} \ i$
+
+   \end{itemize}
+\end{itemize}
+
+
+\Aufgabe % 6
+\textbf{(Multiplikation mit $i$)}\\
+
+Die Multiplikation mit $i$ entspricht geometrisch in der komplexen Zahlenebene einer Drehung um $\smfrac{\pi}{2}$ nach links.
+
+
+\Aufgabe % 7
+\textbf{(Komplexe Determinante)}\\
+\[
+\det \left( {\begin{array}{*{20}c}
+   i & 0 & i  \\
+   2 & i & {1 + i}  \\
+   0 & {2 + 2i} & 1  \\
+\end{array}} \right) =  - 1 + 0 + ( - 4 + 4i) - 0 - 0 - ( - 1 + i)(2 + 2i) =  - 1 + 4i
+\]
+
+
+\Aufgabe % 8
+\textbf{(Unterschiede zwischen $\mathbb{R}^2$ und $\mathbb{C}$)}\\
+
+Auf den komplexen Zahlen haben wir eine Multiplikation definiert, die es so zwischen Vektoren der reelen Ebene nicht gibt.
+
+\end{Gruppenuebungen}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

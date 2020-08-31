@@ -1,0 +1,320 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Dateikopf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{article}
+\usepackage{amssymb,amsmath, amsthm}													% AMS Kram
+\usepackage{german}																						% Man spricht Deutsch
+\usepackage[latin1]{inputenc}
+
+\usepackage{latexsym,enumerate,fancyhdr,textcomp,makeidx} 
+
+%\usepackage{showidx} %prints index entries on margin
+                      % - useful for index proof-reading
+
+%%%%%		PostScript Tricks
+
+\usepackage{pstricks, pst-plot}
+
+
+%%%%%		Seitengröße
+
+%\textwidth 16cm
+%\textheight 21cm
+%\topmargin 0cm
+%\oddsidemargin 0cm
+%\evensidemargin 0cm
+
+
+%%%%%		Kopf- und Fußzeile
+
+\pagestyle{fancy}
+\lhead{}
+%\lhead{\leftmark}
+\chead{}
+\rhead{}
+%\rhead{\rightmark}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+
+%%%%%		?????????
+
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\renewcommand{\baselinestretch}{1.05}
+%\renewcommand{\arraystretch}{.9}
+%\renewcommand{\rmdefault}{\sfdefault}
+%\renewcommand{\textrm}{\textsf}
+\parindent = 0pt 								% Keine Paragraphen
+
+
+%%%%%		Theoremumgebungen
+
+\newtheorem{theorem}{Theorem}%[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{example}[theorem]{Beispiel}
+\newtheorem{remark}[theorem]{Anmerkung}
+\newtheorem{corollary}[theorem]{Korollar}
+
+
+\newtheorem*{theorem0}{Theorem}
+\newtheorem*{definition0}{Definition}
+\newtheorem*{lemma0}{Lemma}
+\newtheorem*{example0}{Beispiel}
+\newtheorem*{remark0}{Anmerkung}
+\newtheorem*{corollary0}{Korollar}
+
+
+%%%%%		Kurzkommandos
+
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z} 
+\newcommand{\R}{\mathbb R} 
+\newcommand{\Q}{\mathbb Q} 
+\newcommand{\C}{\mathbb C} 
+\newcommand{\K}{\mathbb K} 
+\newcommand{\A}{\cal A}
+\newcommand{\E}{\mathcal E}
+\newcommand{\F}{\cal F}
+\newcommand{\G}{\cal G}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\e}{\epsilon}
+
+%%%%%		Trennungsregeln
+
+\hyphenation{ho-meo-mor-phic}
+
+
+
+
+%%%%%		Spezifikation
+
+\makeindex
+\title{Die Punktegruppe-Operation}
+\author{Richard Lindner}
+\date{99.09.9999}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Beginn des eigentlichen Textes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%		Titelseite
+
+% \thispagestyle{empty}
+% \maketitle 		% Gibt Titel, Name und Datum an.
+% \begin{abstract} \end{abstract}
+% \newpage
+
+
+%%%%%		Inhaltsverzeichnis
+
+% \tableofcontents
+% \newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lhead{Vortrag 2: Die Punktegruppe-Operation}
+\rhead{Richard Lindner}
+
+\section{Die Punktegruppe}
+\subsection{Elliptische Kurven}
+Eine \textit{elliptische Kurve} $\E$ über einem Körper $\K$ kann, wenn der Körper nicht die Charakteristik $2$ hat, mit der Weierstrass Normalform
+$$
+\E : y^2= x^3 + ax^2 + bx + c
+$$
+beschrieben werden. Hierbei sind $a,b,c \in \K$ und das rechte Polynom $3$. Grades in $x$ hat keine doppelten Nullstellen. 
+
+\begin{example}2 Elliptische Kurven über $\R$ \\
+
+\begin{tabular}{cc}
+
+\psset{unit=1cm} 
+\begin{pspicture}(-3,-2.5)(3,2.5)
+  \psaxes{->}(0,0)(-2,-2.5)(2,2.5)
+  \psplot{-1}{0}{x x x mul mul x sub sqrt} 					% Linke Schlaufe
+  \psplot{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot{1}{2}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot{1}{2}{x x x mul mul x sub sqrt -1 mul} 
+\end{pspicture}
+& 
+\begin{pspicture}(-3,-2.5)(3,2.5)
+  \psaxes{->}(0,0)(-2,-2.5)(2,2.5)
+  \psplot{-1.3245}{2}{x x x mul mul x sub 1 add sqrt} 
+  \psplot{-1.3245}{2}{x x x mul mul x sub 1 add sqrt -1 mul} 
+\end{pspicture} \\
+\\
+$\E_1 : y^2 = x^3-x$  & $\E_2 : y^2 = x^3-x+1$ \\
+\end{tabular}
+\end{example}
+
+Die Menge einer solchen Punktgruppe stellen wir uns wie folgt vor.
+
+\begin{definition}\textbf{Menge der Punktegruppe} \ $\left( \E (\K), + \right)$\\
+Die Punktegruppe einer elliptischen Kurve $\E$ über $\K$ ist die Menge der Punkte, die auf der Kurve liegen und der Fernpunkt $\cO := (\infty,\infty)$.
+$$
+\E(\K) := \left\{ P=(x,y) \in \K^2 : y^2=x^3+ax^2+bx+c  \right\} \cup \left\{ \cO \right\}
+$$
+
+\end{definition}
+
+Die Operation auf dieser Menge, die wir mit $+$ bezeichnen, wollen wir uns zunächst graphisch vorstellen. Die Summe zweier Punkt $P$ und $Q$ wird dabei konstruiert, indem man eine Gerade $\overline{PQ}$ durch $P$ und $Q$ legt und dann den $3.$ Schnittpunkt mit $\E$ an der $X$-Achse spiegelt. Dabei gibt es folgende Ausnahmen zu beachten: \\
+
+--- Addiert man einen Punkt $P$ zu sich selbst ist die Gerade $\overline{PP}$ nicht eindeutig bestimmt. Damit die Addition stetig bleibt nimmt man die Tangente an $\E$ in $P$.\smallskip
+
+--- Sind $P$ und $Q$ senkrecht übereinander, so hat die Gerade $\overline{PQ}$ und $\E$ keinen dritten Schnittpunkt. Sie schneiden sich im Fernpunkt $\cO$.\smallskip
+
+--- Addiert man zu einem Punkt $P$ den Fernpunkt $\cO$, dann stellt man sich $\cO$ über $P$ vor. Die Gerade $\overline{P \cO}$ schneidet also $\E$ genau gegenüber von $P$ und nach dem Spiegeln ergibt die Addition $P + \cO = P$. \smallskip
+
+
+\newpage
+
+Was wir uns nun überlegen wollen ist, daß $\left( \E (\K), + \right)$ mit der geometrisch beschriebenen Addition wirklich eine \textit{Gruppe} ist. Diese Gruppe ist sogar \textit{kommutativ}.\\
+
+\begin{itemize}
+\item[(i)] \textit{Abgeschlossenheit \ $+: \E (\K)^2 \rightarrow \E (\K)$}\smallskip
+
+Da wir mit unserer Addition nie die Menge $\E (\K)$ verlassen gibt es hier kein Problem.
+
+\item[(ii)] \textit{Neutrales Element} \ $P + 0 = P$ \smallskip
+
+Schon während der Definition fiel uns auf, daß der Fernpunkt beliebig oft auf einen Punkt addiert werden kann ohne diesen zu ändern. $\cO$ ist das neutrale Element.
+
+\item[(iii)] \textit{Inverse Elemente} \ $ -P$ \smallskip
+
+Das inverse Element zu jedem Punkt ist sein Spiegelbild an der $X$-Achse. Da eine Gerade durch zwei übereinanderliegende Punkte zum Fernpunkt, dem neutralen Element läuft.
+
+\item[(iv)] \textit{Kommutativität} \ $P + Q = Q + P$ \smallskip
+
+Dies gilt weil wir beim Addieren immer als erstes eine Gerade durch Beide Punkte ziehen und die Gerade gleichbleibt, egal mit welchem der beiden Punkte man anfängt.
+
+\item[(v)] \textit{Assoziativität} \ $P + (Q + R) = (P + Q) + R$ \smallskip
+
+Die Assoziativität werden wir uns an einem Bild verdeutlichen, aber nicht formal beweisen, da dies sehr technisch ist.
+
+
+\begin{center}
+
+\psset{unit=3.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.04,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+  \rput[lb](-0.65,0.64){$R$}
+  \rput[lb](1.24,0.71){$-(P+Q)$}
+  \rput[lb](1.26,-0.81){$P+Q$}
+  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+  \rput[lb](-1.14,-0.1){$-1$}
+  \rput[lb](0.94,-0.1){$1$}
+
+  \psplot{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)R
+  \psplot{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+
+\end{pspicture}
+
+\end{center}
+
+\end{itemize}
+
+\newpage
+
+\subsection{Additionsformeln für Charakteristik $> 3$}
+Nun werden wir unsere Addition noch genauer über \textit{Additionformeln} beschreiben. Die wohl einfachste Formel beschäftigt sich mit dem Invertieren.\\
+
+Die \textbf{Inversen} Elemente in unserer Gruppe findet man mit einer Spiegelung an der $X$-Achse, sprich man dreht das Vorzeichen der $Y$-Koordinate um. 
+$$ -P = -(x_P,y_P) = (x_P,-y_P) $$
+
+Wir wollen uns für diesen Abschnitt auf Elliptische Kurven über einem Körper $\K$ mit Charakteristik größer $3$ beschränken, da sich diese in der kurzen Weierstrassform schreiben lassen und damit die Formeln angenehmer werden:
+$$ \E : y^2 = x^3 + ax + b $$
+
+Das Addieren \textbf{verschiedener} Punkte kommt zuerst. Seien $P = (x_P,y_P), Q = (x_Q,y_Q), R = (x_R,y_R)$ im Verhältnis
+$$
+P \neq Q \hspace{3cm} P+Q = R
+$$
+dann berechnet sich $R$ wie folgt:\\
+
+Ist $x_P = x_Q$, sprich die Punkte sind übereinander, dann sind $P$ und $Q$ invers zueinander $R = \cO$.\\
+
+Sonst ist $x_P \neq x_Q$ und wir können die Steigung der Gerade $\overline{PQ}$ berechnen:
+$$
+s = \frac{y_Q-y_P}{x_Q-x_P}
+$$
+
+$R$ berechnet sich dann aus dieser Steigung $s$:
+
+$$ x_R = s^2 - x_P - x_Q $$
+$$ y_R = s \cdot (x_P - x_R) - y_P $$
+
+\vspace{1cm}
+Nun wollen wir 2 \textbf{gleiche} Punkte addieren, also einen Punkt verdoppeln. Sei dazu $P = (x_P,y_P), R = (x_R,y_R)$ im Verhältnis
+$$
+2\cdot P = R
+$$
+
+Die Steigung der Tangente an $\E$ in $P$ ergibt sich wie folgt:
+$$
+s = \frac{3x_P^2+a}{2y_P}
+$$
+ist $y_P$ hier 0, dann sind steht die Tangente senkrecht und schneidet $\E$ nicht mehr $R=\cO$. Sonst kann man aus der Steigung genau wie zuvor auch $R$ berechnen:
+$$ x_R = s^2 - 2x_P $$
+$$ y_R = s \cdot (x_P - x_R) - y_P $$
+
+\subsection{Additionsformeln für Charakteristik $=2$}
+
+Zuletzt überlegen wir uns noch, daß das Finden des Punktes $P+Q$ letztlich dem Lösen eines nichtlinearen Gleichungsystems entspricht. Man sucht nämlich den Punkte, der die (lineare) Geradengleichung, beschrieben durch $P$ und $Q$, erfüllt und auch die (nichtlineare) Gleichung, die alle Punkte auf der Elliptische Kurve charakterisiert.\\
+
+Die Berechnung von \textbf{Inversen} ist in dieser Gruppe etwas anders als vorher: 
+$$ \hspace{1cm} -P = (x_P,y_P+x_P) $$
+
+Für Körper der Charakteristik $2$ muß man den Begriff von "`Gerade durch $P$ und $Q$"' in diesem Kontext erweitern und daraus ergeben sich dann die nun folgenden Formeln. Elliptische Kurven über diesen Körpern lassen sich auch nicht in die zum Rechnen angenehme kurze Weierstrassform bringen, sondern sie werden beschrieben mit:
+$$ \E : y^2 + xy = x^3 + ax^2 + b $$
+
+Das Addieren \textbf{verschiedener} Punkte kommt erneut zuerst. Seien $P = (x_P,y_P), Q = (x_Q,y_Q), R = (x_R,y_R)$ im Verhältnis
+$$
+P \neq Q \hspace{3cm} P+Q = R
+$$
+dann berechnet sich $R$ wie folgt:\\
+
+$$ s := \frac{y_P+y_Q}{x_P+x_Q} $$
+$$ x_R = s^2 + s + x_P + x_Q + a $$
+$$ y_R = s \cdot (x_P + x_R) +x_R + y_P $$
+
+\vspace{1cm}
+
+Für das Addieren von zwei \textbf{gleichen} Punkten, also die Verdoppelung von $P = (x_P,y_P)$
+$$
+2\cdot P = R
+$$
+ergibt sich:
+
+$$ s = \frac{x_P+y_p}{x_P} $$
+$$ x_R = s^2 + s + a = x_P^2 + \frac{b}{x_P^2}$$
+$$ y_R = x_P^2 + s \cdot x_R +x_R$$
+
+
+
+
+\end{document}
+
+

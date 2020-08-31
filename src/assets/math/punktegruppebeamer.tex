@@ -1,0 +1,491 @@
+\documentclass{beamer}
+
+\usepackage{pstricks, pst-plot}
+
+
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z} 
+\newcommand{\R}{\mathbb R} 
+\newcommand{\Q}{\mathbb Q} 
+\newcommand{\C}{\mathbb C} 
+\newcommand{\K}{\mathbb K} 
+\newcommand{\A}{\cal A}
+\newcommand{\E}{\mathcal E}
+\newcommand{\F}{\cal F}
+\newcommand{\G}{\cal G}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\e}{\epsilon}
+
+\parindent = 0pt 								% Keine Paragraphen
+
+
+\mode<presentation>
+{
+  %\usetheme{Warsaw}
+  \usetheme{Darmstadt}
+  % oder ...
+  
+  \setbeamercovered{transparent}
+  % oder auch nicht
+}
+
+
+\usepackage[german]{babel}
+% oder was auch immer
+
+\usepackage[latin1]{inputenc}
+% oder was auch immer
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Oder was auch immer. Zu beachten ist, das Font und Encoding passen
+% müssen. Falls T1 nicht funktioniert, kann man versuchen, die Zeile
+% mit fontenc zu löschen.
+
+
+\title[Punktegruppe] % (optional, nur bei langen Titeln nötig)
+{Die Punktegruppe-Operation}
+
+\subtitle
+{Elliptische Kurven Kryptographie Seminar} % (optional)
+
+\author{Richard ~Lindner}
+% - Der \inst{?} Befehl sollte nur verwendet werden, wenn die Autoren
+%   unterschiedlichen Instituten angehören.
+
+\institute
+{Institut für Theoretische Informatik\\ 
+Technische Universität Darmstadt}
+
+\date[Seminarvortrag] % (optional)
+{28.04.2005 / Seminarvortrag Nr. $2$}
+
+
+\subject{Informatik}
+% Dies wird lediglich in den PDF Informationskatalog einfügt. Kann gut
+% weggelassen werden.
+
+
+% Falls eine Logodatei namens "university-logo-filename.xxx" vorhanden
+% ist, wobei xxx ein von latex bzw. pdflatex lesbares Graphikformat
+% ist, so kann man wie folgt ein Logo einfügen:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Folgendes sollte gelöscht werden, wenn man nicht am Anfang jedes
+% Unterabschnitts die Gliederung nochmal sehen möchte.
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Gliederung}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% Falls Aufzählungen immer schrittweise gezeigt werden sollen, kann
+% folgendes Kommando benutzt werden:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gliederung}
+  \tableofcontents[pausesections]
+  % Die Option [pausesections] könnte nützlich sein.
+\end{frame}
+
+
+
+% Da dies ein Vorlage für beliebige Vorträge ist, lassen sich kaum
+% allgemeine Regeln zur Strukturierung angeben. Da die Vorlage für
+% einen Vortrag zwischen 15 und 45 Minuten gedacht ist, fährt man aber
+% mit folgenden Regeln oft gut.  
+
+% - Es sollte genau zwei oder drei Abschnitte geben (neben der
+%   Zusammenfassung). 
+% - *Höchstens* drei Unterabschnitte pro Abschnitt.
+% - Pro Rahmen sollte man zwischen 30s und 2min reden. Es sollte also
+%   15 bis 30 Rahmen geben.
+
+
+
+\section{Elliptische Kurven}
+
+\subsection{Punktemenge}
+\begin{frame}
+\frametitle{Die Punktegrupppen-Menge.}
+%\framesubtitle{Untertitel sind optional.}
+
+
+\begin{definition}\textbf{Menge der Punktegruppe} \ $\left( \E (\K), + \right)$\\
+Die Punktegruppe einer elliptischen Kurve $\E$ über $\K$ ist die Menge der Punkte, die auf der Kurve liegen und der Fernpunkt $\cO := (\infty,\infty)$.
+
+$$ \E(\K) := \left\{ P=(x,y) \in \K^2 : y^2=x^3+ax^2+bx+c  \right\} \cup \left\{ \cO \right\} $$
+\end{definition}
+
+\end{frame}
+
+
+\subsection{Beispiel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ohne Alles
+
+\begin{frame}
+
+\begin{example}
+\begin{center}
+$\E : y^2 = x^3-x$
+
+\vspace{0.5cm}
+
+\psset{unit=2.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.08,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+%  \rput[lb](-0.65,0.64){$R$}
+%  \rput[lb](1.24,0.71){$-(P+Q)$}
+%  \rput[lb](1.26,-0.81){$P+Q$}
+%  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+%  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+  \rput[lb](-1.2,-0.2){$-1$}
+  \rput[lb](0.90,-0.2){$1$}
+
+%  \psplot[linewidth=1pt,linecolor=red]{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)R
+%  \psplot{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+
+\end{pspicture}
+
+\end{center}
+\end{example}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{example}
+\begin{center}
+$\E : y^2 = x^3-x$
+
+\vspace{0.5cm}
+
+\psset{unit=2.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.08,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+%  \rput[lb](-0.65,0.64){$R$}
+  \rput[lb](1.24,0.71){$-(P+Q)$}
+  \rput[lb](1.26,-0.81){$P+Q$}
+%  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+%  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+  \rput[lb](-1.2,-0.2){$-1$}
+  \rput[lb](0.90,-0.2){$1$}
+
+  \psplot[linewidth=1pt,linecolor=red]{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)R
+%  \psplot{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+
+\end{pspicture}
+
+\end{center}
+\end{example}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Mit Gerade....
+
+
+\section{Axiome}
+\subsection{Gruppenaxiome}
+
+\begin{frame}
+\frametitle{Axiome}
+Ist $(\E(\K),+)$ eine \alert{kommutative} Gruppe?
+
+  \begin{itemize}
+
+	\item<2-> \textit{Abgeschlossenheit} \ $+: \E (\K)^2 \rightarrow \E (\K)$
+
+  \item<6> \textit{Assoziativität} \ $P + (Q + R) = (P + Q) + R$
+
+	\item<3-> \textit{Neutrales Element} \ $P + 0 = P$
+
+	\item<4-> \textit{Inverse Elemente} \ $ -P$
+
+	\item<5-> \textit{Kommutativität} \ $P + Q = Q + P$
+  
+  \end{itemize}
+
+\end{frame}
+
+
+\subsection*{Assoziativität}
+
+% BILD 1
+
+\begin{frame}
+\begin{center}
+
+\psset{unit=2.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.08,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+  \rput[lb](-0.65,0.64){$R$}
+  \rput[lb](1.24,0.71){$-(P+Q)$}
+%  \rput[lb](1.26,-0.81){$P+Q$}
+%  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+%  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+  \rput[lb](-1.2,-0.2){$-1$}
+  \rput[lb](0.90,-0.2){$1$}
+
+  \psplot[linewidth=1pt,linecolor=red]{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)R
+%  \psplot{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+
+\end{pspicture}
+\end{center}
+\end{frame}
+
+% BILD 2
+
+\begin{frame}
+\begin{center}
+
+\psset{unit=2.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.08,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+  \rput[lb](-0.65,0.64){$R$}
+  \rput[lb](1.24,0.71){$-(P+Q)$}
+  \rput[lb](1.26,-0.81){$P+Q$}
+  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+%  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+  \rput[lb](-1.2,-0.2){$-1$}
+  \rput[lb](0.90,-0.2){$1$}
+
+  \psplot[linewidth=1pt,linecolor=red]{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+  \psplot[linewidth=1pt,linecolor=green]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)
+%  \psplot{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+%  \psplot[linestyle=dashed]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+
+\end{pspicture}
+\end{center}
+\end{frame}
+
+% BILD 3
+
+\begin{frame}
+\begin{center}
+\psset{unit=2.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.08,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+  \rput[lb](-0.65,0.64){$R$}
+  \rput[lb](1.24,0.71){$-(P+Q)$}
+  \rput[lb](1.26,-0.81){$P+Q$}
+  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+
+  \rput[lb](-1.2,-0.2){$-1$}
+  \rput[lb](0.90,-0.2){$1$}
+
+  \psplot[linewidth=1pt,linecolor=red]{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+  \psplot[linewidth=1pt,linecolor=green]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)
+  \psplot[linewidth=1pt,linecolor=magenta]{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+%  \psplot[linewidth=1pt,linecolor=magenta]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+\end{pspicture}
+\end{center}
+\end{frame}
+
+% BILD 4
+
+\begin{frame}
+\begin{center}
+\psset{unit=2.5cm} 
+\begin{pspicture}(-1.3,-1.3)(1.3,1.3)
+  \psset{linewidth=0.5pt}
+  \psaxes[Dy=1,Dx=2]{->}(0,0)(-1.3,-1.3)(1.3,1.3)
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt} 		% Linke Schlaufe
+  \psplot[linewidth=1pt]{-1}{0}{x x x mul mul x sub sqrt -1 mul} 
+
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt} 					% Rechte Schlaufe
+  \psplot[linewidth=1pt]{1}{1.3}{x x x mul mul x sub sqrt -1 mul} 
+
+  \rput[lb](-1.08,0.28){$P$}
+  \rput[lb](-0.21,0.48){$Q$}
+  \rput[lb](-0.65,0.64){$R$}
+  \rput[lb](1.24,0.71){$-(P+Q)$}
+  \rput[lb](1.26,-0.81){$P+Q$}
+  \rput[lb](1.03,0.03){$Q+R=-(Q+R)$}
+
+  \rput[lb](-1.2,-0.2){$-1$}
+  \rput[lb](0.90,-0.2){$1$}
+
+  \psplot[linewidth=1pt,linecolor=red]{-1.3}{1.3}{x .25 mul .5 add} 							% Linie PQ
+  \psplot[linewidth=1pt,linecolor=green]{-1.3}{1.3}{x -0.370060187 mul 0.370060187 add} 		% Linie -(Q+R)
+  \psplot[linewidth=1pt,linecolor=magenta]{-1.3}{1.3}{x -0.751812641 mul 0.120586693 add} 		% Linie -(P+Q+R)
+  \psplot[linewidth=1pt,linecolor=magenta]{-1.3}{1.3}{x -0.131748658 mul 0.131748658 add} 		% Linie -(P+Q+R)
+
+  \rput[lb](-0.02,0.13){$-(P+Q+R)$}
+
+\end{pspicture}
+\end{center}
+\end{frame}
+
+
+
+\section{Additionsformeln}
+\begin{frame}
+\frametitle{Additionsformeln}
+Formeln für \alert{Charakteristik}$(\K)$ $> 3$\\
+
+$$ \E : y^2 = x^3 + ax + b $$
+\end{frame}
+\subsection{Inverse}
+\begin{frame}
+Die \textbf{Inversen} Elemente findet man mit einer \alert{Spiegelung} an der $X$-Achse:\\
+
+$$ -P = -(x_P,y_P) = (x_P,-y_P) $$
+\end{frame}
+\subsection{Ungleiche Punkte}
+\begin{frame}
+Addieren \textbf{verschiedener} Punkte:\\
+
+Seien $P = (x_P,y_P), Q = (x_Q,y_Q), R = (x_R,y_R)$, so daß\\
+
+$$ P+Q = R $$
+\end{frame}
+\begin{frame}
+Ist $x_P \neq x_Q$ können wir die Steigung der Gerade $\overline{PQ}$ berechnen:
+$$ s = \frac{y_Q-y_P}{x_Q-x_P} $$
+
+$R$ berechnet sich dann aus dieser Steigung $s$:
+
+$$ x_R = s^2 - x_P - x_Q $$
+$$ y_R = s \cdot (x_P - x_R) - y_P $$
+\end{frame}
+\subsection{Gleiche Punkte}
+\begin{frame}
+Addieren von 2 \textbf{gleichen} Punkte, also eine Punkt-\alert{Verdoppelung}.\\
+
+$$ 2\cdot P = R $$
+\end{frame}
+
+\begin{frame}
+Steigung der Tangente an $\E$ in $P$:
+$$
+s = \frac{3x_P^2+a}{2y_P}
+$$
+Für $y_P \neq 0$ kann man aus der Steigung \textit{wie zuvor} $R$ berechnen:
+$$ x_R = s^2 - 2x_P $$
+$$ y_R = s \cdot (x_P - x_R) - y_P $$
+\end{frame}
+
+\section*{Spezielle Formeln}
+\subsection*{Charakteristik 2}
+
+\begin{frame}
+\frametitle{Spezielle Formeln}
+Formeln für \alert{Charakteristik}$(\K)$ $=2$\\
+
+$$ \E : y^2 + yx = x^3 + ax^2 + b $$
+\end{frame}
+
+\begin{frame}
+
+Durchs lösen eines \alert{Gleichungsystems} ergibt sich:\\
+
+  \begin{itemize}
+
+	\item<1> \textit{Inverse} \ $-P = (x_P,y_P+x_P)$
+
+  \item<2-> \textit{"`Steigung"'} \ $s := \frac{y_Q+y_P}{x_Q+x_P} $
+
+	\item<3> \textit{Addieren} 
+	$$ x_R = s^2 + s + x_P + x_Q + a $$
+	$$ y_R = s \cdot (x_P + x_R) +x_R + y_P $$
+
+	\item<4> \textit{Verdoppeln} 
+	$$ x_R = s^2 + s + a $$
+	$$ y_R = x_P^2 + s \cdot x_R +x_R $$
+
+  \end{itemize}
+
+\end{frame}
+
+
+\section*{The End}
+\begin{frame}
+\frametitle{The End}
+Vielen Dank für Ihre Aufmerksamkeit.
+\end{frame}
+
+
+\end{document}
+
+

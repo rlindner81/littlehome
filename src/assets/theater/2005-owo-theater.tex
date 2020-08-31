@@ -1,0 +1,1729 @@
+\documentclass{report}
+
+%%%%%%%%%%%%%             Command definitions                
+\newcommand{\act}[1]{\chapter{#1}}     \newcommand{\scene}[1]{\newpage\section{#1}}
+\newcommand{\dialog}[2]{{\bf \textsc{#1}}: #2} \newcommand{\stage}[1]{(\textit{#1})}
+\newcommand{\opensd}[1]{$\Big[$\textit{\textbf{#1}}\\}  \newcommand{\charsd}[1]{\textbf{\textit{#1}}}
+
+\usepackage[ngerman]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{pxfonts}
+\usepackage{enumerate}
+
+\title{Zeitlose Kunst}
+\author{Artus, Ben, Burgi, James, Katia, Navi, Rafael, Rüdiger, Sebastian}
+\date{Version $\Pi$ \\ kompiliert am \today}
+
+
+%%% The following items are optional. Uncomment to use.
+% \address{}
+% \copyrightnotice{}
+% \draft{}
+
+% Character Macros:
+
+\newcommand{\pan}[1]{\dialog{Pandora}{#1}}
+\newcommand{\amy}[1]{\dialog{Amy}{#1}}
+\newcommand{\ama}[1]{\dialog{Ama}{#1}}
+\newcommand{\bob}[1]{\dialog{Bob}{#1}}
+\newcommand{\vic}[1]{\dialog{Professor}{#1}}
+\newcommand{\kro}[1]{\dialog{Kronos}{#1}}
+\renewcommand{\lor}[1]{\dialog{Lorenzo}{#1}}
+\newcommand{\sbt}[1]{\dialog{Narrator}{#1}}
+%\newcommand{\sbt}[1]{\dialog{Untertitel}{#1}}
+\newcommand{\uone}[1]{\dialog{Ugh 1}{#1}}
+\newcommand{\utwo}[1]{\dialog{Ugh 2}{#1}}
+\newcommand{\uthree}[1]{\dialog{Ugh 3}{#1}}
+%\newcommand{\phy}[1]{\dialog{Georgi Xrastof}{#1}}
+\newcommand{\phy}[1]{\dialog{Physiker}{#1}}
+\newcommand{\fer}[1]{\dialog{Fermat}{#1}}
+\newcommand{\MM}[1]{\dialog{Magnus Maior Maximus}{#1}}
+\newcommand{\Gal}[1]{\dialog{Galois}{#1}}
+\newcommand{\Alfred}[1]{\dialog{Alfred}{#1}}
+\newcommand{\General}[1]{\dialog{General}{#1}}
+
+
+\setlength{\parindent}{-10mm}
+\setlength{\parskip}{5mm}
+
+%% die Namen des Professors a, b, c, wahlweise auch nur Nachname (NN)
+%\newcommand{\PNaNN}{Maclairechargotinevanos }
+%\newcommand{\PNa}{Vivictorinelle Timanothus Maclairechargotinevanos }
+%\newcommand{\PNbNN}{Machargotine }
+%\newcommand{\PNb}{Karl-Heinz Timothy Victorian }
+%\newcommand{\PNaNN}{Maclairechargotinevanos }
+%\newcommand{\PNa}{Vivictorinelle Timanothus Maclairechargotinevanos }
+%\newcommand{\PNbNN}{Machargotine }
+%\newcommand{\PNb}{Karl-Heinz Timothy Victorian }
+
+\newcommand{\PNaNN}{Victorius-Thimoteus}
+\newcommand{\PNa}{Charles \PNaNN}
+\newcommand{\PNbNN}{Victor-Thimo}
+\newcommand{\PNb}{Charles \PNbNN}
+\newcommand{\PNcNN}{Victim}
+\newcommand{\PNc}{Charles \PNcNN}
+\begin{document}
+
+%% die lustige Auf-in-die-Schlacht-Parole des Physikers.
+
+%\newcommand{\Parole}{\textsc{\small Physiker-Parole}: ,,ääh\ldots Nieder die Mathematik!! Idee?'' }
+
+
+\maketitle
+{\Large \bf{TODO}:}
+
+\begin{enumerate}
+
+\item Generalprobe und Aufführung und Autogramme signieren.
+
+\item In der Schlußszene muß der Physiker erwähnen, daß die Zeitmaschine anderen Menschen Ihre Zeit wegnimmt (zum Beispiel aus dem
+Fachschaftsraum oder Keimels Büro). Hier könnte man auch den Gag mit Bob einbauen wo er sagt: `Also deswegen sind meine Eltern 3
+Jahre vor meiner Geburt gestorben!' Physiker `Damit habe ich nichts zu tun.'
+
+\end{enumerate}
+
+
+
+{\Large \bf{DONE}:}
+
+\begin{enumerate}
+
+\item Alles andere. Yeeeeehaaaaw!! 
+
+\end{enumerate}
+
+%%% Uncomment the following line to add a quote page.
+% \quotepage{Quote}{Author}
+
+%%% Uncomment the next few lines to add a cast page.
+%%% Note that there MUST be a blank line between \addcharacter entries.
+%
+%\begin{castpage}
+%
+%\addcharacter{Pandora}{Eine zickige Studentin.}
+%
+%\addcharacter{Amy}{Pandoras beste Freundin.}
+%
+%\addcharacter{Bob}{Ein bemitleidenswerter Idiot.}
+%
+%\addcharacter{Professor \PNa}{Die große Hoffnung des Fachbereich in Sachen Forschung und %Lehre.
+%Sein Name ändert sich von Zeit zu Zeit und keinem fällt das auf\dots}
+%
+%\addcharacter{Kronos}{Der Hauptcharakter und Protagonis der Geschichte.}
+%
+%\addcharacter{Lorenzo}{Kronos' bester Freund.}
+%
+%\end{castpage}
+
+% The magic happens here...
+%
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+\act{Erster Akt: Exposition}      %             A K T                E I N S   
+
+
+
+
+
+
+
+\scene*{Präambel}
+
+Bühnenbild: Vor dem Vorhang sehen wir ein Grab. 
+
+\phy{\stage{tritt mit trauriger trauriger Musik auf, legt eine Rose da hin. Fertich. Mit viel Stimmung aber!}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Vorlesung}                                                          %%%%%%%   A K T   1  --  S Z E N E   1 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Ein Vorlesungssaal wird simuliert. Wir brauchen eine Tafel, Stühle.\\
+
+Rollen: Professor \PNa, Kronos, Lorenzo, Pandora, Bob, Crowd.\\
+
+\opensd{Kurz vor der Vorlesung, alle tuscheln, der Prof, Kronos und Lorenzo sind noch \underline{nicht} da.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pan{
+\stage{zu ihrer Freundin, schüttelt ihre gespreitzten Hände}
+Also Du musst heute mal mitschreiben, ich habe gerade eben meinen neuen Nagellack aufgetragen!}
+
+
+\vic{
+\stage{Der Professor läuft in den Raum, schnurstracks zur Tafel, fängt dort sofort an. sich
+vorzustellen und schreibt seinen Namen an die Tafel}
+Ich bin der Herr Professor \PNa. 
+\stage{schreibt seinen Namen an} Nicht zu verwechseln mit dem Aleksander \PNaNN aus der Informatik und bevor
+jemand fragt ich bin auch \underline{nicht} verwandt mit dem weltberühmten aber zweitklassigen Schauspieler Roland
+\PNaNN\ldots Es ist schon ein Kreuz mit diesen Allerweltsnamen.}
+
+\vic{Ich habe diese Stunde vor Ihnen einen Überblick über den Stoff --- 
+\stage{An dieser Stelle wird \PNaNN durch das Eintreffen von Kronos und Lorenzo unterbrochen.}
+dieses Semsters zu geben.}
+
+\charsd{Kronos und Lorenzo schaun sich vergeblich nach einem Sitzplatz um.}
+
+\vic{Die erste Vorlesung im ersten Semester, und schon zu spät\ldots 
+\stage{Gelächter im Auditorium, Kronos und Lorenzo gucken dumm aus der Wäsche}
+Hier vorne in der ersten Reihe sind noch erstklassige Premiumplätze frei.}
+
+\charsd{Kronos und Lorenzo setzen sich widerwillig in die erste Reihe, Bob sitzt schon dort und macht ihnen bereitwillig Platz, freut sich ganz offensichtlich und grinst die ganze Zeit wie ein Honigkuchengesicht.}
+
+\lor{\stage{zu Kronos} Und alles nur, weil du kein Zeitgefühl hast, Kronos!}
+
+\kro{Ach Lorenzo, als ich heut morgen auf den Wecker geschaut habe, hatten wir noch nen Haufen Zeit! Hättest ja mal anrufen können...}
+
+\vic{Zurück zur Übersicht: Wir werden direkt an Ihr hoffentlich noch vorhandenes Schulwissen anknüpfen und zunächst die Supra-Monigfaltigkeiten mit 7 statt der üblichen 3 Protodimensionen behandeln.}
+
+\bob{
+\stage{verwundert und leicht besorgt zu Kronos}
+Wisst ihr noch was das war? Ich hab da im Unterricht immer geschlafen.}
+
+\charsd{Kronos und Lorenzo ignorieren Bob.}
+
+\kro{
+\stage{zu Lorenzo, gelangweilt}
+Wir haben ja noch nichts verpasst hier, dreidimensionale Monigfaltigkeiten hatten wir doch schon in der Oberstufe, weißt du noch?}
+
+\lor{
+\stage{nickt}
+Kindergeburtstach.}
+
+\bob{
+\stage{halb zu sich, halb zu Kronos}
+Okay, manchmal haben sie mich auch einfach in der Pause verprügelt und ich mußte nach Hause gehen \ldots}
+
+\vic{
+\stage{hat Kronos gehört}
+Wohlgemerkt, mit \underline{sieben} statt der üblichen drei Protodimensionen.
+\stage{zu Kronos gewandt}
+Können \underline{Sie} mir vielleicht die para-orthonomierte Projektion einer solchen Monigfaltigkeit aufzeichnen?
+Im hypergeknuddelten Raum?}
+
+\kro{ Ich, äh---\stage{langgezogenes äh} warum denn eigentlich sieben? Dann ist die doch nicht mehr untergetupft?}
+
+\charsd{Auditorium lacht}
+
+\vic{Sie sind ein wenig unaufmerksam, aber Sie liegen gar nicht so weit daneben mit Ihrer Bemerkung: Die
+siebendimensionalen Supra-Monigfaltigkeiten sind wegen des Schlepper-Kriteriums natürlich nicht unter-
+sonder \underline{ober} getupft. Das sieht dann, in der hypergeknuddelten Projetkion, etwa so aus.}
+
+\charsd{Professor \PNaNN geht zur Tafel, malt dann langsam und mit Sorgfalt einen Kreis, fängt mit dem
+obveren linken Viertel an, dann die anderen Viertel, dann verbindet er sie. Auditorium seufzt durch die
+Bank vor Begeisterung ,,OAoaoaoaoaoh\ldots!''}
+
+\bob{
+\stage{meldet sich mit wedelndem, ausgestrecktem Arm ganz aufgeregt und hektisch}
+Herr Professor, Herr Professor! 
+\stage{Auditorium wird wieder ruhig, Professor dreht sich zu Bob um}
+Müsste das jetzt nicht ein Viereck sein?}
+
+\charsd{verhaltenes Gelächter im Auditorium, leichtes Prusten}
+
+\vic{\stage{runzelt die Stirn}
+Ein Viereck? Das wäre doch dann sofort untergetupft, mit seinen zweieinhalb Dimensionen. Das haben Sie ja
+sicherlich in der Grundschule gelernt, das ist ja Stoff aus dem 17ten Jahrhundert.}
+
+\bob{\stage{verdattert und traurig und kleinlaut}
+Achso, öh, naja, ich dachte ja nur vielleicht und so, weil das dann so schön aussieht\ldots}
+
+\vic{
+\stage{seufzt}
+Da haben wir ja noch eine Menge Arbeit vor uns!
+\stage{dreht sich wieder zum Auditorium}
+Also weiter im Text: Wir werden in dieser Vorlesung sehen, wie die hypergetupften Monigfaltigkeiten eine direkte
+Rho-Verbindung zu der Schmollerschen Co-Theorie haben.}
+
+\dialog{alle Männer}{\stage{freezen, so daß man die Mädels besser sehen kann}}
+
+\pan{\stage{wedelt langsam und völlig unbeeindruckt ihre Hände, pustet ein bisschen drauf.}}
+
+\amy{\stage{schreibt mit.}}
+
+\kro{\stage{leise zu Lorenzo, verwundert} Wirklich? Das ist doch\,--}
+
+\vic{Das ist aber noch nicht alles, liebe Zuhörer! Das Ganze werden wir dann einbetten in die großen
+Zusammenhänge, die uns der Hauptsatz der para-rho-gedrehten Punkte und Türen liefert.}
+
+\dialog{alle Männer}{\stage{freezen, so daß man die Mädels besser sehen kann}}
+
+\pan{\stage{wedelt langsam und völlig unbeeindruckt ihre Hände, pustet ein bisschen drauf.}}
+
+\amy{\stage{schreibt {\bf schneller} mit.}}
+
+\kro{\stage{etwas lauter, etwas verwunderter, etwas mehr zu Lorenzo} Wirklich?? Das ist doch\,--}
+
+\vic{\stage{mit glänzenden Augen, steigert sich in seinen Vortrag rein} \underline{Das} ist aber noch nicht alles,
+liebe Zuhörer! Für ein krönendes Finale nehmen wir das Sternstunden-Axiom zu unserem logischen System dazu
+und beweisen damit die Strumpf-Sparschweinsche Vermutung, aus der dann alles bisherige und die relative
+Stereo-Quantenphysik als einfaches Korollar folgen!! \stage{schaut mit Begeisterung in die Runde}}
+
+\dialog{alle Männer}{\stage{freezen, so daß man die Mädels besser sehen kann}}
+
+\pan{\stage{wedelt langsam und völlig unbeeindruckt ihre Hände, pustet ein bisschen drauf.}}
+
+\amy{\stage{schreibt \underline{noch} schneller mit.}}
+
+\kro{\stage{fassungslos} Wirklich? Das ist ja phänomenal!}
+
+\vic{\stage{hält inne, schaut in seine Richtung durch ihn hindurch und beachtet ihn nicht.}}
+
+\vic{\stage{schaut verträumt durch Kronos hindurch} Und wenn wir am Ende noch ein bisschen Zeit haben. \ldots 
+\stage{macht eine dramatische Pause, das Auditorium hält den Atem an, alle warten schweißgebadet
+zusammengekauert auf ihren Sitzen} \underline{dann} zeige ich euch noch, wie man ein wohlgedrehtes, perfektes,
+unendlich --- knuspriges Croissant backt. \stage{kleine Pause} Ich habe nämlich auch eine Bäckerlehre gemacht!}
+
+\bob{\stage{freut sich} \underline{Das} hab ich wieder verstanden!}
+
+\charsd{ Kronos und Lorenzo schauen sich leidend an (``Why? WHY?'' und schlagen sich mit der Hand an den Kopf)}
+
+\charsd{Ein Gong ertönt.}
+
+\vic{Zehn Minuten Pause, dann machen wir weiter}
+
+\charsd{Alle Kerle ab.}
+
+\pan{\stage{zu ihrer Freundin, die völlig erschöpft ist, zufrieden} Perfektes Timing! \underline{Jetzt} sind sie trocken!}
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Ugh}                                                               %%%%%%%   A K T   1  --  S Z E N E   2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Die Steinzeit. Über die Stühle sind graue Planen geworfen. Die Tafel wurde umgedreht und zeigt
+Höhlengemälde.\\
+
+Rollen: Ugh1 ,Ugh2 ,Ugh3 sowie der Physiker. Dieser trägt über seinem Karohemd ein Fell. Die Verkleidung ist lustlos wirkend. Die Ughs tragen nur Felle. Der Physiker ist am Anfang noch nicht da.\\
+
+\opensd{Drei Ughs sind damit beschäftigt, 8 Goldklumpen unter sich aufzuteilen. Ugh1 hat eine Keule.
+Flintstonemusik.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\sbt{\stage{Schon während des Umbaus} Guten Abend! Die nächste Szene spielt im Afrika des Jahres 14.083 vor Christus, nur wenige Sekunden vor Erfindung der Null. Davon ausgehend, dass nur Wenige von euch der damals üblichen Landessprache mächtig sind, werde ich mir erlauben, die Texte simultan zu übersetzen. Es ist ein recht schwieriger Dialekt, dennoch werde ich mich um wörtliche Translationen bemühen.}
+
+\charsd{die Uhgs sind damit beschäftigt, 8 Goldklumpen unter sich aufzuteilen. Ugh1 hat eine Keule.}
+
+\uone
+ {\stage{gibt sich und U2 jeweils 3 Klumpen, dem U3 nur die übrigen zwei.}}
+
+\uone{Gmabwa, hlllll, de we keip!}
+
+\sbt{Du gut jagen, Du zwei behalten.}
+
+\utwo{Hahahahahahaha!}
+
+\uthree{\stage{greift nach den Goldklumpen der Andren.} Gaaaaf! Subbak! Subbak! Naaaa! Subbak! }
+
+\sbt{Das ist falsch. Ich finde alle, ich kriege wenig\ldots}
+
+\uone{Glanna Ghwurdka Stuakkas!}
+
+\sbt{\stage{mit Akzent} Stress oder was?}
+
+\utwo{Ghooooo ghoooo ghoooo!}
+
+\sbt{Sei besser vorsichtig!}
+
+\uthree{Akhrfa Glonku Darbhoffu Dallo Dallo Dallo! Akhrfa, Smbk. Subbak! Naa! Subbak! Faa, Faa, Faa, Gaaaf!
+Sabbaga, hllllllll, da kaja ropu Rropu Dallo Subbak Rropu Naa! Faa Gaaf! Dallo Akhrfa Glonku Subbak Naa! Subbak!
+Gaaf! hlllllll!}
+
+\sbt{Ich bin nicht einverstanden!}
+
+\charsd{Ugh1 und Ugh2 verjagen ihn, nehmen ihm die zwei Steine auch weg.}
+
+\uthree{\stage{versteckt sich in einer Ecke. Beobachtet das folgende Geschehen nicht, bis zum Schluß.}}
+
+\uone{Fkwaa! Harr Nurra!}
+
+\sbt{Schwächling. Jetzt wir beide vier.}
+	
+\utwo{Gbibba. Slitterekanopodos, tukkneff Nura. Lotk!}
+
+\sbt{Ich stimme Dir auf ganzer Linie zu.. Er grenzt sich selbst völlig sozial aus, da darf er sich nicht über
+die Folgen wundern, dieser große Narr!}
+
+\uone{Akhra, tennö\ldots \stage{grübelt}}
+
+\sbt{Jetzt hat er\ldots}
+
+\charsd{beide grübeln ein wenig.}
+
+\uone{Nnulll!}
+
+\sbt{Null}
+
+\utwo{Null??}
+
+\uone{Idee. Subba! Guckma! Null! \stage{Malt Null auf die Höhlenwand (die Tafel mit den Höhlenmalereien.}}
+
+\utwo{\stage{freut sich und brüllt immer} Null! Null! \stage{Auch im Folgenden bis er stibt.}}
+
+\phy{\stage{tritt auf und summt die Flintstones Musik.} Kalte Kastanien\ldots Um Haaresbreite zu spät\ldots Da werd ich mal retten was noch zu retten ist. \stage{zeigt dem ersten Ugh noch einen Goldklumpen. Er lockt ihn zu sich rüber, tauscht den Goldklumpen gegen die Keule und erschlägt dann den Ugh1. Nimmt den Goldklumpen zurück.} Laß 
+Dir das eine Lektion sein. (Now what did we learn.) \stage{Während U2 freudig ``Null! Null!'' brüllt, erschlägt er auch den.} So, wenn das nicht die Wurzel allen Übels war, dann weiß ichs auch nicht. Mal sehn wie weit die Mathematik so kommt ohne ihre geliebte Null. \stage{ab}}
+
+\uthree{\stage{kommt zurück, freut sich riesig und nimmt alle Steine. Tanzt vor glück.}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Arbeitsraum}                                                        %%%%%%%   A K T   1  --  S Z E N E   3 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Ein offener Arbeitsraum wird simuliert. Wir brauchen eine Tafel, Stühle und einen Tisch. Außerdem einen Schrank, in dem sich bereits der Physiker aufhält. Im Hintergrund ein Dartbrett, an dem man gefahrlos und effektvoll wieder und wieder mit Darts vorbeiwerfen kann.\\
+
+Rollen: Kronos, Lorenzo, Pandora, Bob, Physiker (im Schrank für die nächste Szene).\\
+
+\opensd{Pandora und Amy arbeiten an einem Tisch gemeinsam an ihren Hausaufgaben. Pandoras Tupperdose steht auf
+dem Tisch. Bob wirft Darts, trifft aber nie das Board. Den Großteil der Zeit verbringt er auf dem Boden bei der
+Suche nach runtergefallenen Pfeilen. Im Hintergrund steht eine Tafel mit einigen etwas komplizierten Zeilen drauf.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pan{\stage{liest monoton vom Blatt ab} Und daraus können wir schließen, daß n eine Primzahl ist.}
+
+\amy{\stage{schaut auf ihr Blatt und hört zu}hmmm\ldots Pandora; ich verstehe den zweiten Schritt immer noch
+nicht.}
+
+\pan{Ich versteh's doch auch nicht. Machs wie ich und schreibs einfach ab. Wir haben schliesslich noch drei Aufgaben vor uns bevor wir ins Solarium gehen.}
+
+\amy{Ja, OK, nur, ich verstehs einfach nicht.}
+
+\pan{\stage{ärgert sich, GRRRR.}}
+
+\bob{\stage{nähert sich dem Tisch und guckt das Blatt an}: Hi, ich bin Bob, kann ich Dir helfen?}
+
+\amy{\stage{rollt Ihre Augen} Ähm\ldots nein danke.}
+
+\bob{Ja aber ich hab das doch schließlich schon fertig und außerdem kann ich voll gut erklären haben mir alle
+meine Freunde mal erzählt?}
+
+\amy{Danke, aber \underline{nein} Danke.}
+
+\bob{Aber\ldots}
+
+\amy{Spiel endlich Darts weiter, da brauchst DU die Übung.}
+
+\bob{\stage{auf der Flucht} Klar hast Du recht. Wenn ich dir was erklären kann, sag.. sag mir einfach Bescheid.}
+
+\amy{Ja ja, danke.}
+
+\charsd{Kronos und Lorenzo machen ihren Eintritt zusammen.}
+
+\lor{\stage{beim Eintritt}: Seguro Kronos, du hast ganz schön abgefahrene Albträume. So abgefahren, dass du sie mit der Realität verwechselst.}
+
+\kro{\stage{leicht verärgert} Ich werde es nicht wieder sagen, Lorenzo, ich habs nicht geträumt. Die Vorlesungen sind in diese Woche viel leichter geworden. Es ist als ob einiges an Stoff plötzlich vom ganzen Fach verschwunden wäre. Und ich werde das irgendwann, irgendwie beweisen. Da war nämlich diese \ldots\stage{kopfwehanfall}}
+
+\charsd{Kopfwehsound einspielen}
+
+\lor{Was ist los? Was willst Du beweisen?\ldots An deiner Stelle würde ich einfach glücklich sein, dass alles leichter geworden ist.}
+
+\kro{Ja, egal\ldots Hier ist der letzte öffentliche Arbeitsraum den ich noch abklappern will. Dann haben wir alle Leute die in der Vorlesung
+waren ausgefragt.}
+
+\charsd{Lorenzo dreht sich zu den Frauen und lächelt Sie schauen die Beiden skeptisch an.}
+
+\lor{Ciao Belle, ihr erinnert Euch bestimmt an\ldots, Lorenzo. 
+\stage{läßt das kurz wirken und macht sich mit Mimik bißchen über Kronos lustig} Lasst mich euch meinen Freund
+Kronos vorstellen.}
+
+\kro{\stage{zu den Mädels} Hallo. Ich heiße wirklich.. Kronos. }
+
+\pan{\stage{setzt sich auf den Tisch, flirtet, flasht ihre Beine} Hi, ich heiße wirklich.. Pandorra \stage{gibt ihm die Hand zum
+Handkuss.}}
+
+\kro{Ich.. hab' Dich, äh, Euch, öfters in der Vorlesung gesehen und wollte mal was fragen.}
+
+\pan{Schieß los mit Deiner Frage!}
+
+\kro{Es geht um die Vorlesung von Herrn Professor \PNaNN . Letzte Woche.}
+
+\lor{\stage{von der Ecke geschrien}: Kumpel, wie kommst du auf diesen verrückten Namen. Der heißt doch \PNbNN.}
+
+\pan{Ja, ich kenne den Prof. \PNbNN aber \PNaNN was?}
+
+\kro{Ich bin mir ganz sicher, er heißt wirklich \PNa. \stage{an alle gewandt} So wie Aleksander \PNaNN aus der Informatik oder der weltberühmte aber zweitklassige Schauspieler Roland \PNaNN\ldots}
+
+\stage{Pause. Alle gucken Kronos an.}
+
+\lor{Die heissen auch alle \PNbNN.}
+
+\kro{\stage{seufzt, schüttelt den Kopf, wendet sich wieder zu Pandora} Ich hätte ja in seiner Vorlesung den Namen mitgeschrieben, aber ich schreibe aus Gewohnheit nie mit. Da kommen wir nun zu meinem Problem, ich suche eine unverfälschte Mitschrift!}
+
+\lor{Scusi ragazze, dass ihr die Naivität meines guten Freunds schon heute erfahren müsst. \stage{an Kronos} Es schreibt doch keiner mit, du Esel.}
+
+\bob{Ich hab' mitgeschrieben.}
+
+\charsd{keiner reagiert auf Bob}
+
+\pan{\stage{Sucht ihre kleine Handtasche durch} Warte mal! Ich glaube\ldots Wenn mich nicht alles täuscht\ldots 
+\stage{klaut Amys Mitschrift} ich hab tatsächlich mitgeschrieben!}
+
+\bob{Ich hab auch mitgeschrieben. Ich hab's auch schon geteXt\ldots }
+
+\lor{\stage{steht hinter den Mädels und legt seine Hände auf ihre Schultern. Sie schrecken auf und er zieht sich zurück.} Das ist ne echt schöne Handschrift, Pandora.}
+
+\charsd{Amy will sich beschweren, Pandora guckt sie böse an. Kronos nimmt das Papier in die Hand und fängt an die Blätter zu
+lesen und wird dabei ungeduldig.}
+
+\kro{\stage{quetscht die Blätter in seiner Hand} Nein! das kann nicht sein!!}
+
+\pan{\stage{setzt eine Hand auf seinen Arm} Was ist?}
+
+\amy{Ähm\ldots Kronos, du machst meine Notizen kaputt.}
+
+\charsd{Pandora gibt Amy Stoß in die Rippen.}
+
+\kro{Ich hab gehofft sie würden anders aussehen. Also haben sich nicht nur die Vorlesungen sondern auch alle
+Notizen geändert\ldots \stage{ironisch} toll! Wenn ich doch nur genau wüßte was da passiert ist\ldots
+\stage{Kopfwehattacke}}
+
+\charsd{Kopfwehsound einspielen}
+
+\lor{Ach Mensch, Kronos, akzeptiere endlich, dass du dich einfach geirrt hast.
+\stage{Zu den Mädels} Macht Euch keine Sorgen, ich paß schon auf den Kleinen auf. Va bene\ldots}
+
+\pan{\stage{sieht aus als ob sie sich Sorgen macht} Hmmm. Du siehst ja ganz blass aus. Was Du jetzt brauchst ist ein Fruitshake aus dem Wellnessladen! Der ist zufällig auf dem Weg zum Solarium, und da wollte ich sowieso gleich hin. Willst Du mich nicht einfach begleiten dann geb ich Dir einen aus. \stage{sie krallt sich Kronos und nimmt ihn mit raus.}}
+
+\charsd{Pandora und Kronos ab}
+
+\lor{Kronos Du Drecksau!}
+
+\amy{Pandora Du Schlampe!}
+
+\lor{\stage{Lorenzo ist kein Kind von Traurigkeit} Und wie wärs dann mit uns Beiden, Signorina?}
+
+\amy{\stage{weicht zurück packt schnell alles ein} Ich bin schon in zärtlichen Händen!}
+
+\ama{\stage{Ama kommt rein (sie ist der Mann in der Beziehung)} Wo bist du denn die ganze Zeit? Du hängst doch nicht wieder mit dieser Matikerschlampe Pandora rum?} 
+
+\amy{Nein, nein. Ich hab nur wieder Bob in Mathe geholfen! \stage{küssen sich und ab.}}
+
+\lor{\stage{Handy klingelt.} Pronto, ciao mama, eh woher wußtest Du das, stimmt mir gehts echt nicht so toll, lasagne splendido! ich komm gleich vorbei! \stage{legt auf} Alles Schlampen ausser Mutti! \stage{ab}}
+
+\bob{Oh Mann, der hat immer seine Mama. Seit meine Eltern damals 3 Jahre vor meiner Geburt gestorben sind beachtet mich irgendwie keiner mehr. \stage{schaut traurig}}
+
+\charsd{Nur Bob bleibt im Raum mit dem Physiker im Schrank zurück. Auf dem Tisch lassen sie ein Buch (über Mathematikgeschichte) liegen.}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Monolog Phy}                                                       %%%%%%%   A K T   1  --  S Z E N E   4 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Abstract: Physiker hat Fell und Keule dabei. Hat eine Liste mit mehreren Mathematiker Namen und streicht den obersten durch (Ugh 0). Sieht auf dem Flip-Chart als nächsten Namen Fermat und nimmt sich vor weniger blutig vorzugehen. Muß noch rausfinden, daß die Null erst von den Arabern erfunden wurde.
+
+Bühnenbild: Nach wie vor der beinah verlassene offene Arbeitsraum.\\
+
+Rollen: Bob, und der Physiker, letzterer trägt Fell und Keule.\\
+
+\opensd{Die Zeitmaschine kommt hier an. Kunstnebel, Lichter, Lärm\ldots}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\dialog{{\bf Frauenstimme vom Band}}{Bing! 20tes Jahrhundert. Bitte in Fahrtrichtung rechts aussteigen!}
+
+\bob{\stage{spielt Darts und wirft alles daneben} Mist, nicht schon wieder. Null, Null, Null, Null, Null, Null \stage{Genau wie der Höhlenmensch mit der Szene 1.1}}
+
+\phy{\stage{Kommt während Bobs Nullen durch eine Schranktür rein und schaut sich um. Er ist außer Atem.} Fauliges Fleisch, das ist doch nicht mein Zimmer! Diese verflixte Zeitmaschine ist noch voller Fehler. \stage{Tritt den Schrank}}
+
+\bob{Null, Null, Null. Mir reichts\ldots \stage{ab}}
+
+\phy{Hier klingts wie bei den Höhlenmenschen mein Plan scheint zu funktionieren. \stage{läuft zum Tisch wo ein Buch liegt} Na mal sehen ob die Null wirklich weg ist. \stage{Schaut in ein Buch was auf dem Tisch liegt.} ``Geschichte der Mathematik'' wie passend jetzt wo die Mathematik Geschichte ist. \stage{blättert} Schwingende Säbel, die Null gibts immer noch, nur haben sie jetzt die Araber erfunden\ldots und die Inder und die Mayas \stage{macht verzweifelt das Buch zu} Diese blöde Wissenschaft ist wie eine Hydra, wenn man einen Kopf abschlägt wachsen drei neue. \stage{schaut nochmal ins Buch rein und schmöckert} Der nächste entscheidende Fortschritt ist wohl der Satz von Fermat gewesen, mal sehn ob der schwer genug ist, daß nicht gleich jeder drauf kommt. \stage{holt seinen Plan raus und streicht Ugh0 durch, dafür wird Fermat draufgesetzt.} Ruhe in Frieden.}
+
+
+% \phy{\stage{Seine Klamotten sind durcheinander. Ihm ist schwindelig. Er schaut sich nach einem Stuhl um und läßt sich hineinfallen. Er guckt seine Hände ganz langsam an und ballt sie zu Fäusten. Mit gebissenen Zähnen und geschlossenen Augen sitzt er und denkt daran, was vor kurzem passiert ist. Er fängt an zu zittern,}}
+
+% \phy{\stage{dann guckt er seine Toga an und betrachtet die Blutflecken. Wütend schmeißt er den Stuhl um und zieht in der gleichen Bewegung die Toga aus, schmeißt es von sich. Dann geht er auf und ab, nimmt ein Portraitphoto aus der Tasche.}}
+
+%\phy{Geliebte Dominique. Ich tu das doch nicht zum Spaß. Ich tu das doch für Dich. Um die Mathematik zu stoppen. Warum ist das so schwer zu ertragen? Waren sie wirklich schuldig? Ist die einzige Lösung der Mord? Sie waren keine schlechten Menschen. Sie wußten nicht, was sie taten. Aber ich mußte sie aufhalten\ldots es ist zu viel\ldots zu schwer\ldots das Blut bleibt nicht lange still.
+
+%\stage{Er klappt das Bild um. Gesenken kopfes kommen ihm ein paar Tränen.}}
+
+%\phy{Nein, Nein\ldots \stage{Dann steht er hastig auf, nimmt einen Schluck aus der Amphore}  Griechischer Wein! \stage{geseufzt\ldots}Aaaah! \stage{Noch ein Schluck!} Ich muß das schaffen. Es ist doch für den guten Zweck! Die Mathematik darf nicht triumphieren. \stage{Er holt einen riesen Flippchartzettel aus seiner Hose (durch den Reißverschluß), den er an ein Flipchartständer / Tafel hängt, wo er einen Namen streicht.}}
+
+%\phy{Ruhe in Frieden\ldots \stage{Er faßt sich, blättert in einem Buch, das er dort findet. Liest} Fermats berühmter Beweis. Das große Theorem der Zahlentheorie. Das muß wohl auch weg. \stage{Schreibt Fermat auf die Liste. Packt die Liste ein, geht ab.}}
+
+%\bob{\stage{steht nach wie vor unbeachtet mitten im Raum} Boa! \stage{Denkt nach}  Warum bemerkt mich eigentlich nie irgendwer?!}
+
+%\charsd{Vorhang. Umbaupause}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\act{zweiter Akt, Entwicklungen}        %              A K T          Z W E I   
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Fermat}                                                            %%%%%%%   A K T   2  --  S Z E N E   1 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Das Zimmer von Fermat, darin ein Tisch mit Kerze, Tintenfass, Feder und Papier, ein Stuhl, ein
+Schrank, ein Gemälde (oder Kopie von einem echten Gemälde).\\
+
+Rollen: Der Physiker, Fermat.\\
+
+\opensd{Ein Schild mit der Aufschrift ,,Frankreich, 17. Jahrhundert'' wird gezeigt. Fermat sitzt am Tisch und
+schreibt, dazu spielt Barockmusik. Musik wird ausgedimmt. Physiker ist im Schrank.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\charsd{Fermat spricht die ganze Zeit mit französischem Akzent.} 
+
+\fer{\stage{zu sich selbst}: Und daraus \stage{nimmt ein zweites Blatt zur Hand} \ldots folgt das \ldots und dann, dann \stage{schreibt wieder auf das erste Blatt} können wir das schließen. So. \stage{steht vom Tisch auf, ordnet seine Blätter zu einem Riesenstapel, schaut sie voller Bewunderung an} Fertig! \stage{wendet sich zum Publikum, als wäre es sein Auditorium in einer Vorlesung, geht auf und ab, gestikuliert, so wie Schappacher in seinen Vorlesungen :} Die Gleichung $a^n +b^n=c^n$ hat keine ganzzahligen Lösungen! Außer wenn $n=2$ natürlich - das ist völlig klar: Wenn Sie n=2 haben, dann ist das einfach Pythagoras, das kennen Sie alle aus der Schule! Aber für $n>2$ geht es nicht, niemals! Das ist ein Ergebnis von historischer Tragweite! Und was für ein eleganter Beweis \ldots  Das muss ich sofort an die französische Akademie der Wissenschaften schicken! Für die Gloire de la Patrie!}
+
+\charsd{Zeitmaschinengeräusch. Physiker kommt aus dem Schrank. Fermat zuckt erschrocken zusammen, schaut den Physiker unverwandt an.}
+
+\fer{Parbleu! Ein Fremder in meinem Schrank! \stage{misstrauisch, aufgebracht} Haben Sie etwas mit meiner Frau?? \stage{dreht sich um, geht in die andere Richtung, am Besten zum Publikum, zumindest ungefähr; schreit} Josephiiiiiiiiiiiiiiiiiiiiiiiiiine!! Das war das letzte Mal---}
+
+\phy{\stage{stürzt zu ihm, hält ihm von hinten den Mund zu}}
+
+\phy{Sind Sie Fermat? \stage{er klingt die ganze Szene ein bisschen traurig, ernst. Wie ein Mensch, der etwas verloren hat.}}
+
+\charsd{Fermat nickt, während der Physiker ihm immer noch den Mund zuhält}
+
+\phy{Whatever you do --- don't scream.}
+
+\charsd{Fermat nickt wieder. Der Physiker läßt ihn los.}
+
+\fer{\stage{wischt sich angewidert den Mund ab, leicht angepisst} Sind Sie Engländer?}
+
+\phy{\stage{schüttelt den Kopf} Ich komme aus einem fernen Land, das Sie so nicht kennen. Herr Fermat, Ich brauche Ihre Hilfe.}
+
+\fer{\stage{taut sichtlich auf}: Wir Franzosen sind in der ganzen Welt bekannt für unsere Gastfreundschaft! Sie sind mein Gast, Monsieur \ldots}
+
+\phy{ \ldots nennen Sie mich einfach ,,Physiker''}
+
+\fer{ Monsieur Physiker \stage{spricht den Namen völlig falsch aus, französisch halt}. Sagen Sie mir, was liegt Ihnen auf der Seele?}
+
+\phy{Sie haben vor kurzem einen Beweis aufgeschrieben.}
+
+\fer{\stage{enthusiastisch} Einen wunderbaren Beweis! \stage{erstaunt} Aber --- woher wissen Sie, ich bin gerade fertig, die Tinte ist kaum trocken! \stage{dann ,,versteht'' er} Ah, ich verstehe, Sie waren ja im Schrank. \stage{mit strenger Miene} Darüber müssen wir noch reden - aber später. Erzählen Sie mir von sich.}
+
+\phy{Ich bin Wissenschaftler, wie Sie. Ich weiß Dinge über Physik und Mathematik, von denen Sie noch nicht einmal zu träumen wagen.}
+
+\fer{ So?}
+
+\phy{ Zum Beispiel\ldots zum Beispiel weiß ich, dass die Erde eine Kugel ist!}
+
+\fer{\stage{verzieht verächtlich das Gesicht} Das weiß doch jedes Kind heutzutage.}
+
+\phy{\stage{verdutzt, besorgt}: Wie? \stage{schaut auf Seine Uhr} Mein Gott, natürlich, wir sind ja im 17. Jahrhundert.}
+
+\fer{\stage{greift in Erstaunen nach dem Arm des Physikers; dessen Uhr ist eine fette Digitaluhr mit Taschenrechner}: Bon dieu, was haben Sie da?}
+
+\phy{\stage{zerstreut, achtlos}: Das? Ach, das ist doch bloß meine Digitaluhr.}
+
+\fer{Wie sagen Sie? Digitaluhr? Ich habe noch nie etwas Derartiges gesehen!}
+
+\phy{\stage{etwas geschmeichelt, stolz}: Ja, es ist schon eine nette Spielerei! Sehen Sie, hier ist sogar ein Taschenrechner eingebaut. Damit kann man addieren, multiplizieren, exponentieren, sogar logarithmen gehen damit.}
+
+\fer{ Unglaublich! \stage{hat nur noch Augen für die Uhr}}
+
+\phy{\stage{nimmt die Uhr ab}: Hier, nehmen Sie. Die schenke ich Ihnen. Da wo ich herkomme haben wir solche Uhren zuhauf. }
+
+\fer{\stage{nimmt die Uhr ehrfurchtsvoll}: Mein aufrichtigster Dank! Ich habe mich wohl in Ihnen getäuscht, Sie sind offenbar ein grosser Gelehrter und Ingenieur. Ich bin Ihnen etwas schuldig. Was kann ich also für Sie tun?}
+
+\phy{ Haben Sie Ingenieur gesagt \stage{lachpause}\ldots Dieser Beweis, den Sie geschrieben haben -- Sie dürfen ihn nicht veröffentlichen. }
+
+\fer{\stage{entgeistert}:  Nicht veröffentlichen?}
+
+\phy{ Niemand darf davon erfahren.}
+
+\fer{ Wie? Aber .. das kann ich nicht machen! Die Wissenschaft ist frei! Die Öffentlichkeit hat ein Recht darauf, von meinen Ergebnissen zu erfahren!}
+
+\phy{  Es ist wichtig! Es geht um die Zukunft der Zivilisation! Um Frieden und freie Entwicklung! Es geht um den Fortbestand der menschlich Art!}
+
+\fer{\stage{besorgt}: Geht es um die Zukunft Frankreichs?}
+
+\phy{ Natürlich, auch!}
+
+\fer{\stage{im Brustton der Überzeugung}: Für die Grande Nation bringe ich jedes Opfer! Dem Vaterland gebe ich mein Herzblut! Ah, les enfants de la patrie!---\stage{fängt an zu singen}}
+
+\phy{Ja, ähm, ich habe leider wenig Zeit zu verlieren, meine Zeit hier läuft ab.}
+
+\fer{\stage{übergibt ihm den Stapel Zettel mit seinem Beweis} Hier. Nehmen Sie, machen Sie damit was Sie wollen. Mein Werk ist bei Ihnen in guten Händen, Sie werden es zum Nutzen Frankreichs verwenden, ich weiss es.}
+
+\phy{ Vielen Dank. \stage{stürzt zum Schrank, lässt dabei ein Blatt Papier in der Eile fallen} Ich muß Sie jetzt verlassen.}
+
+\fer{ Aber der Ausgang ist dort \stage{zeigt in die andere Richtung} !}
+
+\phy{\stage{geht in den Schrank} Adieu , mein Freund! \stage{macht die Tür hinter sich zu}}
+
+\fer{ Aber\ldots}
+
+\charsd{Zeitmaschinengeräusche. Ebben dann schnell ab Fermatgeht zum Schrank, macht die Tür auf}
+
+\fer{Sacrebleu! Er ist verschwunden! Nicht nur ein Wissenschaftler und Ingenieur, sogar ein Magier!}
+
+\fer{\stage{schüttelt den Kopf, macht den Schrank wieder zu. Dreht sich um, geht an den Tsich, sieht dabei das Blatt, das der Physiker auf den Boden hat fallen lassen. Hebt es auf.}}
+
+\fer{\stage{seufzt} Ah, was für ein wunderbarer Beweis! Was für ein Jammer! Niemand wird je davon erfahren. \stage{überlegt} Wobei. Wenn der Beweis geheim bleibt 
+ldots Ich kann ja wenigstens erwähnen, dass ich das Problem gelöst habe. \stage{zornig} Nicht dass am Ende ein Engländer den Ruhm für sich beansprucht! \stage{setzt sich an den Tisch, nimmt ein Buch zur Hand} In diesem Buch ist das Problem beschrieben \ldots  ich schreibe einen kleinen Kommentar auf den Seitenrand \ldots \stage{nimmt sich die Feder, schreibt und spricht gleichzeitig} ,,Ich habe eine wahrhaft wunderbare Lösung für dieses Problem gefunden. Leider passt sie nicht auf diesen Rand.'' Voilà! Meine Ehre ist gerettet!}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Liebe und Hass}                                                    %%%%%%%   A K T   2  --  S Z E N E   2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Kronos Schlafzimmer. Ein Bett.\\
+
+Rollen: Pandorra und Kronos.\\
+
+\opensd{Pandorra und Kronos sind im Bett, noch vor dem ,,Kuscheln danach'', mit zerzausten Haaren und kaum bekleidet.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sbt{\stage{hält ein ,,Zensiert'' Schild vor das Bett}}
+
+\kro{Hi! DAS ist WIRKLICH KRONOS! \stage{angeberisch}}
+
+\charsd{ein BH fliegt auf das Zensiert Schild. Pandorra und Kronos stöhnen ein bißchen, hören dann auf}
+
+\sbt{oh, schon fertig... \stage{ab}}
+
+\kro{Schade dass Du es nicht zu der Party geschafft hast.}
+
+\pan{War gut?}
+
+\kro{Total gut. Alle haben miteinander getanzt, die eine wär am liebsten mit mir heimgegangen. Hehe. Die wusste
+ja nicht, was hier für ein süßer Schatz auf mich wartet\ldots \stage{küßt sie}.}
+
+\pan{Aha, und was hast Du mit ihr gemacht?}
+
+\kro{Ja nix. Nur getanzt.}
+
+\pan{Aha. Nur getanzt. Wenn ich mit Männern tanze, wollen die nicht gleich mit mir heim\ldots}
+
+\kro{Ach Schatz. Vielleicht hatte sie was getrunken.}
+
+\pan{Und Du nutzt das direkt aus und tanzt mit diesem beschwipsten Flittchen?!}
+
+\kro{Red doch nicht so schlecht über die Schwester von Lorenzo!}
+
+\pan{Jetzt verteidigst Du sie auch noch!! Auf wessen Seite stehst Du eigentlich?}
+
+\kro{Auf Deiner Seite! Immer auf Deiner\ldots}
+
+\pan{Ach ja?! Und wieso tanzt Du dann mit der, bis sie Dir verfallen ist?}
+
+\kro{Verfallen ist?! So'n Schwachsinn. Und überhaupt. Selbst wenn. Ich kann mich ja wohl kontrollieren!}
+
+\pan{Du musst Dich also kontrolieren, was?!? Sieht sie so viel besser aus, als ich?}
+
+\kro{Nein, sie sieht einfach anders aus.}
+
+\pan{Anders\ldots Dünner? Besser?}
+
+\kro{Aussehen hat nichts damit zu tun. Du weißt doch, ich liebe Dich wie Du bist.}
+
+\pan{Was jetzt? Willst Du sagen dass ich dick bin?}
+
+\kro{Nein, Du bist ganz normal}
+
+\pan{Also dick! Nicht schlank. Aber normal. }
+
+\kro{Jetzt schrei nicht. }
+
+\pan{Ich schreie nicht!!!}
+
+\kro{Du hast keinen Grund Dich so aufzuregen. Beruhig Dich doch mal.}
+
+\pan{Du kommst von ner Party wo Du mit irgendner besoffenen Schlampe rummachst und sagst mir, dass ich dick bin?!
+Das reicht mir zum Aufregen, für jemand, der im Bett so ne Enttäuschung ist, wie Du \stage{haut ab}}
+
+
+
+
+
+   
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Newton}                                                         %%%%%%%   A K T   2  --  S Z E N E   3 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Menschen als Baum, mit Äpfeln in der Hand.\\
+
+Rollen: Newton, Physiker, Frau in Unterwäsche.\\
+
+\opensd{Newton schläft unter dem Apfelbaum und brabbelt vor sich hin}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\phy{\stage{tritt auf, trägt einen Rock, eine Perücke und einen Apfelpflückerinnenkorb} Was man so alles auf einer Wäscheleine in fremden Gärten finden kann. Ich hatte schon Angst diesmal ohne Verkleidung womöglich erkannt zu werden. \stage{sieht sich suchend um} Wo ist er denn jetzt dieser Newton!}
+
+\charsd{Baum bewirft ihn mit einem Apfel}
+
+\phy{\stage{erschrickt} Ach da! Und der Baum fängt auch schon an zu obsten, da komm ich ja gerade richtig!}
+
+\charsd{Der Baum lässt Äpfel auf Newton fallen, die der Physiker mit Mühe fängt, wobei er durch den Wunsch, Newton nicht zu wecken, behindert wird. Der Baum erhöht diskret die Schwierigkeitsstufe, dabei Computerspiel-Musik. Neue Levels alle Naselang, es wird schwerer. Stage 1.. Stage 2.. Stage 3\ldots Bei Stage 3 verjagt der Baum den Physiker, indem er ihn mit Apfeln bombardiert. Dann kommt stage 4.}
+
+\dialog{Baum}{The BIG APPLE}
+
+\dialog{Newton}{\stage{im Schlaf} F = m * \ldots}
+
+\dialog{Baum}{\stage{lässt einen Riesenapfel auf Newton fallen}}
+
+\dialog{Newton}{AH! (Dadurch wird die Phrase F = m * A beendet) Die Beschleunigung ist die Veränderung in der Geschwindigkeit. Und die 
+Geschwindigkeit ist die Veränderlichkeit des Ortes! Das muß ich veröffentlichen! Da muß ich eine saubere mathematische Theorie zu entwickeln, 
+das ist ja viel wichtiger, als der physikalische Aspekt. Sonst könnt ich meine Gleichungen ja auch erwürfeln. \stage{Geht ab!}}
+
+\phy{\stage{kommt zurück} Knatternde Konsolen! (Gratity sucks!) Erst schummelt dieser störrische Franzose ne lästige Randnotiz an mir 
+vorbei, und jetzt stellt sich ein abgewrakter Apfelbaum gegen mich! Jetzt ist erstmal Schluss mit lustig! \stage{Zerquetscht einen Apfel in der Hand}}
+
+\charsd{Frau in langer, veralteter Unterwäsche tritt auf, will ihren Rock und Korb zurück. Physiker läßt den Korb stehen, behält aber die Klamotten und geht ab. Frau ärgert sich.}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Ein Anruf}                                                    %%%%%%%   A K T   2  --  S Z E N E   4 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Büro von Professor \PNcNN.\\
+
+Rollen: Kronos, Pandorra, Lorenzo, Bob, Professor \PNcNN.\\
+
+\opensd{Professor \PNcNN sitzt an seinem Schreibtisch und hat Bob den Rücken zugewandt. Warten bis ruhe ist...}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bob{Also ich bin Bob, ja? Ich bin total verzweifelt. In der letzten Übung zu Ihrer Vorlesung habe ich schon bei der zweiten Aufgabe Probleme gehabt. Und viel schlimmer war, daß ich die komplette Übungszzeit damit verbracht habe dem Übungsleiter nachzulaufen und Ihm meine Probleme zu erzählen\ldots \stage{Pause, keine Reaktion}}
+
+\bob{Ja und der Übungsleiter hat dann allen anderen geholfen und mich total ignoriert und dann bin ich zu meinen guten Freunden gegangen die ich jetzt schon gemacht habe\ldots \stage{Pause, keine Reaktion}}
+
+\bob{Und die hatten dann leider was wichtiges vor und haben mir gar nicht richtig zugehört. Ja und dann hab ich meinen Papa auf dem Friedhof besucht, der ist nämlich Mathematiker gewesen(!)\dots \stage{Pause, keine Reaktion}}
+
+\bob{Ja aber der hat mir auch nicht helfen können. Dann bin ich auf dem Weg zurück in die Uni zufällig an der Studienberatung vorbeigekommen! Ja und die haben mich dann zu Ihnen geschickt\ldots \stage{Pause, Victor dreht sich um und runzelt die Stirn}}
+
+\bob{Okay also da lag so ein Prospekt über das Mentorensystem und ich dachte weil Sie doch mein Mentor sind, dann müssen Sie sich einfach für mich Zeit nehmen.}
+
+\charsd{Kronos, Lorenzo, und Pandora kommen rein. Pandorra ist noch ein bißchen zickig.}
+
+\kro{Haben Sie kurz Zeit?}
+
+\vic{Natürlich habe ich Zeit. Ich nehme mir für alle meine Studenten Zeit.}
+
+\bob{\stage{im gehen} Ich meld mich dann bei Ihnen.}
+
+\kro{Fragen sie mich nicht woher ich das weiß aber ... \stage{malt ihm den Kreis an die Tafel}}
+
+\vic{\stage{langsam...} Was ist das?}
+
+\kro{Das ist die hypergeknuddelte Projektion eines siebendimensionalen\ldots \stage{kann sich nicht richtig erinnern} Daraus folgt dann übrigens daß das alles untergetupft ist mit diesen, äh\ldots }
+
+\vic{Ahhh, ich hatte mal so eine ähnliche Idee, \ldots  aber \ldots die Community hat das als Spinnerei abgetan. Ich hab noch den 
+Preprint von nem Paper hier irgendwo \stage{fängt an danach zu suchen} ich wollte diese Objekte Monigfaltigkeit nennen, nach meiner
+geliebten Frau Monique.}
+
+\kro{Natürlich, so haben wir das in der Schule auch immer genannt. \stage{hat Kopfweh-attacke}}
+
+\charsd{Kopfweh-sound}
+
+\pan{\stage{vergißt den Streit} Geht es Dir nicht gut mein Schatz? Hast Du wieder eine von Deinen Migränen? 
+\stage{zu \PNcNN} Er kann nicht so gut mit Streß umgehen, müssen Sie wissen... kriegt dann immer die verrücktesten 
+Ideen über alternativen Universen und weißgottwas. Dabei kann er total süß sein wenn man nur ganz sanft zu Ihm ist. 
+\stage{täschelt Kronos irgendwie.}}
+
+\lor{Sie meinen das ganze Zeug das er erzählt hat... und die vielen lustigen Bilder die er so komisch gemalt hat... die ergeben wirklich einen tieferen Sinn?}
+
+\vic{Er hat nochmehr davon gemacht? Das ist brilliant! \stage{Pause, nachdenklich}. Ich habe einen Entschluß gefaßt. Ich werde meine Forschung von damals wieder aufnehmen. Ich hätte mich niemals so von meinen Ideen abbringen lassen sollen. Ich schaffe mir meine eigene Community.}
+
+\vic{\stage{träumerisch} Mit Konferenzen. Und Blackjack, und Nutten... Ach eigentlich\,--\,vergeßt das mit dem Blackjack... \stage{normal weiter} Naja, jedenfalls\,--\,mit Euch fang ich an!}
+
+\charsd{Bei dem Teil mit den Nutten jubelt Kronos, Pandora haut ihm den Ellbogen in die Rippen. Dann ist er still. 
+%%Und windet sich vor Schmerzen auf dem Boden. Oder auch nicht, je nachdem, ob Katia das so gut kann, wie Lucho...
+}
+
+\vic{\stage{zu Kronos} ich werde dafür Sorgen das Du in jeder Stiftung aufgenommen wirst und Du \stage{zu Lorenzo} bringst mir alle sein Notizen. Zusammen werden wir schon sehen wieviel Hand und Fuß unsere Theorie kriegt!}
+
+\charsd{das Telefon klingelt \PNcNN geht ran}
+
+\vic{Hallo Herr Kollege, was macht die werte Physik heutzutage?}
+
+\vic{Ahh, das ist natürlich interessant, dafür muß immer Zeit sein... Sie haben ganz recht, da hatte ich auch schonmal dran gedacht... Was? Nein sie machen keine Umstände, kommen sie einfach vorbei!... Ja das ist der Raum 2...1...3 gleich hier im Mathebau?... Haha ja Optikbau natürlich, also dann bis später. \stage{legt auf und sagt zu sich selbst, bzw. dem Publikum} Komischer Kauz aber ohne Frage ein Genie.}
+
+\vic{Ich bekomme gleich Besuch von einem Kollegen aus der Physik. Wir treffen uns dann morgen wieder. \stage{Professor schiebt Studenten aus der Tür}}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Streit der Jungs}     											     %%%%%%%   A K T   2  --  S Z E N E   5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: In einem beliebegen öffentlichen Arbeitsraum im Mathebau (Umbauzeit minimieren!)\\
+
+Rollen: Lorenzo, Kronos.\\
+
+Requisite: Handy.\\
+
+\opensd{Kronos telefoniert am Handy.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\stage{Kronos konzentriert sich sehr auf seinen Hausaufgaben. Sein Handy liegt vor ihm auf dem Tisch. Lorenzo sieht sehr deprimiert aus. Jener kommt rein, setzt sich hin und start das Blatt von Kronos an.}
+
+\kro{(nach eine sehr lange Pause): Na. Was ist?}
+
+\lor{Du bist jetzt mit Pandora zusammen?! (halbvorwurfsvoll)}
+
+\kro{Ja (schreibt weiter).}
+
+\lor{Kann ich ein kurz mit Dir reden?}
+
+\kro{Klar (schreibt weiter).}
+
+\lor{Könntest du mir vielleicht zuhören? (bißchen weiblich)}
+
+\kro{\stage{Kronos hebt zum ersten Mal den Kopf und wirft einen Blick auf Lorenzo.} Sorry ich muß das morgen abgeben, was ist denn los?}
+
+\lor{Pandora meinte eben Ihr seid um halb sechs am Luisenplatz verabredet.}
+
+\kro{Ja.}
+
+\lor{Jetzt ist fünf nach halb.}
+
+\kro{Echt schon?}
+
+\lor{Gehst Du noch da hin?}
+
+\kro{Die sitzt da mit ner Freundin beim Kaffee, da kann ich ruhig ne viertel Stunde später dran sein...}
+
+\lor{Trotzdem, Du machst die Hausaufgaben und läßt sie deswegen warten?}
+
+\kro{Klar\ldots  Man muß halt schon auch Prioritäten setzen.}
+
+\lor{Prioritäten? Kronos, bitte, Deine Hausaufgaben sind Dir wichtiger als die Segnora?! }
+
+\kro{Ja, nein, ich meine.. wieso mischst Du Dich da überhaupt ein?}
+
+\lor{Ich komm einfach nicht damit klar, daß Du sie überhaupt nicht respektierst. Du willst einfach nur das Eine, oder?}
+
+\kro{Junge. Du sollst nicht immer die Brigitte lesen! Ich...}
+
+\lor{Du hast selber gesagt, sie wär' die geilste Sau im Mathebau, Aber offensichtlich non capici. Für dich ist sie gar kein besonderes Mädchen.
+Für dich ist sie einfach noch 'ne geile Schnitte! Noch so 'ne Erstsemesterin zum flachlegen. Ich glaube sogar, Du magst die nur, weil Du weißt,
+daß ich sie süß finde.}
+
+\kro{Das stimmt nicht! Ich hab sie wirklich gerne. Und außerdem, tu mal nicht so, als wär ich hier der Italiener.}
+
+\lor{Ok, Va bo, Io sono il italiano, ma tu no sei tampoco santo... In der Schule war's schon immer so. Du hast immer Mathe geschwänzt, um NOCH
+mehr Zeit auf der Jagd e verbringen. Immer schön mit Deiner Schleimermasche. \stage{in einer Frauenstimme} Aahh, der Kronos, er ist so süß, er
+ist so sexy, er ist so intelligent.}
+
+\kro{\stage{wird leicht verärgert}: Das stimmt überhaupt nicht! Ich hab' auch nie Mathe geschwänzt! \stage{schlägt den Tisch} Was für n Quatsch!
+Wir hatten in der Schule doch gar keine Zeit für Mädels. Wir ham vor lauter Lernen nur so in den Seilen gehangen.}
+
+\lor{Benutz mal Deinen Kopf! \stage{stubst Kronos an den Kopf} Du bist echt komisch geworden. Das Mathe-Studium, wird täglich leichter. Der 
+Professor Victim hat ständig einen neuen Namen.}
+
+\kro{\stage{unterbricht ihn} wie Victim? Der heißt Victor Timo, früher hieß er Victorius Thimotheus!}
+
+\lor{Nein, verdammt. Victim. Der heißt Victim und hieß immer Victim!! Und deine Schulzeit, war die jetzt plötzlich trocken, streßig und
+langweilig?!} 
+
+\kro{Lorenzo, laß den Scheiß. Du weißt genau, wie schwierig unsre Mathe in der Schule war.}
+
+\lor{Tja. Sooo schwierig, dass du immer einsen hattest, ohne je ein Buch anzuschauen. Und jetzt machst du dich nur noch lustig über mich. 
+Ich musste mich für meine gute Noten immer anstrengen\,--\,während du die ganze Zeit Röcke gejagt hast.}
+
+\kro{Hallo? Ich hatte genau eine Freundin in der ganzen Schulzeit. Und der mußte ich immer die Hausaufgaben machen. So sah das aus.}
+
+\lor{Da hast du wohl recht, keine Freundinnen, immer eine nach der andere: Keine feste Beziehung...}
+
+\kro{Waas? So n Blödsinn hab ich ja noch nie gehört! Ich....}
+
+\lor{Jedes Mal hast du ihnen die Herzen gebrochen. Du warst mein bester Freund. Sie wollten danach genau so wenig mit mir zu tun haben, wie
+mit dir. Du hast mir so immer wieder die Chancen versaut, dabei bin ich so gut zu Frauen, wie mir das la mia Mama beigebracht hat!}
+
+\kro{Auf was für Drogen bist Du eigentlich? Ich....}
+
+\lor{Ja Kronos. Das ganze ist mir erst vor neulich klar geworden. Du hast die Mädels immer schlecht behandelt und dadurch auch mir dann
+geschadet. Deswegen habe ich Pandora über deine ganze Geschichte erzählt. \stage{stolz wie'n Spanier}}
+
+\kro{Du hast WAS gemacht? Das kann ja wohl nicht wahr sein! Wie kannst du dich so einmischen?}
+
+\lor{\stage{überhaupt nicht mehr stolz.} Naja, also, öh... Sie hat nach Dir gefragt. Sie hat gemeint, dass sie dich nicht so oft sieht,
+dass du immer schwer zu erreichen bist. Sei froh, dass ich für dich gelogen habe.}
+
+\kro{\stage{steht auf und guckt böse} Was hast du ihr gesagt?}
+
+\lor{Dass du in der Vergangenheit Frauen immer schlecht behandelt hast. Daß Du schon so'n checker warst immer. ABER, dass du es nicht mehr
+macht. Dass du seit dem ein besserer Mann geworden bist. Daß Du keine Hamster mehr kaufst. Blabla. Stimmt ja nicht, aber bin ich schließlich
+immer noch dein bester Freund.}
+
+\kro{\stage{macht den lustigen Waldorfschule - Ausdruckstanz}: Was...? Ich...? Pandorra? Andere Frauen? Hamster?
+Welche...? (sein Handy klingelt)}
+
+\lor{Das wird wahrscheinlich Pandora sein. Ich lasse euch in Ruhe. \stage{steht auf und verläßt den Raum.}}
+
+\kro{\stage{geht ran, hält körp[ersprachlich Kontakt zum abgehenden Lorenzo}: Hi Schatz... Ja, ich bin schon unterwegs.... 
+\stage{ruft Lorenzo nach} Was gehst Du mir so auf den Sack, Du Pissnelke ! ... Nein Baby, ich meinte dich nicht... warte... ich meinte hab mit... So'n Quatsch wieso sollte ich das? Warte, ... Pandora... Pandora?}
+
+\kro{\stage{flucht während der Vorhang zu geht.} Fuck! Wie ist denn das wieder passiert? \stage{nachdenklich} Lorenzo ist doch viel zu
+einfach um sich so ne komplexe Lügengeschichte auszudenken\ldots Bestimmt ist er neidisch auf mein gutes Gespräch mit Professor Victor... 
+Ach und der heißt jetzt plötzlich Victim! Pft, was denn das für ein Name?!? Da muß ich mal in Ruhe drüber nachdenken. Am besten wir machen
+mal zehn Minuten: PAUSE!}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2cm}
+\begin{center}
+\Huge{Pause}
+\end{center}
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\act{dritter Akt: Mehr Gewalt, weniger Sex}        %              A K T          D R E I   
+%akt3
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Mord im Mathebau}                                                 %%%%%%%   A K T   3  --  S Z E N E   1 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Immernoch das Büro von Prof. Victim.\\
+
+Rollen: Victim, Physiker.\\
+
+\opensd{Prof. \PNc\ steht an der Tafel, beschaut sich die Kreise und Formeln, die der Kronos mit ihm entwickelt hat, grübelt darüber}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\phy{\stage{kommt rein und klopft an die tür.} Darf ich sie kurz stören?}
+
+\vic{Natürlich, ich habe sie schon erwartet.}
+
+\phy{Ich bin froh, dass sie Zeit für mich gefunden haben. Sie sind ja ein viel gefragter Mann\ldots}
+
+\vic{Ich freue mich immer, mit Kollegen anderer Fachbereiche zusammenzuarbeiten. Dabei entfaltet die Mathematik erst ihre volle Bedeutung.}
+
+\phy{Edle Eulen, aus ihnen spricht die Weißheit vieler Jahre und dabei sind sie noch so jung. Genau deshalb stehen Sie auch ganz oben auf meiner Liste.}
+
+\vic{Wie meinen sie das?}
+
+\phy{Es mag sie überraschen, aber sie sind das Genie dieses Jahrhunderts, die Krone der Schöpfung und damit sehr gefährlich. Der Zufall hat Ihnen einen üblen Streich gespielt und sie zur falschen Zeit erschaffen. Ich werde das korrigieren \stage{packt dabei seine Pistole aus}.}
+
+\vic{Was\ldots was soll denn das?}
+
+\phy{Die Mathematik muß wieder aufgehalten werden.}
+
+\vic{Was aufgehalten? Die Mathematik ist doch die Leuchte der Menschheit. Nur durch sie kann echter Fortschritt erreicht 
+werden.}
+
+\phy{Eben. \stage{Schiesst, trifft den Arm}}
+
+\charsd{Arm getroffen. Blut}
+
+\vic{Aaaaaaaah! Mein Arm! \stage{Hält sich den zum Publikum gewandten Arm. Eilt zur geschlossenen orangenen Tür, um zu fliehen. Schmiert Blut vom Arm an die Tür.} Nein ich will\ldots}
+
+\phy{\stage{feuert den tödlichen Schuß von hinten in den Mathematikprofessor.}}
+
+\vic{Argh}
+
+\charsd{Tür färbt sich dabei dunkelrot mit Blut. Im Zweifelsfall mit dem Blut vom Arm.}
+
+%\phy{\stage{Nach einigen Sekunden, in denen \PNcNN\ endlich tot daliegt, feuert er einen weiteren Schuß von hinten in den Hals. Nimmt ein Taschentuch, um die Klinke nicht berühren zu müssen und geht durch die geöffnete Tür. Dahinter bleibt er kurz stehen und telefoniert per Handy}}
+
+\phy{\stage{Nimmt ein Taschentuch, um die Klinke nicht berühren zu müssen und geht durch die geöffnete Tür. Dahinter bleibt er kurz stehen und telefoniert per Handy.} Hallo Toter Fisch, hier ist Meuchelnde Meise. ... Ja, es ist vollbracht, die Kraniche sind nach Süden gezogen... Damit kann die Narrenkappe weitergereicht werden... Und bitte enttäuschen Sie mich nicht! ... \stage{legt auf...Kunstvolle Pause.} Now rise, Dean Hieber! \stage{ab}}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Spekulationen}                                                 %%%%%%%   A K T   3  --  S Z E N E   2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Abstract: Die jungen Detektive sollen mit dem gesammelten Wissen herausfinden, daß der Mord an Professor \PNcNN\ wohl an dem Physiker, der ihn angerufen hat liegt. Oder das man zumindest dort weitere Untersuchungen anstellen sollte.
+
+Bühnenbild: Im Fachschaftsraum.\\
+
+Rollen: Kronos, Pandora, Lorenzo, Bob.\\
+
+%\opensd{It's Ben and Navi Productions. Steht zumindest im Word-file. Also was??}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\opensd{Pandora sitzt schmollend rum und schaut in die Luft. Bob sitzt in der Ecke, spielt mit Bauklötzen und kriegt wie immer keine Beachtung.}
+
+\pan{\stage{höhnisch} DAS ist wirklich kronos... pfüh...}
+\kro{\stage{betritt den Raum.}}
+
+\kro{\stage{traurig und zu Pandora} Oh man, habt ihr schon gehört was passiert ist --- Professor \PNcNN\ wurde gestern brutal ermordet. In seinem eigenen Büro. Die ganze Tür ist Weinrot.}
+
+\pan{\stage{kostet aus, daß sie böse auf ihn ist und schmollt rum}.}
+
+\kro{Pandora, bist Du immer noch sauer auf mich? \stage{setzt sich neben sie und Pandora rutscht weg und schaut weg} Es ist doch alles gar nicht so wie der Lorenzo erzählt hat \stage{geht dabei um sie rum um sich auf die andere Seite zu setzen. Pandora rutscht und schaut wieder weg, diesmal in die andere Richtung.} Du mußt mir glauben! Die Vergangenheit hat sich bestimmt wieder verändert, wie in den Vorlesungen die leichter geworden sind, oder wie Deine Mitschrift bei der ganz viel gefehlt hat, oder wie der Name von Professor \PNaNN\ der plötzlich nur noch \PNcNN\ heißt! Ich hab einfach nie irgendwelchen Frauen das Herz gebrochen, das mußt Du doch merken. \stage{stellt sich bei der Rede groß vor sie hin und macht dann die Arme auf, wie zur Umarmung} Glaub mir und komm in meine Arme\ldots}
+
+%\pan{\stage{steht auf und geht zu Kronos} Oh Kronos es ist alles so schrecklich \stage{umarmt ihn}. Vergiss bitte unsern dummen Streit ich brauch jetzt deine Hilfe. \PNcNN\ war so ein besonderer Mensch, der allen Hoffnung geschenkt hat und jetzt ist er nicht mehr \stage{schluchzt}.}
+
+\pan{\stage{schaut ihn wieder an und macht ihn zur sau} Du verdammter, himmelschreiender Versager, ich könnte soviel bessere Typen haben als Dich, ich könnte Tom Cruise  haben, oder Brad Pitt, oder Jonny Depp und sogar Ashton Kutscher könnte ich haben wenn ich nur wollte, also weißt Du überhaupt was Du an mir eigentlich hast Du hirnloser Wurm???}
+
+\kro{\stage{sinkt in sich zusammen und sieht kümmerlich aus} Ja Schatz, Du hast natürlich recht Schatz. Ich bin ein Wurm\ldots in einem tiefen dunklen Loch\ldots und Du bist die goldene strahlende Sonne, die ich anbete.}
+
+\pan{\stage{steht auf und lächelt überheblich geht zu ihm hin und täschelt seinen Kopf} Du bist ein hoffnungsloser Fall.}
+
+\kro{\stage{umarmt sie ohne sich dabei richtig aufzurichten}}
+
+\lor{\stage{kommt rein und wendet sich direkt an Kronos, der noch immer Pandora im Arm hat (Pandora muß jetzt nicht mehr das Publikum anschaun und generell unauffällig sein weil Kronos und Lorenzo jetzt im Fokus sind)} Kronos mein Freund, hast Du schon gehört was passiert ist --- Professor \PNcNN\ wurde brutal ermordet, als hätte er sein Schutzgeldzahlung vergessen\ldots In seinem eigenen Büro. Die ganze Tür ist rot wie Vino Rosso.}
+
+\kro{\stage{kostet aus, daß er böse auf ihn ist und schmollt rum}.}
+
+\lor{Kronos, bist Du immer noch sauer auf mich? \stage{stellt sich neben ihn und Pandora. Kronos schaut weg} Es ist alles gar nicht so wie Du denkst. \stage{geht dabei um sie rum auf die andere Seite. Kronos schaut wieder weg, diesmal in die andere Richtung.} Ich glaube Dir ja! Die Vergangenheit hat sich bestimmt wieder verändert, wie in den Vorlesungen die scheinbar alle leichter geworden sind, oder wie Pandoras Mitschrift bei der angeblich ganz viel fehlt, oder wie der Name von Professor \PNcNN\, wo du immer sagst, daß der mal ganz anders hieß! Ich hab einfach nie irgendwelchen Freunden die Frau ausgespannt, das mußt Du doch merken. \stage{stellt sich bei der Rede groß vor ihn hin und macht dann die Arme auf, wie zur Umarmung} Vertrau mir und komm in meine Arme\ldots}
+
+\kro{\stage{läßt Pandora los, diese geht zur Seite. Kronos schaut Lorenzo an und macht ihn zur Sau} Du verdammter, himmelschreiender Versager, ich könnte soviel bessere Freunde haben als Dich, ich könnte Chandler als Freund haben, oder Ross, oder Joey und sogar Rachel könnte ich haben als Freundin wenn ich nur wollte, also weißt Du überhaupt was Du an mir eigentlich hast Du kränkliche Kakerlake???}
+
+\lor{\stage{sinkt in sich zusammen und sieht kümmerlich aus} Ja, Du hast natürlich recht\ldots. Ich bin eine Kakerlake\ldots in einer schmutzigen, dunklen Küche\ldots und Du bist der blitzblanke prallvolle Kühlschrank, den ich anbete.}
+
+\kro{\stage{lächelt überheblich geht zu ihm hin und täschelt seinen Kopf} Du bist ein hoffnungsloser Fall.}
+
+\lor{\stage{umarmt ihn ohne sich dabei richtig aufzurichten}}
+
+\bob{Kommt das nur mir komisch vor, was gerade passiert ist?}
+
+\pan{\stage{nimmt die Hande an die Hüften und schaut die Beiden an} Okay habt ihr Beiden Euch ausgeweint, kann ich 
+jetzt wieder bißchen Aufmerksamkeit bekommen? \stage{die Beiden anderen achten nicht auf sie, kleine Pause, Pandora fängt an zu flennen und sagt schluchzend} Oh Kronos es ist alles so schrecklich \stage{er stürmt rüber und umarmt sie}. Ich brauch jemand der mich tröstet. Dieser furchtbare Mord. \PNcNN\ war so ein besonderer Mensch, der allen Hoffnung geschenkt hat und jetzt ist er nicht mehr.}
+
+\lor{Mit \PNcNN s Tod und dem neuen Dekan können die Ersties ihr Studium eigentlich gleich an den Nagel hängen.}
+
+\bob{\stage{geschockt} Was es gab einen brutalen Mord? Wie schrecklich! Wieso hat mir Niemand was davon erzählt? Das ist genauso schlimm wie beim Tod meiner Eltern damals\ldots 3 Jahre vor meiner Geburt.}
+
+\kro{Es ist einfach so ungerecht! Ich war mir sicher, daß alles wieder besser wird nach unserem Gespräch gestern und dann rief dieser Physiker an.}
+
+\pan{Stimmt, seitdem ist alles den Bach runtergegangen.}
+
+\lor{Da hatte ich gar nicht mehr dran gedacht\ldots Der muß ja fast als letztes mit \PNcNN\ gesprochen haben. Vielleicht können wir durch den Physiker etwas über den Mörder rausfinden.\,--\,die deutsche Polizei macht ja sowieso nix.}
+
+\kro{Dann sollten wir dem mal einen Besuch abstatten.}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Archimedes}                                                 %%%%%%%   A K T   3  --  S Z E N E   3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Das Innere eines Zelts in einem römischen Heerlager, 212 vor Christus vor Syrakus auf Sizilien.\\
+
+Rollen: Physiker, Magnus Maior Maximus, römischer Soldat vor dem Zelt, Erstis\\
+
+\opensd{Der Physiker befindet sich als Centurio oder so verkleidet in einem römischem Heerlager im Jahre 212 vor Christus vor Syrakus auf Sizilien. Es ist kurz nach der Eroberung ca. 17:30.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Abstract:
+
+Magnus Maior Maximus betritt blutverschmiert das Zelt. Vorher kackt er die Wache\,--\,und die Erstis\,--\,vor dem Zelt ganz schön zusammen. 
+Dann tritt er wie gesagt ein und berichtet dem Physiker, das er dessen Auftrag ausgeführt habe. Der Physiker gibt ihm einen Beutel mit
+Münzen und eine Amphore Wein. Der Physiker vergiftet dabei nach kurzer Unterhaltung den Offizier. 
+
+\charsd{Magnus macht die Zeltwache und die Erstis fertig.}
+
+\MM{\stage{betritt das Zelt.} Salve Centurio!}
+
+\phy{Salve Magnus Maior Maximus}
+
+\MM{Mein verehrter Cenutrio, ich habe euren Auftrag erfüllt. Er ist tot.}
+
+\phy{Glatte Glanzleistung. Archimedes, der große Lehrer Archimedes - Gestorben hier vor Syrakus auf Sizilien. Ein weiterer Bremsklotz auf dem Weg der Mathematik! \stage{zu Magnus Maior} Wie ist er gestorben?}
+
+\MM{Schnell.}
+
+\phy{Hat er noch etwas gesagt?}
+
+\MM{Ja.}
+
+\phy{\stage{schaut ihn schief an} Ah ich verstehe. Hier ist deine Belohnung. \stage{er holt einen  Beutel mit Sesterzen heraus.} Das hast du dir verdient. Und hier, trink einen Schluck!}
+
+\MM{Ahhh, also er saß auf dem sandigen Boden und malte Kreise. Dann besaß er noch die Dreistigkeit mir zu sagen, ich störe seine Kreise. Und dann habe ich ihn erstochen.}
+
+\phy{Sehr gut, trink ruhig noch etwas.}
+
+\MM{\stage{trinkt.}}
+
+\phy{Das hast du hervorragend gemacht, dann muss ich ja nur noch eine Sache erledigen.}
+
+\MM{Vielleicht kann ich dir dabei helfen}
+
+\phy{Das wird leider unmöglich sein, es geht darum Eure Leiche zu beseitigen.}
+
+\MM{Was? Was ist das für ein Getränk? \stage{stirbt tragisch. Physiker wendet sich ab -- zur Zeitmaschiene?}.}
+
+\phy{Aus dem Zwischenfall mit Judas habe ich eines gelernt, man muss manche Sachen persönlich zum Ende bringen. Sonst entstehen aus der kleinsten Veränderung gleich eine ganze Religion. Das nächste Genie ist der alte Galois und die Falle für Ihn ist schon gestellt \stage{reibt sich die Hände}.}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Ein Verdacht}                                                 %%%%%%%   A K T   3  --  S Z E N E   4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Das Büro des Physikers und der Gang davor. Zu sehen ist zunächst nur der Gang und die Tür.\\
+
+Rollen: Kronos, Lorenzo, Pandorra, Physiker, Bob\\
+
+\opensd{Kronos, Lorenzo und Pandorra sind am Büro des Physikers angekommen. Zu sehen ist nur ein Teil der Bühne, der den Flur darstellt. Außerdem sieht man die Tür zum Phibüro. Später wird die andere Seite der Bühne geöffnet (Vorhang weg oder Wand zu Seite oder so) und man sieht auch das Büro.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+\charsd{Kronos klopft, nichts passiert. Pandora liest einen Zettel an der Tür.}
+
+\pan{Oh. Hier steht, daß Montags von 0700 bis 0730 (in Prüfungsangelegenheiten bis 0745) Sprechstunde ist. Ansonsten nach Vereinbahrung.}
+
+\lor{Claro, und eine Terminvereinbahrung bekommt man nur mit Passierschein A38, was?}
+
+\charsd{Lorenzo klopft jetzt. Fest. Der Physiker antwortet verärgert durch die Tür.}
+
+\phy{Nervige Nager! Jaja. Ich komme ja schon. Ist wohl sehr wichtig was? \stage{Er öffnet halb. Hier kann der Physiker noch immer die römische Uniform anhaben.}}
+
+\phy{Entschuldigen sie aber ich habe im Moment wirklich gar keine Zeit, es ist ein Wochentag.}
+
+\kro{Wir wollten mit Ihnen über Professor \PNc\ sprechen. }
+
+\phy{\stage{unterbricht ihn} Wen? Kenne ich nicht. Ist das der Mathematiker, der umgebracht wurde?}
+
+\dialog{Alle}{Ja!}
+
+\phy{Nein, den kenne ich nicht\ldots}
+
+\kro{\stage{verwirrt} Wieso wollen Sie ihn nicht kennen? Wir waren in seinem Büro, als Sie ihn angerufen haben! Sie kannten ihn nicht nur, Sie waren vermutlich auch die letzte Person, die ihn lebend gesehen... na ja, gehört hat.}
+
+\phy{Ich soll diesen Menschen angerufen haben? Ich habe den Namen gerade zum ersten Mal gehört. Warum sollte ich auch mit Leuten verkehren, deren Ableben doch ein klares Zeichen gibt in welcher Gesellschaft sie verkehren. Und da Sie ebenfalls diese Gesellschaft zu sein behaupten, möchten sie mich entschuldigen.}
+
+\phy{\stage{Der Phi schlägt die Tür zu. }}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\act{vierter Akt: Showdown im Abendrot}        %              A K T          V I E R  
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Galois}                                                 %%%%%%%   A K T   4  --  S Z E N E   1 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Auf der Bühne ist Galois Büro. Man sieht einen Schreibtisch (vielleicht eine Kerze).\\
+
+Rollen: Galois, Alfred, Physiker, Französischer General\\
+
+Requisite: Eine spacige Spielzeugpistole, die am besten laute Geräusche macht, zwei Westernwummen, eine Flasche Kalhua.
+
+\opensd{Galois sitzt an seinem Schreibtisch und hat eine Idee nach der andern, die er hastig aufschreibt.}
+
+\Gal{Oh mein Gott! Endlich hab ichs! DAS hat uns Fermat vor so vielen Jahren sagen wollen!}
+
+\stage{Sein Bruder Alfred kommt rein und stört Ihn beim nachdenken.}
+
+\Alfred{Bitte geh nicht. Ich war die ganze Nacht auf und hab gepackt! Wir können sofort Frankreich verlassen. Simeon (Hint: Poissons Vorname) sagt, er kann uns bis Strassburg bringen und von dort schlagen wir uns durch.}
+
+\Gal{Non. Wenn es um meine Ehre ginge, könnte ich fliehen wie ein feiger kleiner Belgier, aber `alas' das ist nicht der Fall. \stage{Krizelt noch schnell was hin und denkt dann kurz nach.} Merde, jetzt hab ichs wieder vergessen. Steht auf. Es hilft nichts. Laß uns gehen und mit einem kleinem Opfer den Namen der süßen Sophie wieder reinwaschen.}
+
+\Alfred{Aber das ist Selbstmord Evariste! Du kannst nicht hoffen, gegen einen Offizier zu gewinnen.}
+
+\Gal{Heute nicht, heute werde ich verlieren, aber morgen und in Zukunft wenn niemand mehr seinen Namen weiß, dann wird mein Lebenswerk dank der unsterblichen Mathematik weiterbestehen.\stage{Theatralische Pause} Sorge dewegen unbedingt dafür, daß meine Notizen nicht in die Hände von Gandarmen oder Physikern fallen.}
+
+\Alfred{Dir ist nicht mehr zu helfen, das ist doch deutlich ein abgekartetes Spiel von den verdammten Royalisten\,--\,und Du läufst mitten rein. Ich werde Dir bis zum Ende folgen, aber ich kann keine Kugeln für Dich fangen.}
+
+\Gal{Ne pleure pas, Alfred! J'ai besoin de tout mon courage pour mourir à vingt ans!}
+
+\Alfred{\stage{leise}Was?}
+
+\stage{Beide gehen ab ins Publikum, auf den Mittelgang wo der Physiker als Sekundant mit dem General wartet. Es wird dunkler, während die Beiden zu den Anderen hingehen. Dann ist das Licht ganz Weg. Dann gibts ein Spotlight auf Beide Kontrahenten. Die stehen Rücken an Rücken. Der Physiker steht, als Sekundant des Generals verkleidet, versetzt in der Mitte und hält ein Taschentuch hoch fängt an bis 10 zu Zählen $(1, 2, 3, ... , 9, 10)$. Beide Leute machen ihr Ding, ihre Waffen sind aber ohne Effekt. Der Physiker zieht seine Laserpistole und killt Galois verliert und fällt um. Alfred hat vor der besonderen Waffe Angst.}
+
+\Alfred{Teufelszeug. Ihr verdammten Royalisten, damit werdet Ihr nicht durchkommen mein Bruder ist genau wie sein Land und die Republik --- unsterblich.\stage{rennt weg.}}
+
+\General{\stage{schießt nochmal nach Ihm} Verdammt! Daneben, hoffentlich richtet der nichts dummes an.}
+
+\phy{\stage{Nimmt seine Verkleidungsmütze ab} Das hätte er, aber jetzt nicht mehr. \stage{nimmt dem perplexen General 
+seine Waffe ab}}
+
+\General{Ihr seid gar nicht mein Sekundant.}
+
+\phy{Ja und das war auch keine von Eueren Pistolen, die im Übrigen ungefähr genauso gefährlich sind wie ein mittelschwerer Ziegelstein. Ich wollte nicht das Risiko eingehen, einen Blindgänger abzubkommen, und hab in Eure beiden Steinschleudern nur Platzpatronen geladen.}
+
+\General{Sacre bleu! Ihr seid auch so ein Illuminate und hinter meiner schönen Frau her!}
+
+\phy{Schaut mal diese modernen Waffen haben sogar einen Betäubungsmodus. \stage{schießt ihn ab. geht zu Galois rüber.} Mach dir keine Sorgen auch ohne die allgemeine Galois-Theorie wird jeder in der Zukunft deinen Namen kennen. Dafür werde ich schon sorgen. Mit \stage{holt eine Flasche Kalua raus.} Galouuis. Wie ein warmer Sonnenstrahl aus den Schneebedeckten Hügeln Russlands. White Russians trinkt man nur mit echtem Galois.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Krimi-Showdown}                                                 %%%%%%%   A K T   4  --  S Z E N E   2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Vor dem Büro des Physikers wie in Szene 3.3\\
+
+Rollen: Physiker, Pandora, Kronos, Bob, Lorenzo\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\opensd{Setzt nach der Szene 3.3 direkt fort. Der Schluß von dieser wird wiederholt.}
+
+\phy{Ich soll diesen Menschen angerufen haben? Ich habe den Namen gerade zum ersten mal gehört. Warum sollte ich auch mit Leuten verkehren, deren Ableben doch ein klares Zeichen gibt in welcher Gesellschaft sie verkehren. Und da Sie ebenfalls diese Gesellschaft zu sein behaupten, möchte ich mich entschuldigen.}
+
+\phy{\stage{Der Phi schlägt die Tür zu. }}
+
+\pan{Hat diese PERSON gerade behauptet, ICH wäre schlechte Gesellschaft?}
+
+\kro{Mach dir nichts daraus, ist doch bloß ein Physiker. Was mich irritiert, ist seine Behauptung, \PNcNN\ nicht zu kennen. Das ist schon ziemlich seltsam.}
+
+\bob{\stage{kommt an.}}
+
+\bob{Da seid ihr! Mannomann ich dachte schon ich finde euch gar nicht mehr. Hattet ihr vergessen, dass ich mitkommen wollte? Ihr hättet mir schon sagen können, dass dieses Büro hier ist. Habt ihr schon was erfahren?}
+
+\lor{\stage{ignoriert Bob}Si, das ist nicht bloß seltsam, das ist verdächtig. Und warum versucht er uns loszuwerden? Ich denke er wollte uns nicht in sein Büro lassen.}
+
+\kro{\stage{nickt}Dann lasst uns doch mal nachschauen, ob er etwas zu verbergen hat. Wir müssten ihn nur irgendwie ablenken.}
+
+\bob{Ich kann ihn ablenken. Ich halt das für nen guten Plan, und ihr? Also wenn niemand was dagegen hat dann geh ich jetzt rein! Ich hab ja schon bißchen Schiss. Ich bin für jede andere Idee offen. }
+
+\pan{\stage{immer noch beleidigt und ignoriert Bob}... schlechte Gesellschaft! Ich!! ... Und wie kann man so eine \textsl{Person} ablenken?}
+
+\bob{Letzte Chance mich aufzuhalten\ldots Ich werde jetzt wirklich reingehen\ldots \stage{geht zur Tür und klopft an}}
+
+\kro{Ich glaube wir sind in einer Sackgasse, keiner von uns kann da jetzt einfach anklopfen und den Physiker rauslocken\ldots Wir müssen uns wohl was neues überlegen.}
+
+\charsd{kro, lor, pan stellen sich in nem Kreis zusammen.}
+
+\bob{\stage{geht zum Büro und klopft lang an. nix passiert.} Oh man ich trau mich nicht so richtig na gut noch einmal. Drei, Zwo, Eins, \stage{tür geht auf bob ganz laut} Null!}
+
+\phy{Oh, da ist ein Höhlenmensch, der ist mir wohl gefolgt! Besser ich bring den mal zurück in die Vergangenheit bevor er noch großen Schaden anrichtet. Na komm her mein kleiner, ich hab hier einen tollen Goldklumpen für dich.}
+
+\bob{Dieser Spinner! Der denkt ich bin ein Höhlenmensch \stage{rennt weg}.}
+
+\phy{Verdammt! \stage{rennt ihm nach}}
+
+\kro{Also wir suchen uns jemand der ihn rauslockt und dann brechen wir ins Büro ein.}
+
+\pan{Du Idiot es ist doch schon offen und irgendwer ist auch gerad weggelaufen.}
+
+\charsd{Alle treten ein. Die Bühne wird geöffnet. Man sieht das Physikerbüro.}
+
+\charsd{
+An der Tafel steht ``Wichtig:'' als Überschrift und dann 3 Merksätze
+``Spinat darf man nicht aufwärmen'' und darunter 
+``Blut geht mit kalt' Wasser raus.'' Darunter
+``Mit Männern kann man nicht reden.'' Der mittlere Satz ist unterstrichen. Im Raum steht außerdem ein Flipchart auf dem eine Liste ist:\\
+``Höhlenmenschen: geknüppelt'',\\
+``Fermat: verarscht'',\\
+``Kolmogorof: ertränkt'',\\
+``Newton: versagt'',\\
+``Bobs Eltern: weg'',\\
+``\PNcNN: gerichtet'',\\
+``Karl Ranseier: tot'',\\
+``Archimedes: erdolcht'',\\
+``Galois: lecker'',\\
+``Kronos'' steht da als nächstes (und ohne Haken).}
+
+\kro{\stage{Fängt an die Liste vorzulesen} ... Bei Bob's Eltern --- Wer ist eigentlich Bob? \stage{Alle zucken die Schultern.}... \stage{zum Schluß} Ahh, ich verstehe. Er hat alle diese Mathematik-Genies \stage{geschmeichelt} ... \stage{entsetzt} umgebracht!}
+
+\lor{Aber das sind doch alles olle Kamellen, wie kann irgendjemand heute für diese Geschichtlichen Ereignisse Verantwortlich sein? Du spinnst doch wieder Kronos.}
+
+\kro{Nein, zum ersten mal seh ich alles klar. Es passt alles zusammen! Verstehst Ihr nicht, ich bin draussen man, aus diesem Lauf der Zeit. Der Physiker dem dieses Büro gehört hat einen Weg gefunden die Mathematik immer weiter zu behindern. Nur mich kann er damit nicht treffen. Ich erinnere mich immer an die echte Wirklichkeit! Nichts was er in der Vergangheit verändert hat, beeinflußt mich.}
+
+\pan{Deshalb hast du auch immer diese Kopfschmerzen mein Schatz.}
+
+\lor{Aber wie soll ein zweitklassiger Darmstädter Physiker die Vergangenheit verändern? \stage{kurze Pause und dann effektvoll:}
+Das macht doch alles keine Sinn!}
+
+\kro{\stage{schaut sich um} Er muß eine Zeitmaschine haben.}
+
+\lor{Das glaub ich nicht! Was soll denn hier eine Zeitmaschine sein?}
+
+\kro{Keine Ahnung, so ein Ding könnte irgendwie aussehen. Sie ist wahrscheinlich nicht alzu klein, damit man sich reinstellen kann... Oder wenigstens irgendwie reinquetschen halt... und wenn ich eine bauen würde, wäre sie unauffällig so wie... dieser erstaunlich kleine Wandschrank!}
+
+\lor{Ja klar der Wandschrank, also du bist zwar ein gute Mathematiker, aber fürs echte Leben fehlt dir einfach die Bodenständigkeit.}
+
+\kro{Du hast recht. Wir müssen die Polizei verständigen!}
+
+\lor{Das dauert zu lang. Wer weiß, wen er in der Zwischenzeit alles tötet.}
+
+\pan{Was soll das überhaupt bedeuten? Zwischenzeit?}
+
+\charsd{alle nicken nachdrücklich nachdenklich}
+
+\kro{Macht schnell, wenn wir uns beeilen holen wir den noch ein!}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Die Jagd}                                                 %%%%%%%   A K T   4  --  S Z E N E   3 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: \\
+
+Rollen: \\
+
+\opensd{Flucht des Physikers und Verfolgungsjagd. Am Ende wird er gestellt und dann kommt seine Motivation raus.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+... Verfolgungsjagd... Physiker wird gestellt... Zur Rede gestellt...
+
+\kro{Haben Sie eine Zeitmaschine gebaut? Sind Sie verantwortlich für den Tod von Kolmogoroff, Archimedes, Professor \PNcNN\ und all 
+der anderen Mathematikern?}
+
+\phy{Das versteht ihr nicht, sie mussten sterben damit alle überleben!}
+
+\lor{Sie monströser Mörder! Sie gieriger Ganove! Sie flügelloser Physiker!}
+
+\phy{Ihr Narren. Haltet mich auf. Macht Eure Mathematik. Bringt es zu Ende und zerstört die Welt!}
+
+\kro{Was mich interessiert ist, wie sie eine Zeitmaschine gebaut haben?}
+
+\phy{Gebaut? Du scheinst ja doch nicht so helle zu sein, ich werds Dir ganz langsam erklären. Ich komme aus der Zukunft, in der sich die
+Mathematik rücksichtlos entfaltet hat... Und ich verkünde Euch, die Menschheit überlebt es nicht! Glaubt mir. Atombomben und diese Sachen,
+ja, die konnten wir noch leicht im Zaum halten. Aber die Technik, die in ein paar Jahrzehnten standard ist, die Möglichkeiten, die Macht,
+der Moniggenerator! ... in den Händen von Idioten! \stage{pause} Stellt Euch vor die Macht über alles Leben im Universum in den Händen
+eines gewöhnlichen Menschen. Wisst ihr wie dumm der durchschnittliche Mensch ist?}
+
+\charsd{die drei nicken, sagen ja. Lorenzo stellt den durchschnittlichen Idioten dar, wie Joey.}
+
+\phy{Und bedenkt die Hälfte von Ihnen ist sogar noch dummer... Aber verzagt nicht es ist fast vollbracht! Dieses mal hab ich Eure
+verlauste Wissenschaft fast soweit, daß sie ungefährlich ist. Ein Mord hier eine Bestechung da, die Einführnug vom Bachlor / Master
+System um die Forschung zu stoppen... nur noch ein i-tüpfelchen und die Menschheit ist wieder sicher. Es geht hier um das höhere
+Zeil, die Errettung der Menschheit. Nichts wirklich wertvolles im Leben erreicht man ohne Opfer!}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Die Rede}                                                 %%%%%%%   A K T   4  --  S Z E N E   3 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: *musik patriotische Amerikanische Filme* \\
+
+Rollen: Kronos im Monolog mit allen Anwesenden als Audienz \\
+
+\opensd{Ansprache an die Bühnengenossen.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\kro{Das Leben eines Menschen darf nicht genommen werden. Zu keinem Zweck der Welt. Denn damit würde der Mensch vom Selbstzweck zum Zweck degradiert werden. }
+
+\stage{Pause. Genossen sind völlig mit ihm überein.}
+
+\kro{Aber kein Mensch darf ein Mittel sein. Das kann ein Ziel nicht liefern. Man kann keine solch endgültige Entscheidung treffen, niemand darf ein Gewaltmonopol haben, mit dem er anderen ihr Recht auf Leben nehmen könnte.}
+
+\stage{Genossen sind völlig einverstanden.
+Auf etwas erhöhtes steigen, langsam den Fokus der Ansprache auf Publikum verschieben.}
+
+\kro{Eine solche Handlungsoption darf man nicht ziehen, sonst hat man ein absolutes Mittel und dann ist einem jedes Ziel recht. }
+
+\stage{Nachdrückliches nicken. Genossen wirken irritiert verwerfen ihre bedenken und stimmen wieder zu.
+Dann langsam zum vorderen Bühnenrand schlendern und mit Gesten der Würde beim Nennen des Namens das Foto aus der Tasche ziehen. Nach einer kurzen Zeit das Foto falten und einstecken.}
+
+\kro{Auch widerspricht eine solche Vorgehensweise sowohl der tradierten Lehre Imago Dei als auch der Enquete Kommission! Doch wir müssen uns gar nicht auf subjektive Vorbilder stützen, bereits vor zweihundert Jahren beschäftigte sich der Thüringer Philosoph Karl Christian Friedrich Krause (geboren 1781 in Eisenberg; gestorben 1832 in München) in seiner Sittenlehre und Rechtsphilosophie mit moralischen und rechtlichen Fragen. Er entwickelte als Nachfolger von Fichte und Schelling in Jena nicht nur sein Konzept einer idealistischen Metaphysik im Anschluß an die idealistische Philosophie Platons und die kritische Methode Kants, sondern integrierte empirische Fragestellungen zur Rechtspersönlichkeit in seinen transzendentalphilosophischen Ansatz.}
+
+\stage{Pause. Genossen sind verwirrt worden und jubeln fragend. Held ist vorne an der Bühne angekommen und spricht jetzt nur noch zum Publikum. Er entrollt mit dem nächsten Satz einen Zettel, auf dem \"Panentheismus\" steht und hält ihn bei erwähnen des Wortes hoch.}
+
+\kro{Krause zählt zu den vernachlässigten Philosophen der deutschen Geschichts- bzw. Philosophieschreibung. Keine Philosophiegeschichte des 20. Jahrhunderts erwähnt ihn als Vertreter des deutschen Idealismus. Nur unter dem Stichwort ,,Panentheismus'', das Krause für sein eigenes philosophieren prägte, finden sich einige Einträge in philosophischen Lexika. }
+
+\stage{Ab jetzt sind die Genossen überzeugt, der Held drehe am Rad und winken ihm von hinten zu, räuspern sich etc. um ihn zum schweigen zu bringen.}
+
+\kro{Danach sucht er nach einer universal-kosmologischen Einheit zwischen dem EINEN und dem VIELEN im Rahmen einer theistischen Metaphysik. 
+Ihm geht es um die Harmonie zwischen Besonderen und Allgemeinen, d.h., um das Verhältnis zwischen transzendentaler Idee der Menschheit und
+zeitlich-individuell begrenzter Subjektivität. Da Krause seine Rechtsphilosophie und Moralphilosophie auch aus theologischen, d.h. metaphysischen
+Axiomen heraus ableitet, begreift er das Leben als unantastbar. Sein metaphysischer Ansatz unterscheidet sich von Platon und Aristoteles, bei
+denen sich Argumente finden, die damals schon eine Eugenik befürworten.}
+
+\lor{\stage{sobald Lorenzo denkt, daß die Zuschauer jetzt genuch haben, kommt er an und hält Kronos auf} Perdona, Kronos, aber Du hast
+uns glaube ich verloren. kannst Du das irgendwie... leichter sagen?}
+
+\kro{\stage{fährt resignierend fort:}}
+
+\charsd{amerikanische Hymne, leise}
+
+\kro{Der Mensch ist also Zweck, nicht Mittel! \stage{Völlige Resignation vom Philosophischen Verständnis seiner Zuhörerschaft.}
+Die Würde des Menschen ist unantastbar.
+Unser aller Recht auf Leben ist eine Grenze, die nicht überschritten werden darf.}
+\stage{Kleine Pause. Die Leute verstehn ihn wieder}
+
+\kro{Darum lasst uns zusammenstehen in einer Koalition der Lebenden. Gegen die Achse der Utilitaristen}
+
+\lor{Utilita??}
+
+\kro{Laßt uns unter dem einen Banner reiten, das da lautet: Bis hierhin und keinen Schritt weiter!}
+
+\kro{Und um zum Schluß zu kommen - das mit dem Bachelor und dem Master war ein Geniestreich. Und Hieber erst! Wir alle wissen, dass damit die 
+Forschung und der Fortschritt aufgehalten sind. Kehre also um, Physiker, wende Dich ab vom Mord, Deine Mission ist geglückt, doch zu viel 
+Blut ist schon geflossen. Laßt uns doch alle Freunde sein!}
+
+\kro{So lasst es geschehen. Denn große Kraft bringt große Verantwortung.}
+
+\charsd{hymne jetzt laut}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\scene{Der Schluss}                                                 %%%%%%%   A K T   4  --  S Z E N E   3 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bühnenbild: Szene von vorher setzt sich fort\\
+
+Rollen: Kronos, Lorenzo, Amy, Bob und der Physiker\\
+
+\opensd{das Unglueck naht...}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\phy{Große Worte, kleiner Mann! Und nicht ganz falsch. Krause {\bf ist} völlig unterbewertet. Und auf Bolonia bin ich auch wirklich stolz. Ich denke es ist die Zeit gekommen, um aufzuhören. Nur eines noch: Kronos! Du mußt mir versprechen, keinem zu erzählen von den Dingen an die Du Dich erinnerst. Laß uns einen guten Wein aus Syrakus darauf trinken! \stage{schenkt ein gibt ihm ein Glas,...}}
+
+\charsd{Kronos trinkt und fängt an zu röcheln.}
+
+\kro{Was war das für ein Wein?}
+
+\phy{Jeder sagt dasselbe... Stirb in Frieden, Kronos. Du bist das letzte Opfer. Und Dein Tod garantiert den Fortbestand der Menschheit. \stage{mehr zu sich} Und für mich das Gegengift... \stage{Holt eine Phiole hervor, trinkt einen Schluck.} Und der Rest davon aus dem Fenster!}
+
+\charsd{Der Physiker wirft die Phiole aus dem Fenster, also von der Bühne. Er wirft dabei nicht wirklich was, aber alle deuten mit Blicken auf die hohe ,,Flugbahn'' hin. Das ist in Zeitlupe. Lorenzo steht am nächsten an dem ,,Fenster'' und versucht die Flasche zu fangen. Über den Bühnenrand gehängt, fängt er die unsichtbare Flasche und hat dann selbst genau so eine Flasche in der Hand (trick...)}
+
+\dialog{Alle}{Hast Du sie gefangen?}
+
+\lor{\stage{hat sie, für das Publikum gut ersichtlich, gefangen. Überlegt kurz. Blickt zum Physiker, zu Pandora, zu Kronos. erkennt seine Chance. Schaut zu Pandorra, läßt die Flasche fallen} Nein. Leider... \stage{geht zu Kronos rüber} Perdona mi, Amico.}
+
+\kro{uaaarhgh... \stage{stirbt allmählich}}
+
+\phy{Ich kanns nicht glauben das das wirklich geklappt hat. So long suckers, see you in a thousand years.}
+
+\charsd{Physiker verschwindet in seien Zeitmaschine, alle leiden und heulen rund 20 Sekunden lang. Traurige traurige Musik...}
+
+\lor{\stage{zu Pandora} Hey... Wie wärs nem Fruitshake? Hm? Ich glaube wir brauchen jetzt beide einen! \stage{Nimmt die weinende Pandorra in den Arm und ab.}}
+
+\kro{\stage{windet sich im Todeskampf} kann mir denn keiner Helfen \stage{stirbt}}
+
+\charsd{Vorhang geht zu}
+
+\bob{\stage{hat das Gegengift in der Hand, tritt vor dem Vorhang auf, kurz bevor das Publikum aufsteht} Hallo Leute! Ich bin's, Bob! Also,
+hm... Äh... ich kam zufällig vorbei und hab hier diese Flasche gefangen. Äh, hallo?}
+
+.T.H.E. . E.N.D.
+
+\end{document}

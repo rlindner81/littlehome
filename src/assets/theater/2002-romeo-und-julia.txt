@@ -1,0 +1,476 @@
+$Id: rnj.txt,v 1.1 2002/10/22 22:52:46 klink Exp $
+
+Besetzung: 
+ 
+Barde - Martin  
+Romeo - Niklas  
+Julia - Nicole  
+1. Mathematiker - Andreas  
+2. Mathematiker - Jan Essert 
+Martin - Martin 
+Mercutio - Artus  
+Benvolio - Ben  
+Tybalt - Richard  
+Hieber - Alex 
+Alber - Pavol
+Farwig - Necati
+Kümmerer - Christian  
+Amy - Lea  
+Studiensekretariat - Ute  
+Spamfilter - Wiebke  
+Frau Roder - Meggie  
+Jan - Jan Hakenberg 
+AStA - Thilo  
+AStA Gefolge - Pavol, Negati
+Tänzer auf dem Matheball... 
+Mailer Demon (verkleidet als Dämon) ­ Jan Zeitz 
+Bäume - Rallygewinner 
+
+1. Akt 
+ 
+0. Szene 
+(Barde spielt ein Lied. Romeo steht rechts außen auf der Bühne und Julia links außen.) 
+ 
+// Liedtext fehlt noch... 
+ 
+1. Szene 
+(Herrengarten; Bäume stehen rum. 1., 2. Mathematiker sitzen Go spielend im Zentrum.)  
+ 
+1: Hast Du schon das Neuste gehört? Dieses CS-Vordiplom, für das die Zweitsemester alle 
+lernen, das dürfen die gar nicht schreiben! (tock)
+2: Ja wie? Erzähl!  (tock) Schein oder nicht Schein, das ist hier die Frage?
+1: Allesamt nicht zugelassen! Irgendein Pfusch im Prüfungssekretariat. Atari.
+2: Von wegen Pfusch - da stecken bestimmt diese dreckigen Physiker dahinter! Denen ist alles zu 
+zutrauen...  (decken)
+1: Wenn man vom Teufel spricht.  
+(Mercutio, Benvolio treten links auf und laufen auf sie zu, Tybalt tritt rechts auf und läuft auch 
+dazu)  
+Mercutio: Schau mal, Mathematiker! Was machen die denn da?  
+Benvolio: Kinderspiele, sieht man doch die spielen 4 gewinnt. Der eine rafft nichtmal, dass er 
+schon gewonnen hat...  
+(Mercutio kommt an und tritt 1. Mathematiker an den Schuh) 
+Mercutio: Na, kann man die essen?  
+(Tybalt kommt an)  
+Tybalt: 'Ne intelligentere Frage hätte ich von dir auch nicht erwartet!  
+(1. Mathematiker springt auf) 
+1: Was wisst ihr über die CS-Klausuren?  
+Mercutio: ... schreiben nur Schwuchtel!  
+(Handgemenge, Prügeln bis der ASTA kommt)  
+(GONG! AStA und Gefolge treten auf. Gefolge schnappt sich die Streiter.) 
+AStA: Ruhe jetzt, der AStA spricht! Ihr Wahnsinnigen wagt wohl wegen wirrer Worte den 
+Frieden auf Darmstadts Strassen zu stören. So wisset denn, daß das ausschließliche 
+Gewaltmonopol beim AStA liegt und das bin ich! Und wenn mir noch einmal irgendwas zu 
+Ohren kommt, fliegt ihr hier alle raus! Dann könnt ihr ja in Mannheim BWL studieren.  
+(Vorhang)  
+ 
+2. Szene (Hieber, Farwig & Alber in der Mensa, A, F sitzen, Hieber kommt
+mit Mensatablett dazu)
+
+F: Guten Tag, Herr Hieber.
+H: Einen wunderschönen guten Tag, Herr Alber, Herr Farwig, meine lieben
+   Kollegen! (setzt sich)
+F: Sie scheinen ein lokales Maximum in ihrer Launenfunktion zu haben...
+A: Geradezu eine Singularität...
+H: Ja, ich habe eine aussichtsreiche Studentin fuer eine Diplomarbeit in
+   meinem Seminar gefunden.
+A+F: Was, eine Diplomandin in der Angewandten Analysis? (laut)
+A (leiser, traurig): Das hatte ich noch nie...
+F: Wie heisst denn die Glückliche?
+H: Julia. Sie ist zwar erst junge 14 Semester, aber scheint sehr reif für
+die Partiellen Differentialgleichungen. (Zu F:) Sie müssten sie aus ihrer übung in
+nichtlinearer Funktionalanalysis kennen.
+A: Übung? Was ist eine Übung? (verwirrt)
+F: Ich glaube, die hat damals mein Skript geTeXt.
+H: Skript? Was ist ein Skript? (verwirrt)
+Jan (mit Tablett und Einladungen): Oh, gut dass ich sie alle treffen.
+Ich bin von der Ball-AG. Hier ist die Einladung für unseren Matheball. Es
+werden jede Menge Studentinnen da sein und gute Musik noch dazu. Schon heute
+abend soll die Feier steigen.
+F: Matheball? Was ist ein Matheball? (verwirrt)
+ 
+3. Szene 
+(Links: Foyer der 1. Stock, Rechts: Kümmerers Büro von außen; Benvolio, Romeo, Mercutio, 
+Martin sitzen im Foyer.) 
+ 
+Benvolio (zu Martin): Sag mal Martin, Du schreibst doch schon Diplomarbeit, oder? Wie geht's 
+denn so voran? 
+Martin: Naja geht schon irgendwie...(zu Romeo) aber Romeo hier, der studiert doch echt schon 
+irre lang!  
+Mercutio: Der studiert doch gar nicht. Der hängt den ganzen Tag nur im FS-Raum rum und löst 
+Zeit-Rätsel. 
+Romeo: PM-Logiktrainer bitte! Immerhin sind wir Physiker... 
+Martin: Fängst Du jetzt bald mal an mit ner Diplomarbeit? 
+Romeo: Ach je, um Himmels Willen, das ist doch ein Haufen Arbeit,...ich kann mich absolut 
+nicht für so was motivieren... 
+(Jan kommt in Eile und irrt umher.)  
+Mercutio: Was sucht einer von denen denn hier? Der hat sich wohl verlaufen.  
+Romeo: Es ist eine Schande, daß Mathematiker in unserem Physikbau leben. Mal sehn was der so 
+treibt.  
+(Jan findet das Büro, aber es ist abgeschlossen. Er schiebt die Einladung halb unter die Tür und 
+geht wieder.) 
+Benvolio: Eine geheime Botschaft, was da wohl drinsteht.  
+(Romeo geht zur Tür, nimmt die Einladung und liest sie)  
+Romeo: 'Ne Einladung zum Matheball, da gehn doch nur Spinner hin.  
+Benvolio: Auf einem Ball gibt's viele Frauen.  
+Romeo: Mathematikerinnen zählen nicht als Frauen.  
+Mercutio: Du musst Dich ja nicht mit ihnen unterhalten.  
+Benvolio: Es werden auch echte Frauen kommen.  
+Romeo: Woher willst Du das wissen? Warst Du etwa da?  
+Benvolio: Ich kenn jemanden, der mal dort war.  
+Romeo: Und wer soll das gewesen sein?  
+Benvolio: 'N Ingenieur.  
+Mercutio: Was Ingenieure so als Frauen bezeichnen...  
+Benvolio: Wir könnten zumindest hingehen und den Ball sprengen.  
+Mercutio: Ja, wie die OWO-Fete vor 3 Jahren! Das war ein Spaß.  
+Romeo: Aber wir wollen uns nicht wieder als PAFF verkleiden und dieselben
+doofen Forderungen stellen.
+Benvolio: OK, diesmal gehen wir inkognito.  
+(Romeo schiebt die Einladung zurück und die Physiker gehen. Kümmerer kommt und nimmt die 
+Einladung) 
+(Vorhang)  
+ 
+4. Szene  
+(Matheball, Links ein Tisch mit 2 Stühlen, Rechts die Bar; Im Zentrum wird getanzt. Jan und 
+Julia tanzen als Paar. Tybalt steht hinter der Bar und beobachtet. Romeo, Benvolio verkleidet mit 
+dünnen weißen T-Shirts über den Karo-Hemden kommen links dazu)  
+ 
+Benvolio: Hoffentlich erkennt uns niemand bis Mercutio kommt.  
+Romeo: Auf keinen Fall, so gut wie wir verkleidet sind.  
+(Romeo und Benvolio setzen sich am Tisch.)  
+Benvolio: Wie die hier tanzen, das hält man ja nüchtern nicht aus! Ich besorg uns mal was zu 
+trinken.  
+(Benvolio geht zur Bar.)  
+(Romeo schaut sich um und Julia tanzt an ihm vorbei. Seine Augen folgen Julia. Auch Julia sieht 
+beim Tanzen die ganze Zeit zu Romeo. Jan merkt das, wird sauer und dreht sie in Romeos 
+Richtung. Dannach geht er zur Bar. Romeo fängt Julia auf.)  
+ 
+// Martin Sommer spielt ein Lied über Liebe auf den ersten Blick und den ersten Kuß  
+// ...derweil improvisieren Romeo und Julia eine körpersprachliche Annäherung und küssen sich 
+schließlich leidenschaftlich.  
+// bis zum Ende des Lieds  
+ 
+(Benvolio geht zurück. Auch Tybalt sieht das Knutschen und kommt vor die Bar.)  
+Tybalt: Guck mal, mit wem Deine Tanzpartnerin da rumknutscht.  
+Jan: Halb so wild, die konnte eh nicht tanzen.  
+(Benvolio sieht das Knutschen und läßt die Gläser fallen. Beim Aufheben rollt ihm ein Jojo aus 
+dem Ärmel rüber zu Tybalt. Tybalt hebt das Jojo auf.)  
+Tybalt: Ein Jojo! ... Das sind Physiker. ... Auf unserem Ball. ... Na die werden was erleben.  
+(Tybalt geht nach links. Mercutio kommt an. Er ist verkleidet und hat einen Ghettoblaster 
+hinterm Rücken) 
+Benvolio: Bist Du noch ganz dicht, das ist ne Mathematikerin!!! 
+(Mercutio macht laute Musik an.)  
+Mercutio: Zur Hölle mit dem Ball!  
+(Tumult, alles schreit, die Physiker rennen raus und Tybalt hinterher. Julia bleibt.) 
+(Vorhang) 
+
+2. Akt 
+ 
+1. Szene:  
+(Weg; Romeo, Mercutio, Benvolio laufen in die Szene und halten im Zentrum an.)  
+Romeo (zu Mercutio): Hast Du n Quantensprung in der Tasse? Ich war gerade dabei dieses 
+Mädel klarzumachen! 
+Benvolio: Du hast den Sprung! Das war doch Julia - eine Mathematikerin! Die war schon auf 
+dem letzten Matheball... 
+(Romeo und Mercutio schauen ihn an) 
+Benvolio: ...hat der Ingenieur erzählt. 
+Mercutio (zu Romeo): Wie weit bist du überhaupt gekommen? 
+Romeo: Alles lief wunderbar, bis irgendein Idiot den Ball gesprengt hat! 
+Mercutio: Ok, sorry, ich mach's wieder gut! Wir gehen zurück zum Mathebau und ich helf dir 
+rein. 
+Benvolio: Mir reichts für heute. 
+(Romeo, Mercutio gehen zurück und Benvolio geht weiter.) 
+ 
+2. Szene: 
+(Links Balkon vom Mathebau, Rechts Weg zum Mathebau; Links sitzen Julia und Amy) 
+ 
+Julia: ...und dann kam dieser Idiot und hat einfach den schönen Ball gesprengt. 
+Amy: Da hast du ja gerade noch mal Glück gehabt! Weißt du nicht wer das war? Das war 
+Romeo, ein Physiker!... 
+Julia: ...nie im Leben! So kann kein Physiker küssen! 
+Amy: Glaub mir, der ist auf allen Physikerfeten! 
+(Julia schaut sie an.) 
+Amy: ...ähm hat mir so ne Ingenieurin erzählt. 
+Julia: Oh Gott! Ein Physiker ...mein Leben ist verwirkt! 
+(Rechts kommen Romeo und Mercutio.) 
+Romeo: Eine Mathematikerin ... mein Leben ist wunderbar! 
+Mercutio: Ahh, das ist sie... Die mit dieser Amy aufm Balkon rumhängt. 
+Romeo: Wie soll ich denn da hochkommen? Wie werden wir diese Amy los? Und was soll dieser 
+kleine Gummiclown (zeigt drauf), der da schon die ganze Szene lang auf der Bühne liegt? 
+Mercutio: Tja dafür hast du ja mich dabei. (zückt sein Handy ruft Amy an.) *umgarnt Amy* 
+(Amy läuft los) 
+Romeo: Woher hast du den jetzt deren Handynummer? 
+Mercutio: ...die hat mir ein Ingenieur geflüstert! 
+(Amy lässt Romeo zum Balkon und verschwindet mit Mercutio.) 
+Romeo: Erinnere mich dran, wo waren wir vorhin stehengeblieben? 
+Julia: Unglücksengel! Bring mich nicht in Versuchung. Du - Ich - Wir... Das darf nicht - oder 
+doch?  
+Romeo: Oh Julia!  
+Julia: (umarmt ihn) nicht...  
+(Tybalt und 1.,2. Mathematiker gehen durch's Publikum) 
+Tybalt: (aus dem Off) Verdammt, wenn ich den finde! Dieser verrückte Physiker macht uns hier 
+die Frauen streitig! Soweit isses schon gekommen! 
+Julia: Himmel, die Fachschaft! Du musst hier sofort verschwinden. Lebewohl Geliebter!  
+Romeo: Aber wann seh ich Dich wieder?  
+Julia: Wir können uns nie wiedersehn. Das hätte keine Zukunft!  
+Romeo: Und wenn wir gemeinsam Diplomarbeit schrieben?  
+Julia: Bei Kümmerer?  
+Tybalt (off): Julia, hast Du diesen überdrehten Physiker gesehen? Den werd' ich n-teilen! 
+Julia: Jaja! Ich komm gleich und helf euch suchen!  
+Romeo: Du bist so schön wie Du klug bist: Kümmerer, der einzige Prof hier, der über den 
+blinden Haß hinaussieht.  
+(Romeo gibt Julia Abschiedskuß)  
+Romeo: Morgen um 12!  
+Julia: In Kümmerer's Büro. 
+(Romeo ab.)  
+ 
+3. Szene: 
+(Romeo bei Kümmerer im Büro, ins Gespräch vertieft) 
+ 
+(Amy kommt herein)  
+Amy: Guten Tag, Herr Kümmerer! (zu Romeo, zögernd) Du bist Romeo?  
+Romeo: Der bin ich wohl! Nur wo bleibt Julia? 
+Amy: Sie ist noch müde nach gestern Nacht, also bin ich gekommen. 
+Kümmerer: Amy, nicht wahr?  
+Amy (nickt): Ja. 
+Kümmerer: Ich habe alles mit Romeo besprochen. Sag Julia sie können bei mir zusammen ihr 
+Diplom machen!  
+Amy: Cool danke. (zu Romeo) Darf ich dich noch mal unter vier Augen sprechen? 
+(Romeo, Amy gehen etwas weg)  
+Romeo: Nun sind wir allein. (neugierig) Was sollst du mir noch erzählen? 
+Amy: Eigentlich nichts... Aber hast du was von Mercutio gehört? Er hat mir beim MOND 
+versprochen heute gleich anzurufen. 
+(Vorhang) 
+ 
+4. Szene  
+(Kümmerers Büro, nachts; Julia sitzt und schreibt an der Diplomarbeit)  
+ 
+(Romeo kommt und hat ein Papier mit Meßergebnissen.) 
+Beweis* 
+Romeo: Ach, Du wirst schon recht haben, Schatz!  
+Julia: Nein, Du hast recht. (nimmt Romeos Hand)  
+Romeo: So viel Arbeit, so wenig Zeit für UNS.  
+Julia: Aber wir sind bald fertig mit der Diplomarbeit und dann... (umarmt Romeo) 
+(Romeos Blick fällt noch mal auf den Beweis.) 
+Romeo: Aber die Meßergebnisse!  
+Julia: Aber der Beweis!  
+(Vorhang)  
+Romeo: Aber die Meßergebnisse!  
+Julia: Aber der Beweis!  
+
+
+3. Akt  
+ 
+0. Szene  
+(Martins Lied)  
+ 
+1. Szene  
+(Herrengarten; Mercutio und Benvolio relaxen.) 
+
+Benvolio (spielt mit Jojo): Schwingungen... harmonische Schwingungen...
+Trägheit... Reibung... Schwerkraft...
+Mercutio: Hol lieber Papers!
+(Tybalt tritt auf und geht zu den Physikern.) 
+Tybalt: Okay welche von euch Gehirnamöben hat sich gestern an Julia rangemacht? 
+Mercutio: Und was wenn ich das wäre? 
+Tybalt: Du warst das also. Deine Visage kam mir doch gleich so bekannt vor.  Du hast mit dieser 
+harten Musik unseren Ball zerstört. Hast du Lust heute mal hart zu tanzen? (zieht seine Jacke aus 
+und macht sich zum Kampf bereit.) 
+Mercutio: Gerne, aber wir sind zwei und du nur einer, daß ist quasi ungefähr nur die Hälfte. 
+Tybalt: Du bist so blöd, da fang ja echt die Schmeißfliegen an zu kotzen. 
+Benvolio (zu Mercutio): Laß mal lieber, mit dem ist nicht zu spaßen. 
+Mercutio: Quatsch ich werd diesem Zahlenversteher hier mal Manieren beibringen. 
+Benvolio: Das wird mir zu heiß ich hohl Verstärkung. (rennt weg) 
+Tybalt: So eine Feige Sau, echt jetzt Junge. 
+Mercutio: Niemand nennt ihn eine Feige Sau! 
+bewusstlos.* 
+Tybalt (steht auf): Das wäre geklärt. Aber wie sorge ich jetzt dafür, daß er Julia nicht wieder 
+sieht... 
+(Tybalt läuft zur Geldbörse macht diese auf.) 
+Tybalt: Hmm sein Studienausweis. Das ist es! (zückt Handy) Ich ruf das Studiensekretariat an 
+und exmatrikulier den einfach, dann hat er an der Uni nichts mehr verloren. 
+Tybalt (ruft an): Hallo ist dort das Studiensekretariat? ... Ja. ... Ich bin die Nr. 108042 bitte 
+exmatrikulieren sie mich! (legt auf) Ha! Jetzt fehlt nur noch der Tanz: (schaut sich kurz um.) 
+Tybalt (singt Adaption von Liebe ist Süß von J.B.O.):  
+            Er hät's wissen müssen, doch jetzt ist er tot.  
+            Mit Mathematikern und Physikern das geht selten gut.  
+            Und hier die Moral, jetzt mal ganz ehrlich, 
+            Diese Liebe war lebensgefährlich! 
+            LaLaLa LaLaLa LaLaLa La. 
+(Romeo und Benvolio treten auf.) 
+Benvolio: Das ist er! Was hast du mit Mercutio gemacht??? (geht und weckt Mercutio auf) 
+Tybalt: Das kommt davon wenn man Julia anmacht.  
+Romeo: Aber Julia ist doch meine Freundin. 
+Tybalt: WAS? Dann hab ich ja den Falschen von der Uni geschmissen. 
+(schmeißt die Geldbörse zu Mercutio.) 
+Mercutio(steht gestüzt von Benvolio auf.): (laut)Ihr habt doch alle ein Rad ab! Romeo, durch 
+deine blöde Affäre und diesen Affen bin ich jetzt exmatrikuliert. Ich werd jetzt Ingenieur und 
+wünsch 'die Pest auf eure beiden Häuser'! (humpelt mit Benvolio davon und wiederholt 'die Pest 
+auf eure beiden Häuser' immer leiser) 
+Tybalt: Romeo also...Sagst du mit deine Matrikelnummer freiwillig, oder muß ich sie mir holen? 
+Romeo: Du sollst heut noch eine Lektion lernen: Taten sprechen lauter als Worte. 
+
+seinen Mund zu.* 
+Romeo (ruft Studiensekretariat an): Hallo? Hier spricht der AStA, exmatrikulieren sie sofort 
+Tybalt. Matrikel-Nr.??? Sie haben mich nicht verstanden! Ich bin der AStA, verstehen sie? ... Gut 
+Danke! 
+(Vorhang) 
+ 
+2. Szene 
+(Telefon Szene; Links Studiensekretariat. Rechts AStA.) 
+(GONG!) 
+AStA: Allmächtiger Studierenden-Ausschuss, Hallo! 
+Studiensekretariat: Hallo, hier hat sich gerade ein gewisser Tybalt beschwert. Ein Physiker 
+namens Romeo habe sich als AStA ausgegeben und besagten Tybalt exmatrikuliert. 
+AStA: WAS? Moment ich überprüfe das mal... Es stimmt! Da missbraucht wirklich ein Student 
+den Einfluß des allmächtigen AStA! Na der kann was erleben. 
+Studiensekretariat: Soll ich ihn gleich rausschmeißen? 
+AStA: Nein das wäre viel zu gnädig. Wir werden ihm den Rest seiner Studienzeit hier zur Hölle 
+machen. Unsere Spione berichten, daß er hier eine Freundin namens Julia gefunden hat. 
+Studiensekretariat: Soll ich die rausschmeißen? 
+AStA: Nein sie ist ja eine Mathematikerin und noch dazu unschuldig... Ich will, das sie Romeo 
+für ein langes Auslandsjahr ins eiskalte Sasketchuan nach Kanada schicken! Dort soll über seinen 
+Fehler nachdenken. 
+Studiensekretariat: Ja das sollte allen eine Lehre sein sich nie als AStA auszugeben. Wird sofort 
+erledigt! 
+(Vorhang) 
+ 
+3. Szene 
+(Balkon; Romeo und Julia sind da.) 
+Romeo: Ich muß sofort gehen. Es wurde von höchster Stelle befohlen! 
+Julia: Wirst Du mich auch nicht vergessen? 
+Romeo: Wie könnte ich? 
+(Abschiedskuß und Romeo ab. Frau Roder tritt auf.) 
+Fr. Roder: Julia hier steckst du also! 
+Julia: Ich wollte ich wär weit fort. 
+Fr. Roder: Nicht doch! Ich habe großartige Neuigkeiten! 
+Julia: Ach Frau Roder ... um mich aufzuheitern, müssen sie wirklich großartig sein. 
+Fr. Roder: Du wirst jauchzen Kindchen! Du kannst Diplomarbeit beim Hieber schreiben, es ist 
+schon alles unter Dach und Fach! 
+Julia: Ach ...  
+Fr. Roder: Na was sagst du dazu?  
+Julia: Das ist ... ähm ... ganz wunderbar, ja. Ich muß jetzt aber zu Kümmerer - äh ich meine auf's 
+Klo. 
+Fr. Roder: Geh lieber gleich zu Hieber! 
+Julia: Jaja... 
+(Julia hastig ab.) 
+(Vorhang) 
+
+4. Akt  
+ 
+1. Szene  
+(Kümmerer's Büro; Kümmerer und Julia sind da.) 
+ 
+Julia: Was soll ich denn jetzt nur tun? 
+Kümmerer: Ich sehe nur einen Ausweg: Ihr müsst eure Diplomarbeit sofort abschließen. 
+Julia: Aber wie? Romeo ist doch weit fort in Kanada! 
+Kümmerer: Du wirst vorgeben, daß du dein Studium geschmissen hast und zu deinen Eltern 
+zurückgezogen bist. In Wahrheit versteckst du dich im Keller des Mathebaus... Romeo schicke 
+ich eine Mail und wenn er kommt, schreibt ihr einfach im KELLER die Arbeit fertig. 
+Julia: Natürlich! Der Keller - da kommt sowieso nie jemand hin.  
+ 
+2. Szene 
+(Kümmerer's Büro; Kümmerer schreibt eine eMail auf Papier.) 
+ 
+Kümmerer: "Betreff: Wichtig! Vertrauliche Angelegenheit, Bitte sofort lesen!!!" (Pause) Nun der 
+Text: "Lieber Romeo, Julia droht die Zwangsexmatrikulation wenn sie nicht Diplomarbeit beim 
+Hieber schreibt. (Pause) Sie wird vorgeben, die Uni zu verlassen und sich im Keller verstecken. 
+Dort könnt ihr die Diplomarbeit beenden. (Pause) Dies sei Dein Ansporn: Du musst wegeilen um 
+Elementarschäden zu verhindern. (Pause) Viele Grüße Burkhardt Kümmerer. PS: Es geht voran, 
+Julia hat mit Vektoralgebra einen Gruppenisomorphismus gefunden!" Fertig! Jetzt 
+noch abschicken. 
+(Mailer Demon kommt und Kümmerer gibt ihm das Blatt. Mailer Demon rennt weg und 
+Vorhang.) 
+
+5. Akt  
+ 
+1. Szene  
+(Spamfilter steht im Zentrum und wartet. Mailer Demon kommt angerannt und gibt Spamfilter 
+die Mail und rennt wieder weg.) 
+Spamfilter: Incoming Mail form Kümmerer@mathematik.tu-darmstadt.de for Romeo@uni-
+sasketchuan.ca...Processing Job...Spam Assassin activated...Reading subject line:"Wichtig! 
+(Beep) Vertrauliche (Beep) Angelegenheit, Bitte sofort (Beep) lesen!!!". Found Matchwords: 
+wichtig, vertraulich, sofort. Extensive use of exclaimation marks... strongly suspect spam... 
+reading main text: "Lieber Romeo, Julia droht die Zwangsexmatrikulation (Beep) wenn sie nicht 
+Diplomarbeit beim Hieber schreibt." Offensive word sex found in "Zwangsexmatrikulation"! "Sie 
+wird vorgeben, die Uni zu verlassen und sich im Keller verstecken. Dort könnt ihr die Diplomarbeit beenden. Dies sei Dein Ansporn:(Beep) " Offensive 
+word porn found in "Ansporn"! "Du mußt wegeilen (Beep) um Elementarschäden (Beep) zu 
+verhindern." Offensive word geil found in "wegeilen"! Offensive word arsch found in 
+"Elementarschäden"! "Viele Grüße Burkhardt Kümmerer. PS: Es geht voran,
+Julia hat mit Vektoralgebra (BEEP) einen 
+Gruppenisomorphismus (BEEP) gefunden!" Enough keywords 
+found! Mail is 100% Spam...deleting (zerreisst Brief. Vorhang) 
+
+2. Szene 
+(Benvolio am Telefon) 
+Benvolio: Romeo? 
+Romeo: Benvolio! Endlich ein Lebenszeichen! Sag wie geht es Julia und was macht unsere 
+Diplomarbeit? 
+Benvolio: Ich habe eine gute und eine schlechte Nachricht für dich: Die Diplomarbeit ist fast 
+fertig und Julia hat das Studium geschmissen. 
+Romeo: Und was war jetzt die schlechte Nachricht? Ich hab hier längst ne neue Freundin! Die 
+Mathematikerin ist aus dem weg und ich kann den ganzen Ruhm für die coole Diplomarbeit 
+absahnen.  
+Benvolio: Wie ich dachte du wärst voll verliebt??? 
+Romeo: *g* Sie war ja echt ganz nett, aber das hätte nie klappen können. 
+Benvolio: Aber der Ball, diese wunderbare Liebesgeschichte... 
+Romeo: ...ist eben Geschichte! Ich hätte nie die Geduld gehabt alleine so ne Arbeit zu schreiben, 
+ausserdem kann ich kein Mathe. 
+Benvolio: Was willst du jetzt machen? Kümmerer will die Arbeit auf Eis legen, bis Du 
+wiederkommst! 
+Romeo: Was? Oh Gott! Noch ein Jahr warten... daß halt ich nicht aus. Ich komme noch heute 
+zurück und schlüpfe nochmal in die Rolle des Verliebten. 
+
+PHYSIKER-SZENE
+
+3. Szene 
+(Benvolio im Aufzug im Mathebau. Stehen im Fahrstuhl rum.) 
+ 
+Romeo: Warum fährt der nicht los? 
+Benvolio: (sieht zur Notbremse und legt sie um) Da hat wohl einer die Notbremse gezogen. 
+(Türen gehen.) 
+Romeo: Jetzt aber ab in den ersten Stock zu Kümmerer... Warum zum Geier fahren wir jetzt nach 
+unten?  
+(Das Rad am Fahrstuhl dreht sich auf Keller. Alles ist dunkel. Julia schreibt in einer Ecke bei 
+wenig Licht Diplomarbeit. Auch im Fahrstuhl ist licht. Türen gehen auf. Julia hört alles!) 
+Benvolio: Wir sind im Keller. Da hat wohl wieder so ein Scherzkeks Keller, vierter Stock und 
+Notbremse gedrückt. 
+Romeo: Das war bestimmt so ein verdammter Mathematiker! Zum Glück muß ich die nie 
+wiedersehn, wenn ich erstmal das Diplom hab. 
+Benvolio: Ah jetzt geht er wieder. (Geräusche) 
+Romeo: Dann wolln wir mal sehn, ob wir Kümmerer MEINE Diplomarbeit abluxen können. 
+(lacht) 
+(Fahrstuhltüren gehen zu. Rad dreht sich und Licht aus im Fahrstuhl.) 
+Julia: Dieses Schwein, das kann doch einfach nicht wahr sein! ... Er hat mich nur für die blöde 
+Diplomarbeit ausgenutzt! Er hat mit meinen Gefühlen gespielt wie... wie mit einem JOJO. 
+Dieser, ... Dieser,... PHYSIKER. Das wird er bitter bereuen. Jetzt kann mir nur noch einer 
+Helfen! (zückt Handy.) 
+(Vorhang) 
+ 
+4. Szene 
+(Kümmerer's Büro; Romeo kommt rein.) 
+ 
+Romeo: Burgi, mein Gott, so eine schreckliche Tragödie! Ich bin sofort gekommen. Was machen 
+wir jetzt? Was wird aus der ganzen Arbeit? 
+Kümmerer: Beruhige dich erstmal... Hast du meine Mail nicht bekommen? 
+Romeo: Welche Mail? 
+Kümmerer: Die Julia hat sich vor Hieber im Keller versteckt. Geh zu ihr und schreibt die 
+Diplomarbeit zu ende, dann wird alles gut. 
+Romeo: (brabelt) Julia! Im Keller! Das ist... das ist ja wunderbar. Da bin ich ja... unglaublich 
+erleichtert. Ich werde gleich... 
+(GONG! Julia und AStA mit Benvolio in Gefangenschaft kommen rein. Dazu kommt AStA 
+Gefolge. 2 gehen zu und halten Romeo der Dritte hat Benvolio.) 
+Romeo: Julia! Was für eine Freude dich zu sehen! Ich dachte du wärst für immer... 
+Julia: Gib dir keine Mühe du doppelzüngige Schlange. Ich hab alles gehört! Du hast mich benutzt 
+wie eine X-BELIEBIGE Formel, aber heute ist ZAHLTAG! 
+Romeo: (brabelt) aber ich... ähm, hatte doch... 
+AStA: Ich bin der AStA. Wiederstand ist zwecklos! Ich habe bereits alles geregelt. Alle Physiker 
+sind exmatrikuliert. Der Fachbereich 5 wird aufgelöst! Ihr hat 24 Stunden den Mathebau für 
+immer zu verlassen! 
+(Vorhang) 
+ 
+Epilog 
+ 
+Barde: So wurde der FB5 aufgelöst und S215 gehört endlich seinen rechtmäßigen Besitzern. Ein 
+Physiker war zu weit gegangen und so hat der Jahrhunderte lange Streit in der Verbannung aller 
+Physiker sein glückliches Ende gefunden. Und Julia schreibt Diplomarbeit
+beim Hieber damit's ein Drama bleibt.

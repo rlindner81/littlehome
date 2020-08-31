@@ -1,0 +1,245 @@
+\documentclass[11pt,a4paper,leqno]{article}
+
+\usepackage{pst-plot, pstricks} 
+\usepackage{fancybox,amssymb,color} 
+
+\usepackage{amsfonts,german}
+\usepackage{a4wide}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{uebung}
+\usepackage{texdraw}
+%\usepackage{epsf}
+
+
+\Nummer{2} % Blattnummer eingeben
+
+%% Gruppe Haus Test Zusatz
+
+\Anfang{1}{1}{1}{1} % Zaehler fuer  Gruppenuebung und Hausuebung eingeben
+
+\Datum{08. Oktober 2004} % Datum eingeben
+
+\parindent0mm
+
+
+
+\begin{document}
+
+\Kopf
+
+\Uebungloes
+
+
+
+%%%%%%%%%%%%%%%%%%%% Gruppenuebungen %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Gruppenuebungen}
+
+
+\Aufgabe % 1
+\textbf{(Welche Zuordnungen sind Funktionen?)}
+\begin{itemize}
+\item[(a)]
+FUKTION, diese Zuordnung ist eine Funktion, da jeder nat"urlichen Zahl genau eine Zahl zugeordnet wird.
+\item[(b)]
+KEINE FUNKTION, da es ein Element (n"amlich die Zahl $1$) gibt, der kein Bild zugeordnet wird.
+\item[(c)]
+KEINE FUNKTION, da es ein Element gibt, dem zwei unterschiedliche Werte zugeornet werden.
+\item[(d)]
+KEINE FUNKTION, da es sogar mehrere Elemente gibt, denen zwei unterschiedliche Werte zugeornet werden.
+\item[(e)]
+KEINE FUNKTION, siehe (d)
+\item[(f)]
+Hier soll man dar"uber nachdenken, dass $f$ keine Funktion ist, falls es eine Aufgabe ohne L"osung oder eine Aufgabe mit mehreren L"osungen gibt.
+\item[(g)]
+KEINE FUNKTION, da die (Quadrat-)Wurzelfunktion nicht f"ur negative Zahlen definiert ist und man deshalb
+nicht jeder Zahl einen Wert zuordnet. (Dies wird eine Funktion, falls man den Definitionsbereich auf
+$[0,+\infty [$ einschr"ankt.
+\end{itemize}
+
+\Aufgabe % 2
+\textbf{(Skizziere die folgenden Funktionen)}
+\begin{itemize}
+
+\item[(a)]
+
+
+$\varphi (x) = x^2 +4$
+
+\psset{unit=0.5cm} 
+\[ \begin{pspicture}(0,0)(10,6)
+  \psaxes{->}(0,0)(-2,0)(2,7)
+  \psplot{-2}{2}{x x mul 4 add} 
+\end{pspicture} \]
+
+\item[(b)]
+
+$\psi (x) = \sin x +1$
+
+\[ \begin{pspicture}(0,-1)(10,3)
+  \psaxes{->}(0,0)(-6,0)(6,3)
+  \psplot{-6}{6}{180 3.14 div x mul sin 1 add} 
+\end{pspicture} \]
+
+
+
+
+
+\item[(c)] 
+Wenn man die Funktion $\phi$ auf die endliche Menge $\left\{ 1,2,3,4 \right\}$ einschr"ankt, dann reichen die Funktionswerte an diesen vier Stellen aus, um die Funktion eindeutig zu beschreiben. Folglich k"onnte eine Wertetabelle eine sinnvolle Darstellung sein:
+
+\[ \begin{array}{c|c|c|c|c}
+x & 1 & 2 & 3 & 4 \\
+\hline
+\varphi(x) & 5 & 8 & 13 & 20 
+\end{array} \]
+
+\end{itemize}
+
+\Aufgabe % 3
+\textbf{(Rechnen mit Polynomen im $\mathbb{R}[X])$}\\
+
+$ p(x)=x^2+2x+2 \\ $
+$ q(x)=x^2+3 \\ $
+$ p+q(x)=p(x)+q(x)= (x^2+2x+2) + (x^2+3) = 2x^2+2x+5 \\ $
+$ p-q(x)=p(x)-q(x)= (x^2+2x+2) - (x^2+3) = 2x-1 \\ $
+$ p\cdot q(x)=p(x)\cdot q(x)= (x^2+2x+2) \cdot (x^2+3) = x^4+2x^3+5x^2+6x+6 \\ $
+$ p:q(x)=\frac{p(x)}{q(x)}= \frac{x^2+2x+2}{x^2+3} \\ $
+Mit Polynomdivision l"asst dieses Ergebnis noch umformen zu:
+$ = 1 + \frac{2x-1}{x^2+3} \\ $
+$ p\circ q(x)=p(q(x))=(q(x))^2+2q(x)+2=(x^2+3)^2+2(x^2+3)+2 = x^4+6x^2+9+2x^2+6+2=x^4+8x^2+17\\ $
+$ q\circ p(x) = q(p(x)) = (p(x))^2+3 = (x^2+2x+2)^2+3 = x^4+4x^3+8x^2+8x+7\\ $
+
+\Aufgabe % 4
+\textbf{(Finde die Nullstellen)}\\
+
+\begin{itemize}
+
+\item[(a)]
+
+$ f(x)=x^2+2x-3$ \\
+Nullstellen von quadratischen Polynomen finden man z.B. mit der $pq$-Formel:\\
+$ x^2 +2x-3=0$\\
+Also ist $p=2$ und $q=-3$.\\
+Somit ergeben sich als L"osungen:\\
+$x_{1,2} = -\frac{p}{2} \pm \sqrt{ (\frac{p}{2})^2 -q} = -1 \pm \sqrt{ 1 -(-3)}  = -1 \pm 2$
+Also sind unsere Nullstellen $x_1=-1-2=-3$ und $x_2=-1+2=1$.
+
+\item[(b)]
+
+$f(x)=e^x$ \\
+Die Exponentialfunktion hat keine Nullstellen, da $e^x >0$ f"ur alle $x\in \mathbb{R} $.
+\textit{(siehe Skizze im Skript)}
+
+\end{itemize}
+
+\Aufgabe % 5
+\textbf{(Bestimme den maximalen Definitionsbereich)} \\
+$\xi:D \rightarrow \mathbb{R}$  :  $\xi(x)=\frac{e^x+\sqrt{x}}{x^2-1}$
+
+Die Exponentialfunktion $x\mapsto e^x $ ist f"ur alle $x \in \mathbb{R} $ definiert. Die Wurzelfunktion $x\mapsto \sqrt{x}$ nur f"ur $x$, die gr"o"ser oder gleich $0$ sind. Und der Bruch ist nur wohldefiniert, wenn der Nenner ungleich $0$ ist. Der Nenner $(x^2-1)$ ist genau dann $0$, wenn $x=1$ oder $x=-1$ ist.
+Die $-1$ ist aber bereits aus dem Definitionsbereich herausgenommen, da dort die Wurzel nicht definiert war.
+Somit bleibt als maximaler Definitionsbereich $D = $ die Menge aller reelen Zahlen, die gr"o"ser oder gleich 0 sind und die nicht gleich 1 sind:
+$D = \{ x \in \mathbb{R} : x \geq 0  $ \textsl{und}   $ x \neq 1 \}
+= [0,+\infty[ \backslash \{ 1\}
+= [0,1[ \cup ]1,+\infty[$
+
+\Aufgabe % 7
+\textbf{(In welchen Intervallen ist die Sinusfunktion monoton steigend?)}\\
+Die Sinusfunktion ist im Intervall $[-\frac{\pi }{2} , \frac{\pi}{2}]$ monoton steigend. (siehe Skizze im Skript). Von $\frac{\pi}{2}$ bis $\frac{3}{2}\pi$ ist sie monoton fallend. Da die Funktion $2\pi$-periodisch ist, setzt sich dieses Verhalten in beide Richtungen periodisch fort:\\
+Also ist die Sinusfunktion beispielsweise auch in den Intervallen $[-\frac{\pi }{2} +2\pi, \frac{\pi}{2} +2\pi]$ und $[-\frac{\pi }{2} +4\pi, \frac{\pi}{2} +4\pi]$ monoton steigend. Allgemeiner gilt also:\\
+Die Sinusfunktion ist auf allen Intervallen der Form $[-\frac{\pi }{2} +k\cdot 2\pi, \frac{\pi}{2} +k\cdot 2\pi]$ monoton steigend f"ur $k \in \mathbb{Z} $ beliebig.
+
+\Aufgabe % 8
+\textbf{(Skizziere Funktion im Intervall $[0,1]$)}\\
+
+\begin{itemize}
+\item[(a)]
+
+
+$h$ monoton steigend:\\
+
+$f:[0,\frac{\pi}{2}] \rightarrow \mathbb{R}: x \mapsto sin(x)$
+
+
+\item[(b)]
+
+$g$ streng monoton fallend:\\
+
+$f:[\frac{\pi}{2},\frac{3\pi}{2}] \rightarrow \mathbb{R}: x \mapsto sin(x)$
+
+
+\item[(c)]
+
+Die einzigen Funktionen, die sowohl monoton steigend als auch monoton fallend sind, sind die Konstanten: $f(x)=C$ (f"ur ein $C \in \mathbb{R}$) 
+
+\psset{unit=2cm} 
+\[ \begin{pspicture}(0,-1)(10,1.8)
+  \psaxes{->}(0.2,0)(0,-0.2)(2,2)
+  \psplot{0.2}{1.2}{1.35} 
+\end{pspicture} \]
+
+
+\item[(d)]
+
+Die Eigenschaften "`Streng monoton steigend"' und "`streng monoton fallend"' widersprechen sich, da f"ur eine solche Funktion sowohl $f(1)>f(0)$ als auch $f(1)<f(0)$ gelten m"usste.
+
+ 
+\end{itemize}
+
+\Aufgabe % 9
+\textbf{(Symmetrische Polynome)}\\
+Sei $p$ ein beliebiges Polynom der Form $p(x)=c_0+c_1 x+c_2 x^2 + ... + c_n x^n$. Wir wissen, dass 
+eine Funktion $f:\mathbb{R} \rightarrow \mathbb{R}$ punktsymmetrisch zum Ursprung ist, falls
+$(\forall x \in \mathbb{R}) p(-x)=-p(x)$ gilt.
+Diese Bedingung k"onnen wir nun f"ur unser Polynom $p$ "uberpr"ufen.\\
+$p(-x)=c_0+c_1 (-x)+c_2 (-x)^2 + ... + c_n (-x)^n=c_0+c_1 (-1)x+c_2 (-1)^2 x^2 + ... + c_n(-1)^n x^n$
+Das hei"st, dass die Koeffizienten $c_k$ alle mit $(-1)^k$ multipliziert werden. Somit bleiben alle  Koeffizienten mit geraden Indizes $c_0, c_2, ...$ gleich, die mit ungeraden Indizes $c_1, c_3, ...$ werden zu
+$-c_1, c_3, ...$.
+Damit nun also $p(-x)=-p(x)$ f"ur alle $x$-Werte gelten kann, m"ussen alle geraden Koeffizienten Null sein.
+Somit ergibt sich als Resultat:
+Ein Polynom ist punktsymetrisch zum Ursprung, wenn alle geraden Koeffizienten Null sind, also nur ungerade Exponenten der Variablen ($x, x^3, x^5, ...$) vorkommen.
+
+Analog zeigt sich, dass $p$ achsensymmetrisch zur y-Achse ist, wenn alle ungeraden Koeffizienten Null sind, also nur gerade Exponten ($x^0, x^2, x^4, ...$) vorkommen.
+
+\Aufgabe % 10
+\textbf{(Welche der abgebildeten Funktionen sind stetig?)}\\
+
+
+\begin{itemize}
+\item[(a)]
+Die Funktion ist stetig.
+
+\item[(b)]
+Die abgebildete Kurve ist "uberhaupt KEINE Funktion, da ein $x$-Wert zwei unterschiedliche $y$-Werte erhält.
+
+\item[(c)]
+Die Funktion ist stetig.
+
+\item[(d)]
+Auch diese Funktion ist stetig auf ihrem gesammten Definitionsbereich $]0,+\infty[$.
+ 
+\end{itemize}
+
+\Aufgabe % 12
+\textbf{(Welche Aussage ist richtig?)}\\
+
+\begin{itemize}
+\item[(a)] $(\forall y \in \mathbb{R})(\exists x \in \mathbb{R}) x > y$
+In Worten bedeutet diese Aussage: F"ur jede beliebige reele Zahl $y$ l"asst sich eine Zahl $x$ finden, die gr"o"ser ist.
+Die Aussage ist somit wahr, da man ja z.B. die Zahl $x+1$ nehmen k"onnte.
+\item[(b)] $(\exists x \in \mathbb{R})(\forall y \in \mathbb{R}) x > y$
+In Worten bedeutet diese Aussage: Es gibt eine reele Zahl $x$, die so gewählt ist, dass sie gr"o"ser als jede beliebige reele Zahl $y$ ist. Das ist nat"urlich falsch, denn eine solche Zahl m"usste ja z.B. auch gr"o"ser als sein als sie selbst: $x > x$, was nat"urlich nicht m"oglich ist.
+\end{itemize}
+
+
+\end{Gruppenuebungen}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
