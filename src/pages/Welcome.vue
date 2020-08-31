@@ -16,7 +16,7 @@
         Dr. Richard Lindner
         </h5>
         <a
-          target="_blank" href="https://www.sap.com">
+          target="_blank" href="https://sap.com">
           SAP SE
         </a><br/>
         Dietmar-Hopp-Allee 16<br/>
@@ -51,17 +51,6 @@
         </router-link>
       </div>
     </div>
-<!--    <div class="row">-->
-<!--      <div class="col">-->
-<!--        Welcome-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="row">-->
-<!--      <div class="col-6">-->
-<!--      </div>-->
-<!--      <div class="col-6">Second column</div>-->
-<!--    </div>-->
   </q-page>
 </template>
 
