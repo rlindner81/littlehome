@@ -23,8 +23,8 @@
       {
         "name": "My lecture",
         "variants": [
-          { "name": "slides", "link": "https://goodnogood.org/home/crypto/2011-02-02-lecture-dl.pdf" },
-          { "name": "video", "link": "https://goodnogood.org/home/crypto/2011-02-02-lecture-dl.pdf" }
+          { "name": "slides", "link": "https://goodnogood.org/home/crypto/2010-04-30-lecture-pqc.pdf" },
+          { "name": "video", "link": "https://download.mmag.hrz.tu-darmstadt.de/media/HRZ/elc/OpenLearnWare/Informatik/09_10WS_VL_PostQuantumCryptography_Buchmann/20091021/21.10.2009_Buchmann-Krypt.mp4" }
         ]
       }
     ],
@@ -43,6 +43,25 @@
       { "name": "Markus Rückert" }
     ],
     "semester": "SS 2009"
+  },
+  {
+    "name": "Assisting lecture - Public Key Kryptanalyse",
+    "teachers": [
+      { "name": "Prof. Johannes Buchmann" },
+      { "name": "Richard Lindner" },
+      { "name": "Markus Rückert" },
+      { "name": "Michael Schneider" }
+    ],
+    "semester": "WS 2008/2009"
+  },
+  {
+    "name": "Seminar - Ausgewählte Themen der Kryptographie",
+    "teachers": [
+      { "name": "Richard Lindner" },
+      { "name": "Markus Rückert" },
+      { "name": "Michael Schneider" }
+    ],
+    "semester": "WS 2008/2009"
   },
   {
     "name": "Assisting lecture - Grundlagen der Informatik II",
