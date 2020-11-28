@@ -29,13 +29,13 @@
 
       <!-- teachers -->
       <span
-        v-for="(person, personIndex) in teachers"
+        v-for="(person, index) in teachers"
         v-bind="person"
-        :key="person.name"
+        :key="index"
       >
         <span>{{ person.name }}</span>
         <span
-          v-if="personIndex < teachers.length - 1"
+          v-if="index < teachers.length - 1"
         >, </span>
       </span><br />
 
@@ -61,7 +61,7 @@ export default {
 
     teachers: {
       type: Array,
-      required: true
+      default: () => []
     },
 
     semester: {
