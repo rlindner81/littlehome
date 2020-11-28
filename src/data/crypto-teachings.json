@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Assisting lecture - Introduction to Cryptography",
+    "lectures": [
+      {
+        "name": "My Discrete Logarithm lecture",
+        "variants": [{ "name": "slides", "link": "https://goodnogood.org/home/crypto/2011-02-02-lecture-dl.pdf" }]
+      },
+      {
+        "name": "My Merkle-Shamir lecture",
+        "variants": [{ "name": "slides", "link": "https://goodnogood.org/home/crypto/2011-02-09-lecture-merkle-shamir.pdf" }]
+      }
+    ],
+    "teachers": [
+      { "name": "Prof. Johannes Buchmann" },
+      { "name": "Richard Lindner" }
+    ],
+    "semester": "WS 2010/2011"
+  },
+  {
+    "name": "Assisting lecture - Post-Quantum Kryptographie",
+    "lectures": [
+      {
+        "name": "My lecture",
+        "variants": [
+          { "name": "slides", "link": "https://goodnogood.org/home/crypto/2011-02-02-lecture-dl.pdf" },
+          { "name": "video", "link": "https://goodnogood.org/home/crypto/2011-02-02-lecture-dl.pdf" }
+        ]
+      }
+    ],
+    "teachers": [
+      { "name": "Prof. Johannes Buchmann" },
+      { "name": "Richard Lindner" },
+      { "name": "Markus Rückert" }
+    ],
+    "semester": "WS 2009/2010"
+  },
+  {
+    "name": "Seminar - Ausgewählte Themen der Kryptographie",
+    "teachers": [
+      { "name": "Erik Dahmen" },
+      { "name": "Richard Lindner" },
+      { "name": "Markus Rückert" }
+    ],
+    "semester": "SS 2009"
+  },
+  {
+    "name": "Assisting lecture - Grundlagen der Informatik II",
+    "teachers": [
+      { "name": "Prof. Johannes Buchmann" },
+      { "name": "Erik Dahmen" },
+      { "name": "Richard Lindner" }
+    ],
+    "semester": "SS 2008"
+  },
+  {
+    "name": "Seminar - Post-Quantum Cryptography",
+    "teachers": [
+      { "name": "Richard Lindner" },
+      { "name": "Axel Schmidt" }
+    ],
+    "semester": "WS 2007/2008"
+  },
+  {
+    "name": "Assisting lecture - Introduction to Cryptography",
+    "teachers": [
+      { "name": "Prof. Johannes Buchmann" },
+      { "name": "Richard Lindner" }
+    ],
+    "semester": "WS 2006/2007"
+  }
+]
