@@ -4,11 +4,11 @@
     "lectures": [
       {
         "name": "My Discrete Logarithm lecture",
-        "variants": [{ "name": "slides", "link": "https://goodnogood.org/home/crypto/2011-02-02-lecture-dl.pdf" }]
+        "variants": [{ "name": "slides", "link": "crypto/2011-02-02-lecture-dl.pdf" }]
       },
       {
         "name": "My Merkle-Shamir lecture",
-        "variants": [{ "name": "slides", "link": "https://goodnogood.org/home/crypto/2011-02-09-lecture-merkle-shamir.pdf" }]
+        "variants": [{ "name": "slides", "link": "crypto/2011-02-09-lecture-merkle-shamir.pdf" }]
       }
     ],
     "teachers": [
@@ -23,7 +23,7 @@
       {
         "name": "My lecture",
         "variants": [
-          { "name": "slides", "link": "https://goodnogood.org/home/crypto/2010-04-30-lecture-pqc.pdf" },
+          { "name": "slides", "link": "crypto/2010-04-30-lecture-pqc.pdf" },
           { "name": "video", "link": "https://download.mmag.hrz.tu-darmstadt.de/media/HRZ/elc/OpenLearnWare/Informatik/09_10WS_VL_PostQuantumCryptography_Buchmann/20091021/21.10.2009_Buchmann-Krypt.mp4" }
         ]
       }
