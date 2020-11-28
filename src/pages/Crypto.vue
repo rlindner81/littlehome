@@ -18,7 +18,7 @@
         </h5>
         <CryptoPublication
           v-for="(publication, index) in publications"
-          :key="index"
+          :key="'publication' + index"
           v-bind="publication"
         ></CryptoPublication>
 
@@ -27,7 +27,7 @@
         </h5>
         <CryptoTeaching
           v-for="(teaching, index) in teachings"
-          :key="index"
+          :key="'teaching' + index"
           v-bind="teaching"
         ></CryptoTeaching>
 
