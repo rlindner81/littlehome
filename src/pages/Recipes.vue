@@ -1,6 +1,9 @@
 <template>
-  <q-page class="flex flex-center">
-    Recipes
+  <q-page class="flex-block">
+    <div class="row q-pa-md q-col-gutter-md">
+      <div class="col-12">
+      </div>
+    </div>
   </q-page>
 </template>
 

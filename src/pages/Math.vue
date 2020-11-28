@@ -2,7 +2,8 @@
   <q-page class="flex-block">
     <div class="row q-pa-md q-col-gutter-md">
       <div class="col-12">
-        <h4><a name="TOC-Grundstudium"></a>Grundstudium</h4>
+        <h4>Math</h4>
+        <h5><a name="TOC-Grundstudium"></a>Grundstudium</h5>
         Stark zusammengefasste Lernblätter für die <b>Analysis</b> im ersten und
         zweiten Semester (<i>Hoffmann</i>):
         <ul>
@@ -25,10 +26,7 @@
           </li>
         </ul>
         Für besonders Interessierte gibt's noch den
-        <a
-          href="http://www.cdc.informatik.tu-darmstadt.de/%7Erlindner/add_lemma_limit_comparison_test.pdf"
-          rel="nofollow"
-          target="_blank"
+        <a href="math/05_lemma_limit_comparison_test.pdf" target="_blank"
           >Limit Comparison Test</a
         >
         aus Rafaels großem Calculus Buch.<br /><br />
@@ -59,7 +57,7 @@
               href="math/mittelseminar.pdf"
               target="_blank"
               >pdf</a
-            >, <a href="math/mittelseminar.zip" target="_blank">tex</a>]&nbsp;
+            >, <a href="math/mittelseminar.zip" target="_blank">tex</a>]
           </li>
         </ul>
         <br />Material eines mathematischen <b>WI-Vorkurses</b> (mit
@@ -89,7 +87,7 @@
             >, <a href="math/wi-solution03.tex">tex</a>]
           </li>
         </ul>
-        <h4><a name="TOC-JAlgebra"></a>JAlgebra</h4>
+        <h5><a name="TOC-JAlgebra"></a>JAlgebra</h5>
         Nach viel Arbeit an der University of Birmingham in England ist meine
         <b>Bachelorarbeit</b> fertig (<i>Dr. Kaye</i>):
         <ul>
@@ -105,7 +103,7 @@
             >
           </li>
         </ul>
-        <h4><a name="TOC-Verschiedenes"></a>Verschiedenes</h4>
+        <h5><a name="TOC-Verschiedenes"></a>Verschiedenes</h5>
         <ul>
           <li>
             Elliptische Kurven Seminar (<i>Dr. Vollmer</i>): Handout [<a
