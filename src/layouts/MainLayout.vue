@@ -69,16 +69,16 @@ const linksList = [
     icon: 'account_balance',
     link: '/theater'
   },
-  {
-    title: 'Recipes',
-    icon: 'restaurant',
-    link: '/recipes'
-  },
-  {
-    title: 'Links',
-    icon: 'link',
-    link: '/links'
-  }
+  // {
+  //   title: 'Recipes',
+  //   icon: 'restaurant',
+  //   link: '/recipes'
+  // },
+  // {
+  //   title: 'Links',
+  //   icon: 'link',
+  //   link: '/links'
+  // }
 ];
 
 import { defineComponent, ref } from 'vue'
