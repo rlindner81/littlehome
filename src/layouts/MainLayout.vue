@@ -8,7 +8,7 @@
           round
           icon="menu"
           aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
+          @click="toggleLeftDrawer"
         />
 
         <q-toolbar-title>
@@ -21,7 +21,7 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-1"
+      class="bg-grey-1"
     >
       <q-list>
         <q-item-label
@@ -30,6 +30,7 @@
         >
           Navigation
         </q-item-label>
+
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -47,7 +48,7 @@
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
 
-const linksData = [
+const linksList = [
   {
     title: 'Welcome',
     icon: 'home',
@@ -80,14 +81,25 @@ const linksData = [
   }
 ];
 
-export default {
+import { defineComponent, ref } from 'vue'
+
+export default defineComponent({
   name: 'MainLayout',
-  components: { EssentialLink },
-  data () {
+
+  components: {
+    EssentialLink
+  },
+
+  setup () {
+    const leftDrawerOpen = ref(false)
+
     return {
-      leftDrawerOpen: false,
-      essentialLinks: linksData
+      essentialLinks: linksList,
+      leftDrawerOpen,
+      toggleLeftDrawer () {
+        leftDrawerOpen.value = !leftDrawerOpen.value
+      }
     }
   }
-}
+})
 </script>

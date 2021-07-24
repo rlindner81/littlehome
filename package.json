@@ -3,24 +3,24 @@
   "version": "0.0.1",
   "description": "Little Home",
   "productName": "Little Home",
-  "author": "Richard Lindner <rlindner81@gmail.com>",
+  "author": "Richard <rlindner81@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.10.9",
-    "core-js": "^3.15.2",
-    "quasar": "^2.0.3"
+    "@quasar/extras": "^1.0.0",
+    "core-js": "^3.6.5",
+    "quasar": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.7",
-    "@quasar/app": "^3.0.3",
-    "eslint": "^7.31.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-vue": "^7.14.0"
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app": "^3.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "eslint-webpack-plugin": "^2.4.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -34,7 +34,7 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": ">= 10.18.1",
+    "node": ">= 12.22.1",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }
