@@ -33,6 +33,8 @@
         <router-link
           to="/crypto">
           <q-img
+            fit="none"
+            position="50% 0"
             src="welcome/crypto.png"></q-img>
         </router-link>
       </div>
@@ -40,6 +42,8 @@
         <router-link
           to="/math">
           <q-img
+            fit="none"
+            position="50% 0"
             src="welcome/math.png"></q-img>
         </router-link>
       </div>
@@ -47,6 +51,8 @@
         <router-link
           to="/theater">
           <q-img
+            fit="none"
+            position="50% 0"
             src="welcome/theater.png"></q-img>
         </router-link>
       </div>
