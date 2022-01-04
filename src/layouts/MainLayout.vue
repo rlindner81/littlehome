@@ -69,11 +69,11 @@ const linksList = [
     icon: 'account_balance',
     link: '/theater'
   },
-  // {
-  //   title: 'Recipes',
-  //   icon: 'restaurant',
-  //   link: '/recipes'
-  // },
+  {
+    title: 'Recipes',
+    icon: 'restaurant',
+    link: '/recipes'
+  },
   // {
   //   title: 'Links',
   //   icon: 'link',
