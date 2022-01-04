@@ -5,21 +5,21 @@
       <b>{{ name }}</b><br />
       <span v-if="lectures && lectures.length">
         <span
-          v-for="(lecture,index) in lectures"
+          v-for="(lecture,lectureIndex) in lectures"
           v-bind="lecture"
-          :key="index"
+          :key="lectureIndex"
         >
           {{ lecture.name }}
           [
           <span
-            v-for="(variant, index) in lecture.variants"
+            v-for="(variant, variantIndex) in lecture.variants"
             v-bind="variant"
-            :key="index"
+            :key="variantIndex"
           >
             <a
               :href="variant.link">{{ variant.name }}</a>
             <span
-              v-if="index < lecture.variants.length - 1"
+              v-if="variantIndex < lecture.variants.length - 1"
             >, </span>
           </span>
         ]
@@ -29,13 +29,13 @@
 
       <!-- teachers -->
       <span
-        v-for="(person, index) in teachers"
+        v-for="(person, personIndex) in teachers"
         v-bind="person"
-        :key="index"
+        :key="personIndex"
       >
         <span>{{ person.name }}</span>
         <span
-          v-if="index < teachers.length - 1"
+          v-if="personIndex < teachers.length - 1"
         >, </span>
       </span><br />
 
