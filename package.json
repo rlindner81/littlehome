@@ -2,12 +2,10 @@
   "private": true,
   "name": "littlehome",
   "version": "0.0.1",
-  "description": "Little Home",
-  "productName": "Little Home",
   "author": "Richard Lindner <rlindner81@gmail.com>",
   "scripts": {
-    "dev": "quasar dev",
-    "build": "quasar build"
+    "dev": "npx quasar dev",
+    "build": "npx quasar build"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
